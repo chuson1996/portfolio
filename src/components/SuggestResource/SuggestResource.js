@@ -1,14 +1,20 @@
 import React, { Component, PropTypes } from 'react';
 import Modal from 'react-bootstrap/lib/Modal';
-import { Field, reduxForm, formValueSelector } from 'redux-form';
-import { WithContext as ReactTags } from 'react-tag-input';
+import { Field, reduxForm, getFormValues } from 'redux-form';
+// import { WithContext as ReactTags } from 'react-tag-input';
 import { connect } from 'react-redux';
 import * as suggestResourceActions from 'redux/modules/suggestResource';
 import get from 'lodash/get';
 import debounce from 'lodash/debounce';
+import { Loader, TagInput } from 'components';
+import Button from 'react-bootstrap/lib/Button';
+// import update from 'react-addons-update';
 
 @reduxForm({
-  form: 'suggestResource'
+  form: 'suggestResource',
+  initialValues: {
+    tags: []
+  }
 })
 @connect(
   (state) => ({
@@ -16,13 +22,9 @@ import debounce from 'lodash/debounce';
     inputTags: state.suggestResource.tags.map(
       (text, id) => ({ text, id })
     ),
-    values: (() => {
-      const selector = formValueSelector('suggestResource');
-      return {
-        url: selector(state, 'url')
-      };
-    })(),
-    metaData: state.suggestResource.metaData
+    values: getFormValues('suggestResource')(state),
+    metaData: state.suggestResource.metaData,
+    metaDataLoading: state.suggestResource.metaDataLoading
   }),
   {
     ...suggestResourceActions
@@ -36,7 +38,9 @@ export default class SuggestResource extends Component {
     inputTags: PropTypes.array,
     getMetaData: PropTypes.func,
     values: PropTypes.object,
-    metaData: PropTypes.object
+    metaData: PropTypes.object,
+    metaDataLoading: PropTypes.bool,
+    handleSubmit: PropTypes.func
   };
 
   constructor(props) {
@@ -69,8 +73,9 @@ export default class SuggestResource extends Component {
 
   render() {
     const styles = require('./SuggestResource.scss');
-    const { inputTags, allTags, addTag, removeTag,
-      metaData } = this.props;
+    const { /* inputTags, allTags, addTag, removeTag, */
+      metaData, metaDataLoading, handleSubmit } = this.props;
+
     return (
       <div>
         <Modal
@@ -80,40 +85,41 @@ export default class SuggestResource extends Component {
             <Modal.Title>Suggest a resource</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Field
-              component="input"
-              type="text"
-              className="form-control"
-              placeholder="Resource Url"
-              // onChange={this.getMetaData}
-              name="url" />
-            <ReactTags
-              tags={inputTags}
-              suggestions={allTags}
-              classNames={{
-                tagInputField: `form-control`
-              }}
-              handleAddition={addTag}
-              handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)} />
+            <form onSubmit={handleSubmit}>
+              <Field
+                component="input"
+                type="text"
+                className="form-control"
+                placeholder="Resource Url"
+                // onChange={this.getMetaData}
+                name="url" />
 
-            { metaData &&
-              <div>
-                <p>
-                  <b>Title: </b>
-                  { metaData.title }
-                </p>
+              <Field
+                name="tags"
+                component={TagInput} />
 
-                <p>
-                  <b>Description: </b>
-                  { metaData.description }
-                </p>
+              { metaDataLoading && <Loader />}
+              { metaData &&
+                <div>
+                  <p>
+                    <b>Title: </b>
+                    { metaData.title }
+                  </p>
 
-                <p>
-                  <b>Author: </b>
-                  { metaData.author }
-                </p>
-              </div>
-            }
+                  <p>
+                    <b>Description: </b>
+                    { metaData.description }
+                  </p>
+
+                  <p>
+                    <b>Author: </b>
+                    { metaData.author }
+                  </p>
+                </div>
+              }
+
+              <Button bsStyle={`success`} type="submit">Suggest</Button>
+            </form>
           </Modal.Body>
         </Modal>
 

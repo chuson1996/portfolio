@@ -48,6 +48,7 @@ export default function reducer(state = inital, action) {
       return {
         ...state,
         metaDataLoaded: false,
+        metaDataLoading: false,
         metaDataError: action.error,
         metaData: null
       };

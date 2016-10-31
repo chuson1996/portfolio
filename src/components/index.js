@@ -10,3 +10,4 @@ export AlwaysVisible from './AlwaysVisible/AlwaysVisible';
 export CTA from './CTA/CTA';
 export SuggestResource from './SuggestResource/SuggestResource';
 export Loader from './Loader/Loader';
+export TagInput from './TagInput/TagInput';
