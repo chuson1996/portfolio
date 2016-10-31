@@ -1,0 +1,17 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+
+.suggestBtn {
+  position: fixed !important;
+  bottom: 30px;
+  right: 10px;
+  z-index: 1;
+  @media only screen and (min-width : $screen-sm) {
+    right: calc((100vw - #{$screen-sm}) / 2 + 10px);
+  }
+  @media only screen and (min-width : $screen-md) {
+    right: calc((100vw - #{$screen-md}) / 2 + 10px);
+  }
+  @media only screen and (min-width : $screen-lg) {
+    right: calc((100vw - #{$screen-lg}) / 2 + 10px);
+  }
+}

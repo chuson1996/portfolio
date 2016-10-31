@@ -10,7 +10,9 @@ import flatten from 'lodash/flatten';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import xor from 'lodash/xor';
-import { AlwaysVisible } from 'components';
+import { AlwaysVisible,
+  CTA,
+  SuggestResource } from 'components';
 
 @asyncConnect([{
   promise: ({ store: { dispatch, getState }}) => {
@@ -130,6 +132,10 @@ export default class FrontendAdvisor extends Component {
             </div>)
           }
         </div>
+
+        <CTA />
+
+        <SuggestResource />
       </div>
     );
   }
