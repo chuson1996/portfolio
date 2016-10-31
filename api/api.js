@@ -14,7 +14,7 @@ const pretty = new PrettyError();
 const app = express();
 
 const server = new http.Server(app);
-mongoose.connect('mongodb://localhost:27017/codeadvisor');
+mongoose.connect(config.mongoDB);
 
 const io = new SocketIo(server);
 io.path('/ws');
