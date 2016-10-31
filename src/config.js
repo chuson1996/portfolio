@@ -14,7 +14,7 @@ module.exports = Object.assign({
   port: process.env.PORT,
   apiHost: process.env.APIHOST || 'localhost',
   apiPort: process.env.APIPORT,
-  mongoDB: process.env.MONGO_ENV || 'mongodb://localhost:27017/codeadvisor',
+  mongoDB: process.env.MONGO_DB || 'mongodb://localhost:27017/codeadvisor',
   app: {
     title: 'My Social Media',
     description: 'Chu Hoang Son - Front-end Developer',
