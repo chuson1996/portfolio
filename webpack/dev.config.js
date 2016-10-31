@@ -1,4 +1,5 @@
 require('babel-polyfill');
+/* eslint-disable */
 
 // Webpack config for development
 var fs = require('fs');

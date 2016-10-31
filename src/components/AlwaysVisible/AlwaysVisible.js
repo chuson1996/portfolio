@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import get from 'lodash/get';
 
 export default class AlwaysVisible extends Component {
   static propTypes = {
@@ -11,19 +12,6 @@ export default class AlwaysVisible extends Component {
   }
 
   componentDidMount() {
-    const { top, width } = this.div.getBoundingClientRect();
-    const scrollY = window.scrollY;
-    // console.log(`Mounted with top: ${top}, width: ${width}`);
-    setTimeout(() => {
-      this.setState({
-        initial: {
-          top: top + scrollY,
-          width
-        }
-      });
-      this.listener();
-    });
-
     // console.log('Add scroll listener');
     window.addEventListener('scroll', this.listener);
   }
@@ -35,23 +23,29 @@ export default class AlwaysVisible extends Component {
 
   listener = () => {
     const scrollY = window.scrollY;
-    const { top, width } = this.state.initial;
-    if (top - scrollY < 0) {
-      this.setState({
-        ...this.state,
-        style: {
-          position: 'fixed',
-          width,
-          top: 0
-        }
-      });
+    const parDivCoordinates = this.parDiv.getBoundingClientRect();
+    const top = get(parDivCoordinates, 'top') + scrollY;
+
+    if (top <= scrollY) {
+      if (get(this.state, 'style.position') !== 'fixed') {
+        this.setState({
+          ...this.state,
+          style: {
+            position: 'fixed',
+            width: get(parDivCoordinates, 'width'),
+            top: 0
+          }
+        });
+      }
     } else {
-      this.setState({
-        ...this.state,
-        style: {
-          position: 'relative'
-        }
-      });
+      if (get(this.state, 'style.position') !== 'relative') {
+        this.setState({
+          ...this.state,
+          style: {
+            position: 'relative'
+          }
+        });
+      }
     }
   };
 
@@ -59,7 +53,7 @@ export default class AlwaysVisible extends Component {
     const { children, ...rest } = this.props;
 
     return (
-      <div {...rest}>
+      <div {...rest} ref={(elem) => this.parDiv = elem}>
         <div
           style={this.state.style}
           ref={(elem) => this.div = elem}>

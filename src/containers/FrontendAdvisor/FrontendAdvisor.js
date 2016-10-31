@@ -9,7 +9,6 @@ import flatten from 'lodash/flatten';
 // import uniq from 'lodash/uniq';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
-import Navbar from 'react-bootstrap/lib/Navbar';
 import xor from 'lodash/xor';
 import { AlwaysVisible } from 'components';
 
@@ -92,10 +91,11 @@ export default class FrontendAdvisor extends Component {
               classNames={{
                 tag: styles.tag,
                 remove: styles.remove,
-                suggestions: styles.suggestions
+                suggestions: styles.suggestions,
+                tagInputField: `form-control`
               }}
               tags={inputTags}
-              suggestions={allTags}
+              suggestions={possibleTags}
               handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
               handleAddition={this.handleAddition}
               autocomplete={!false} />
@@ -103,13 +103,17 @@ export default class FrontendAdvisor extends Component {
 
           <Row>
             <Col xs={12} className="m-t-20 m-b-20">
-              <button>Suprise me!</button>
+              <button className={`btn btn-default`}>Suprise me!</button>
             </Col>
           </Row>
 
           <Row>
             <Col xs={12}>
-              { possibleTags.map((tag, i) => <a key={i} onClick={() => this.handleAddition(tag)}>{tag}, </a>) }
+              { possibleTags.map((tag, i) => (
+                <a
+                  key={i}
+                  onClick={() => this.handleAddition(tag)}>
+                  {tag}, </a>)) }
             </Col>
           </Row>
         </div>

@@ -22,14 +22,8 @@ if (__DEVELOPMENT__) {
     })) {
     return;
   }
-  global.webpackIsomorphicTools = new WebpackIsomorphicTools(require('../webpack/webpack-isomorphic-tools'))
-    .development(__DEVELOPMENT__)
-    .server(rootDir, function() {
-      require('../src/server');
-    });
-} else {
-  global.webpackIsomorphicTools = new WebpackIsomorphicTools(require('../webpack/webpack-isomorphic-tools'))
-  .server(rootDir, function() {
-    require('../src/server');
-  });
 }
+global.webpackIsomorphicTools = new WebpackIsomorphicTools(require('../webpack/webpack-isomorphic-tools'))
+.server(rootDir, function() {
+  require('../src/server');
+});
