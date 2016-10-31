@@ -1,0 +1,50 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+$border-color: rgba(160,160,160,0.3);
+
+.frontendAdvisor {
+  .masthead {
+    // min-height: 100vh;
+    position: relative;
+    margin-bottom: 100px;
+
+    margin-top: 10px;
+    @media only screen and (min-width : $screen-sm) {
+      margin-top: 100px;
+    }
+    @media only screen and (min-width : $screen-md) {
+      margin-top: 200px;
+    }
+  }
+  .tag {
+    border: 1px solid $border-color;
+    padding: 4px 11px;
+    + .tag {
+      border-left: 0;
+    }
+  }
+  .remove {
+    border-bottom: 0;
+    margin-left: 5px;
+  }
+  .suggestions {
+    position: absolute;
+    z-index: 1;
+    ul {
+      list-style-type: none;
+      box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+      width: 200px;
+      background: white;
+      padding-left: 0;
+      li {
+        border-bottom: 1px solid $border-color;
+        padding: 5px 10px;
+        &:global(.active) {
+          cursor: pointer;
+          background: #b7cfe0;
+        }
+      }
+    }
+  }
+}
