@@ -2379,5 +2379,1322 @@
       "resource",
       "news"
     ]
+  },
+  {
+    "title": "Monads, Monoids and Composition with Functional JavaScript",
+    "url": "https://www.youtube.com/watch?v=ZQSU4geXAxM",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video"
+    ],
+    "description": "http://WatchMeCode.net presents A Gentle Introduction to Functional JavaScript, Part 2: Mondads, Monoids and Composition Check out these resources from the s..."
+  },
+  {
+    "title": "Notes and Code from the Crowdcast",
+    "url": "https://github.com/ChetHarrison/A-Gentle-Introduction-to-Functional-JavaScript",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "A-Gentle-Introduction-to-Functional-JavaScript - Notes and code from the 3 part crowdcast with Derick Bailey summer, 2016"
+  },
+  {
+    "title": "The Basics of Functional Programming",
+    "url": "https://www.youtube.com/watch?v=myISHtMMeyU",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video",
+      "basics"
+    ],
+    "description": "http://WatchMeCode.net present A Gentle Introduction to Functional JavaScript. Get all the referenced materials, here: http://bit.ly/gentle-fp For updates on..."
+  },
+  {
+    "title": "A Million Ways to Fold in JS",
+    "url": "https://www.youtube.com/watch?v=JZSoPZUoR58",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video",
+      "loop",
+      "recursion"
+    ],
+    "description": "Loops are bullshit. Loops are bullshit. Hey, and we have tail-call elimination es6, which means recursion is on the menu. I'll provide as many alternatives t..."
+  },
+  {
+    "title": "Allong.es",
+    "url": "http://allong.es/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "allong.es is a JavaScript library based on the function combinator and decorator recipes introduced in the book JavaScript Allongé."
+  },
+  {
+    "title": "Barely Functional",
+    "url": "https://github.com/cullophid/barely-functional",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "barely-functional - tiny (2.7kb) functional programming library using native es5/6 operations"
+  },
+  {
+    "title": "Basic Lazy Evaluation and Memoization in JavaScript",
+    "url": "http://blog.gypsydave5.com/2015/03/21/lazy-eval-and-memo/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "memoization"
+    ],
+    "description": "was (and I didn't have a calculator), it would take a few minutes to work out. Right now, I don't need to know.  Maybe I'll never need to know. I could put those two numbers and the + sign on a piece of paper and stick it in my pocket."
+  },
+  {
+    "title": "Bilby.js",
+    "url": "http://bilby.brianmckenna.org/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "bilby.js is a serious functional programming library. Serious, meaning it applies category theory to enable highly abstract and generalised code. Functional, meaning that it enables referentially transparent programs."
+  },
+  {
+    "title": "Composability: from Callbacks to Categories in ES6",
+    "url": "https://medium.com/@homam/composability-from-callbacks-to-categories-in-es6-f3d91e62451e",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "callback"
+    ],
+    "description": "Exploring Functional Programming ideas like Monads and Kleisli Category in JavaScript. Starting from an alternative solution to Promises."
+  },
+  {
+    "title": "Curry or Partial Application?",
+    "url": "https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "The Difference Between\nPartial Application and Curry"
+  },
+  {
+    "title": "James Coglan: Practical functional programming: pick two | JSConf EU 2014 - YouTube",
+    "url": "https://www.youtube.com/watch?v=XcS-LdEBUkE",
+    "description": "We often talk about JavaScript as a ‘functional programming language’. This is mostly because it has first-class functions, but there is far more to function...",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video"
+    ]
+  },
+  {
+    "title": "Daggy",
+    "url": "https://github.com/puffnfresh/daggy",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "daggy - Library for creating tagged constructors."
+  },
+  {
+    "title": "Debugging Functional",
+    "url": "https://medium.com/@drboolean/debugging-functional-7deb4688a08c",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "debug",
+      "resource"
+    ],
+    "description": "What’s the problem"
+  },
+  {
+    "title": "Deterministic",
+    "url": "https://deterministic.curated.co/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "news"
+    ],
+    "description": "A weekly digest of interesting news and articles covering functional programming for the web, especially on the front end."
+  },
+  {
+    "title": "Async Problem",
+    "url": "https://github.com/plaid/async-problem",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "asynchronous"
+    ],
+    "description": "async-problem - :twisted_rightwards_arrows: Solutions and non-solutions to JavaScript's async problem"
+  },
+  {
+    "title": "FP DOM",
+    "url": "https://github.com/fp-dom/fp-dom",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "dom"
+    ],
+    "description": "fp-dom - A collection of functions to favor functional programming in a DOM context"
+  },
+  {
+    "title": "Functional Concepts For JavaScript Developers: Currying",
+    "url": "https://blog.simpleblend.net/functional-javascript-concepts-currying/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "curry"
+    ],
+    "description": "Before I understood the concept of currying, I was always filled with anxiety when hearing other developers describe it. They always made it seem so complicated and difficult to understand; as if an ominous thundercloud arrived every time the topic was mentioned. Well I assure you that the concept of currying, at least applied to programming, is not hard to understand at all. It’s actually quite easy to grasp and once you do, opens the door to a powerful functional programming technique."
+  },
+  {
+    "title": "Functional Core Reactive Shell",
+    "url": "http://www.mokacoding.com/blog/functional-core-reactive-shell/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "This is a blogpost version of the content of my talk \"Functional Core, Reactive Shell\""
+  },
+  {
+    "title": "Functional Frontend Architecture",
+    "url": "https://github.com/paldepind/functional-frontend-architecture",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "framework"
+    ],
+    "description": "functional-frontend-architecture - A functional frontend framework."
+  },
+  {
+    "title": "Functional JavaScript Mini Book",
+    "url": "https://jcouyang.gitbooks.io/functional-javascript/content/en/index.html",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "Mini and Brief Intro to FP in JS"
+  },
+  {
+    "title": "Functional Javascript Workshop",
+    "url": "https://github.com/timoxley/functional-javascript-workshop",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "functional-javascript-workshop - A functional javascript workshop. No libraries required (i.e. no underscore), just ES5."
+  },
+  {
+    "title": "Functional Principles In React",
+    "url": "https://www.youtube.com/watch?v=1uRC3hmKQnM",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "reactjs",
+      "video"
+    ],
+    "description": "Jessica Kerr - Functional Principles In React at ReactRally 2015"
+  },
+  {
+    "title": "Functional Programming for JavaScript People",
+    "url": "https://medium.com/@chetcorcos/functional-programming-for-javascript-people-1915d8775504",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "(Japanese, Chinese)"
+  },
+  {
+    "title": "Functional Refactoring in JavaScript",
+    "url": "http://victorsavkin.com/post/63551894251/functional-refactoring-in-javascript",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "refactor"
+    ],
+    "description": "When discussing functional programming we often talk about the machinery, and not the core principles. Functional programming is not about…"
+  },
+  {
+    "title": "Functional.js",
+    "url": "http://functionaljs.com/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "curry"
+    ],
+    "description": "functional.js is a functional JavaScript library that facilitates currying and point-free / tacit programming."
+  },
+  {
+    "title": "Functionize",
+    "url": "https://github.com/paldepind/functionize",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "functionize - A library which aids in making any JavaScript library more functional."
+  },
+  {
+    "title": "Futures and Monoids",
+    "url": "https://medium.com/@yelouafi/futures-and-monoids-7e9f4574bd88",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "In the post From Callback to Future -> Functor -> Monad we clearly saw how Futures/Promises map to some well known constructs from FP and…"
+  },
+  {
+    "title": "Hey Underscore, You're Doing It Wrong!",
+    "url": "http://functionaltalks.org/2013/05/27/brian-lonsdorf-hey-underscore-youre-doing-it-wrong/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "Brilliant people giving brilliant talks on Functional Programming."
+  },
+  {
+    "title": "Immutability, Interactivity & JavaScript",
+    "url": "https://www.youtube.com/watch?v=mS264h8KGwk",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "immutability",
+      "video"
+    ],
+    "description": "This is a talk from Barcelona FutureJS 2014 (http://futurejs.org). Surprisingly the high performance mutation available in modern JavaScript engines is a gre..."
+  },
+  {
+    "title": "Immutable Sequence.js",
+    "url": "https://github.com/qiao/immutable-sequence.js",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "immutability"
+    ],
+    "description": "immutable-sequence.js - High performance implementation of Immutable Sequence in JavaScript, based on Finger Tree."
+  },
+  {
+    "title": "Immutable.js",
+    "url": "https://github.com/facebook/immutable-js/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "immutability"
+    ],
+    "description": "immutable-js - Immutable persistent data collections for Javascript which increase efficiency and simplicity."
+  },
+  {
+    "title": "JSAir - Functional and Immutable Design Patterns in JavaScript",
+    "url": "https://javascriptair.com/episodes/2015-12-30/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video"
+    ],
+    "description": "Episode 003 of the live JavaScript broadcast podcast. Functional programming has been greatly facilitated with ES6. We're going to talk about the how and why of functional programming and immutable design patterns in JavaScript."
+  },
+  {
+    "title": "JavaScript and Type Thinking",
+    "url": "https://medium.com/@yelouafi/javascript-and-type-thinking-735edddc388d",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "type"
+    ],
+    "description": "At the heart of functional thinking is to ask about the meaning of things. In the case of functions, it’s reasoning about their return…"
+  },
+  {
+    "title": "Javascript Combinators by Reginald Braithwaite",
+    "url": "https://vimeo.com/97408202",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video",
+      "combinator"
+    ],
+    "description": "JavaScript's first-class functions are the basis for nearly everything in the language, including methods and constructors. In this talk, we'll explore…"
+  },
+  {
+    "title": "Lamda.js",
+    "url": "https://github.com/loop-recur/lambdajs",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "Contribute to lambdajs development by creating an account on GitHub."
+  },
+  {
+    "title": "Lenses Quick n’ Dirty",
+    "url": "https://vimeo.com/104807358",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video"
+    ],
+    "description": "Functional Lenses in javascript. Implementation and some use cases."
+  },
+  {
+    "title": "Lenses and Virtual DOM Support Open Closed",
+    "url": "http://joneshf.github.io/programming/2015/12/19/Lenses-and-Virtual-DOM-Support-Open-Closed.html",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "dom",
+      "virtual dom",
+      "lenses"
+    ],
+    "description": "N.B. Some knowledge of van Laarhoven lenses, ramda, and virtual-dom is assumed.\nThis post will not go over the specifics of those."
+  },
+  {
+    "title": "Lenses.js",
+    "url": "https://github.com/DrBoolean/lenses",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "lenses",
+      "ramda"
+    ],
+    "description": "Composable kmett style lenses"
+  },
+  {
+    "title": "Lodash/fp",
+    "url": "https://github.com/lodash/lodash/wiki/FP-Guide",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "lodash",
+      "curry"
+    ],
+    "description": "lodash - A modern JavaScript utility library delivering modularity, performance, & extras."
+  },
+  {
+    "title": "Making your JavaScript Pure",
+    "url": "http://alistapart.com/article/making-your-javascript-pure",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ]
+  },
+  {
+    "title": "Folktale",
+    "url": "http://folktalejs.org/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "framework"
+    ],
+    "description": "Folktale is a framework for functional and generic programming in JavaScript, giving you tools for achieving maximum DRY."
+  },
+  {
+    "title": "Monet.js",
+    "url": "https://github.com/cwmyers/monet.js",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "monads"
+    ],
+    "description": "monet.js - Monadic types library for JavaScript"
+  },
+  {
+    "title": "Practical Intro to Monads in JavaScript: Either",
+    "url": "https://tech.evojam.com/2016/03/21/practical-intro-to-monads-in-javascript-either/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads"
+    ],
+    "description": "My simple and practical Intro to Monads in JS, where I covered basics of Identity and Maybe monads, seemed to be helpful for a lot of folks, so I’ve decide to continue the topic. Now it’s time for Either – a tool for fast-failing,  synchronous computation chains. A tool that may increase readability and quality of code while reducing error proneness. The best part is that we can still ignore the category theory!"
+  },
+  {
+    "title": "From Callback to Future -> Functor -> Monad",
+    "url": "https://medium.com/@yelouafi/from-callback-to-future-functor-monad-6c86d9c16cb5",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "callback"
+    ],
+    "description": "Motivation"
+  },
+  {
+    "title": "Futurizer",
+    "url": "https://github.com/arcseldon/futurizer",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "callback",
+      "promise"
+    ],
+    "description": "futurizer - Turn callback-style functions or promises into futures!!"
+  },
+  {
+    "title": "Practical Intro to Monads in JavaScript",
+    "url": "https://tech.evojam.com/2016/02/22/practical-intro-to-monads-in-javascript/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads"
+    ],
+    "description": "If you’ve heard about Monads but never had time learn them, here’s a simple explanation. Not a theoretical nonsense. It’s a simple, practical tutorial for JavaScript developers showing how some monads can be used. It’s for engineers, not scientists."
+  },
+  {
+    "title": "Understanding Monads With JavaScript",
+    "url": "http://igstan.ro/posts/2011-05-02-understanding-monads-with-javascript.html",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads"
+    ],
+    "description": "For the past weeks I've been working hard studying monads. I'm still learning\nHaskell, and to be honest I thought I knew what monads are all about, but when\nI wanted to write a little Haskell library, just to sharpen up my skills, I\nrealized that while I understood the way monadic bind (>>=) and return\nwork, I had no understanding of where that state comes from. So, most likely I\nhad no understanding at all. As a result of this I thought I rediscover monads\nmyself using JavaScript. The plan was basically the same as that used when I\nderived the Y Combinator: start from the initial problem (dealing with\nexplicit immutable state in this case), and work my way up to the solution by\napplying simple code transformations."
+  },
+  {
+    "title": "A Gentle Intro to Monads … Maybe?",
+    "url": "http://sean.voisen.org/blog/2013/10/intro-monads-maybe/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads"
+    ],
+    "description": "Sean Voisen's compendium of projects and musings."
+  },
+  {
+    "title": "A Monad in Practicality: First-Class Failures",
+    "url": "http://robotlolita.me/2013/12/08/a-monad-in-practicality-first-class-failures.html",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads"
+    ],
+    "description": "Extending Fold and Unfold to Exponential Embarassing-ness"
+  },
+  {
+    "title": "Don’t Fear the Reader",
+    "url": "https://passy.svbtle.com/dont-fear-the-reader",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads"
+    ],
+    "description": "I was hesitant to publishing this article right from the beginning and even more so afteI wrote this post mainr reading Letter to a Young Haskell Enthusiast. ly for myself, because explaining a concept to someone else is oftentimes the best way of... | Pascal Hartig | Writing code at Twitter"
+  },
+  {
+    "title": "LiveCoding Video of Reader Monad Implementation",
+    "url": "https://www.livecoding.tv/evilsoft/videos/WojoB-functional-js-reader-monad",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video",
+      "monads"
+    ],
+    "description": "This video is about Functional JS - Reader Monad, created  by evilsoft, who showed impressive coding skills in JavaScript"
+  },
+  {
+    "title": "Fantasy ArrayT",
+    "url": "https://github.com/quarterto-archive/fantasy-arrayt",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads",
+      "array"
+    ],
+    "description": "fantasy-arrayt - monad transformer for arrays"
+  },
+  {
+    "title": "Practical Intro to Monads in JavaScript: Validation",
+    "url": "https://tech.evojam.com/2016/04/26/practical-intro-to-monads-in-javascript-validation/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "monads",
+      "validation"
+    ],
+    "description": "Few weeks ago I published a practical Intro to Monads in JavaScript where I covered basics of Identity and Maybe monads. Some time later I added a tutorial on Either monad and fails-fast error handling. This time I will show you error accumulation in a simple Validation use case."
+  },
+  {
+    "title": "Mostly Adequate Guide to Functional Programming",
+    "url": "https://drboolean.gitbooks.io/mostly-adequate-guide/content/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "book"
+    ],
+    "description": "This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative. However, I believe it is the best way to learn FP for several reasons:"
+  },
+  {
+    "title": "Pointfree Fantasy",
+    "url": "https://www.npmjs.com/package/pointfree-fantasy",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "Point free wrappers for fantasy land js."
+  },
+  {
+    "title": "Pointfree Javascript",
+    "url": "http://lucasmreis.github.io/blog/pointfree-javascript/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "Javascript is really a very flexible language. It has functional and object oriented characteristics, and it allows for programming in a lot of different styles. In this post I will present what is called pointfree style programming, and I will go through some common scenarios to demonstrate its benefits."
+  },
+  {
+    "title": "Promises + FP = Beautiful Streams",
+    "url": "https://medium.com/@yelouafi/promises-fp-beautiful-streams-6f0235c5b179",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "promise"
+    ],
+    "description": "Reactive Streams built with ADTs and pure FP"
+  },
+  {
+    "title": "Pure JavaScript",
+    "url": "https://vimeo.com/49384334",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "video"
+    ],
+    "description": "Are you comfortable passing functions around, returning them from other functions, and generally enjoy the pleasures of higher-order functions? Join in on an hour…"
+  },
+  {
+    "title": "Ramda",
+    "url": "http://ramdajs.com/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "ramda"
+    ],
+    "description": "There are already several excellent libraries with a functional flavor. Typically, they are meant to be general-purpose toolkits, suitable for working in multiple paradigms. Ramda has a more focused goal. We wanted a library designed specifically for a functional programming style, one that makes it easy to create functional pipelines, one that never mutates user data. "
+  },
+  {
+    "title": "Ramda Fantasy",
+    "url": "https://github.com/ramda/ramda-fantasy",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "ramda"
+    ],
+    "description": "ramda-fantasy - :ram::sparkles: Fantasy-Land compatible types for easy integration with Ramda.js"
+  },
+  {
+    "title": "Sanctuary",
+    "url": "http://sanctuary.js.org/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library"
+    ],
+    "description": "Sanctuary is a functional programming library inspired by Haskell and PureScript. It depends on and works nicely with Ramda. Sanctuary makes it possible to write safe code without null checks."
+  },
+  {
+    "title": "The Little Idea of Functional Programming",
+    "url": "http://jaysoo.ca/2016/01/13/functional-programming-little-ideas/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource"
+    ],
+    "description": "A little known fact about me is that I took Wing Chun\nlessons for four months back in 2006. A student starting in Wing Chun will begin by learning\nthe first form, called Siu Lim Tao (小練頭). This form’s name translates to “little idea,”\nand it provides the foundation in which succeeding forms and techniques depend upon."
+  },
+  {
+    "title": "Transducers",
+    "url": "http://blog.cognitect.com/blog/2014/8/6/transducers-are-coming",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ]
+  },
+  {
+    "title": "\"Transducers\" Presentation at Strange Loop",
+    "url": "https://www.youtube.com/watch?v=6mTbuzafcII",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer",
+      "video"
+    ],
+    "description": "People keep implementing map, filter and other fundamental algorithms in different contexts - eagerly over collections, over lazy sequences, in parallel, ove..."
+  },
+  {
+    "title": "Figuring out what transducers are good for",
+    "url": "http://gfxmonk.net/2015/11/25/figuring-out-what-transducers-are-good-for.html",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ],
+    "description": "I’ve been aware of transducers for a little while, but haven’t actually used them, or even really felt like I fully grokked what they were good for. They come from the clojure community, but are making their way into plenty of other languages and libraries too. I’ve seen claims that they are a game-changing, breathtaking new concept, which didn’t really square with what they looked like."
+  },
+  {
+    "title": "Transduce",
+    "url": "https://github.com/transduce/transduce",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ],
+    "description": ":radio: JavaScript transducers"
+  },
+  {
+    "title": "Transducers-js by Cognitect Labs",
+    "url": "https://github.com/cognitect-labs/transducers-js",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "transducer",
+      "library"
+    ],
+    "description": "transducers-js - Transducers for JavaScript"
+  },
+  {
+    "title": "Transducers.js Library by James Long",
+    "url": "https://github.com/jlongster/transducers.js",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "library",
+      "transducer"
+    ],
+    "description": "transducers.js - A small library for generalized transformation of data (inspired by Clojure's transducers)"
+  },
+  {
+    "title": "Transducers.js Round 2 with Benchmarks",
+    "url": "http://jlongster.com/Transducers.js-Round-2-with-Benchmarks",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ],
+    "description": "A few weeks ago I released my transducers library and explained the algorithm behind it. It's a wonderfully simple technique for high-performant transformations like map and filter and was created by Clojure (mostly Rich Hickey I think)."
+  },
+  {
+    "title": "Transducers.js: A JavaScript Library for Transformation of Data",
+    "url": "http://jlongster.com/Transducers.js--A-JavaScript-Library-for-Transformation-of-Data",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ],
+    "description": "If you didn't grab a few cups of coffee for my last post, you're going to want to for this one. While writing my last post about js-csp, a port of Clojure's core.async, they announced transducers which solves a key problem when working with transformation of data. The technique works particularly well with channels (exactly what js-csp uses), so I dug into it."
+  },
+  {
+    "title": "Streaming Logs with Transducers and Ramda",
+    "url": "http://simplectic.com/blog/2015/ramda-transducers-logs/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer",
+      "ramda"
+    ],
+    "description": "Ramda is a library that helps you write JavaScript without curly braces. In this article we will use Ramda to parse a log file without curly braces (and introduce transducers along the way)."
+  },
+  {
+    "title": "Transducers Explained: Part 1",
+    "url": "http://simplectic.com/blog/2014/transducers-explained-1/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ],
+    "description": "An introduction to transducers using JavaScript. We will work from reducing over arrays, to defining transformations as transformers, then incrementally introducing transducers and using them with transduce. We will conclude with a summary of what we've learned, what is coming in future articles, and links to additional resources and existing transducer libraries."
+  },
+  {
+    "title": "Transducers Explained: Pipelines",
+    "url": "http://simplectic.com/blog/2014/transducers-explained-pipelines/",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer",
+      "pipeline"
+    ],
+    "description": "This is the second article of the Transducers Explained tutorial.  In the first article, we progressed from reducing functions to transformers to using the map transducer with transduce. In this article, we will introduce four new transducers: filter, remove, drop and take. We will show how transducers can be composed into pipelines and talk about the order of transformation.  We will also modify our reduce implementation to handle early termination with reduced values."
+  },
+  {
+    "title": "Transducers are Coming",
+    "url": "http://blog.cognitect.com/blog/2014/8/6/transducers-are-coming",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ]
+  },
+  {
+    "title": "Transducers with Observable Sequences",
+    "url": "https://xgrommx.github.io/rx-book/content/getting_started_with_rxjs/creating_and_querying_observable_sequences/transducers.html",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer",
+      "observable"
+    ],
+    "description": "Much like Language Integrated Query (LINQ), Transducers are composable algorithmic transformations. They, like LINQ, are independent from the context of their input and output sources and specify only the essence of the transformation in terms of an individual element. Because transducers are decoupled from input or output sources, they can be used in many different processes - collections, streams, observables, etc. Transducers compose directly, without awareness of input or creation of intermediate aggregates.  There are two major libraries currently out there, Cognitect's transducer-js and James Long's transducers.js which are both great for getting high performance over large amounts of data.  Because it is collection type neutral, it is a perfect fit for RxJS to do transformations over large collections."
+  },
+  {
+    "title": "Understanding Transducers in JavaScript",
+    "url": "https://medium.com/@roman01la/understanding-transducers-in-javascript-3500d3bd9624#.3lbq6d4yq",
+    "tags": [
+      "javascript",
+      "functional programming",
+      "resource",
+      "transducer"
+    ],
+    "description": "I’ve found a very good article explaining Transducers. If you are familiar with Clojure, go and read it: “Understanding Transducers”. But…"
+  },
+  {
+    "title": "Animate SVG with CSS",
+    "url": "https://jonsuh.com/blog/animate-svg-with-css/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css"
+    ],
+    "description": "Animating SVG with CSS is like animating any other element with CSS—it can be done with transitions, transforms, and keyframe animations. Once you’re familiar with the markup of an SVG, the rest is fairly straight forward."
+  },
+  {
+    "title": "Intermediate SVG–Animating with snap.svg",
+    "url": "http://unicorn-ui.com/blog/intermediate-svg.html",
+    "tags": [
+      "svg",
+      "animation",
+      "library",
+      "resource",
+      "snap.svg"
+    ],
+    "description": "Get started with animating SVGs using using the popular Snap.svg library"
+  },
+  {
+    "title": "The Simple Intro to SVG Animation",
+    "url": "http://davidwalsh.name/svg-animation",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "Velocity.js creator Julian Shapiro provides an introduction to SVG animation!"
+  },
+  {
+    "title": "SVG animation",
+    "url": "http://stylecampaign.com/blog/2014/02/svg-animation/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "Going from a static SVG to an animated SVG is a big jump, unless you want to float a balloon up the screen (even that takes a bijillion lines of code). There’s three ways to animate an SVG: CSS, native SVG animation and JavaScript. As email devs we can’t use  JavaScript, so we started with the more familiar CSS."
+  },
+  {
+    "title": "The Playground Vector Animation Process",
+    "url": "http://playgroundinc.com/blog/the-playground-vector-animation-process/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "Playground is a digital creative agency that strives to make the web a better place. "
+  },
+  {
+    "title": "MDN about Animation with SMIL",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "Chrome 45 deprecated SMIL in favor of CSS animations and Web animations."
+  },
+  {
+    "title": "Animating SVG with CSS",
+    "url": "http://css-tricks.com/animating-svg-css/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "snap.svg",
+      "svg.js"
+    ],
+    "description": "There isn't just one way to animate SVG. There is the tag that goes right into the SVG code. There are libraries that help with it like Snap.svg or SVG.js."
+  },
+  {
+    "title": "Animated line drawing in SVG",
+    "url": "http://jakearchibald.com/2013/animated-line-drawing-svg/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "I like using diagrams as a way of showing information flow or browser behaviour, but large diagrams can be daunting at first glance. When I gave talks about the Application Cache and rendering performance I started with a blank screen and made the diagrams appear to draw themselves bit by bit as I described the process. Here's how it's done:"
+  },
+  {
+    "title": "Animating Vectors with SVG",
+    "url": "http://24ways.org/2013/animating-vectors-with-svg/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "vector"
+    ],
+    "description": "\n                \n                    \n                        \n                        Brian Suda\n                    \n                \n                "
+  },
+  {
+    "title": "Animated SVG icons with Snap.svg",
+    "url": "http://tympanus.net/codrops/2013/11/05/animated-svg-icons-with-snap-svg/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "snap.svg"
+    ],
+    "description": "Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example."
+  },
+  {
+    "title": "How to Animate Festive SVG Icons With CSS",
+    "url": "http://webdesign.tutsplus.com/tutorials/how-to-animate-festive-svg-icons-with-css--webdesign-17658",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css",
+      "icon"
+    ]
+  },
+  {
+    "title": "Polygon feature design: SVG animations for fun and profit",
+    "url": "http://product.voxmedia.com/2013/11/25/5426880/polygon-feature-design-svg-animations-for-fun-and-profit",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "The Polygon PlayStation 4 Review and Xbox One Review involved an unprecedented level of coordination between the editorial and product teams at Vox Media. The goal was to create a pair of..."
+  },
+  {
+    "title": "SVG drawing animation",
+    "url": "http://tympanus.net/codrops/2013/12/30/svg-drawing-animation/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "A little experiment that explores the usage of SVG line drawing animations to precede the appearance of graphics or website elements, simulating the loading of them."
+  },
+  {
+    "title": "SVG Circus",
+    "url": "http://svgcircus.com/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "spinner",
+      "loader",
+      "loop",
+      "tool",
+      "helper"
+    ],
+    "description": "SVG Circus enables you to create cool animated SVG spinners, loaders and other looped animations in seconds"
+  },
+  {
+    "title": "An Intro to SVG Animation with SMIL",
+    "url": "http://codepen.io/noahblon/blog/an-intro-to-svg-animation-with-smil",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "smil"
+    ],
+    "description": "It looks deceptively simple, but it's hard to do without a lot of keyframes.  My mind jumped to SVG, and I've been wanting to give SMIL a shot.  I didn't find many resources on SMIL out there, so I thought I'd share what I learned."
+  },
+  {
+    "title": "Interactive Infographic wtih SVG and CSS animations",
+    "url": "http://tympanus.net/codrops/2013/02/06/interactive-infographic-with-svg-and-css-animations/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css"
+    ],
+    "description": "Learn how to build an interactive animated infographic using SVG, CSS and JavaScript."
+  },
+  {
+    "title": "SVG Path Animation with Jquery and Illustrator",
+    "url": "http://blog.teamtreehouse.com/svg-path-animation-with-jquery-and-illustrator",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "infographic",
+      "jquery",
+      "illustrator"
+    ],
+    "description": "As technology in the web moves forward we are offered new tools to build amazing web applications.  Scalable Vector Graphics or SVG’s have been gaining traction in the past year or so as most browsers handle the image file extension ‘.svg’.  You can see the break down over at CanIUse.com."
+  },
+  {
+    "title": "Animate SVG with SMIL Adam Guttentag's Blog",
+    "url": "http://codepen.io/guttentag/blog/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "smil"
+    ],
+    "description": "We're all for progressive enhancement, but CodePen is a bit unique in that it's all about writing and showing front end code, including JavaScript. It's required to use most of the features of CodePen."
+  },
+  {
+    "title": "How SVG Line Animation Works",
+    "url": "http://css-tricks.com/svg-line-animation-works/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "line"
+    ],
+    "description": "I bet all of you have seen that little trick where an SVG path is animated to look like it's drawing itself. It's super cool. Jake Archibald pioneered the"
+  },
+  {
+    "title": "Masking SVG Animations",
+    "url": "https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "Using Clip-Path to make your animations more beautiful"
+  },
+  {
+    "title": "Loading Animation with SVG",
+    "url": "https://github.com/jxnblk/loading",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "load",
+      "loader"
+    ],
+    "description": "loading - This could take a while"
+  },
+  {
+    "title": "SVG animation with SMIL a collection by Jorge Aznar",
+    "url": "http://codepen.io/collection/chefj/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "smil"
+    ],
+    "description": "\"SVG's SMIL animations (, , etc.) are deprecated and will be removed. Please use CSS animations or Web animations instead.\""
+  },
+  {
+    "title": "A Guide to SVG Animations (SMIL) by Sara Soueidan",
+    "url": "http://css-tricks.com/guide-svg-animations-smil/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "smil"
+    ],
+    "description": "Update December 2015: At the time of this update, SMIL seems to be kinda dying. Sarah Drasner has a guide on how you can replace some of it's features. The"
+  },
+  {
+    "title": "Animate SVG Icons with css and Snap",
+    "url": "http://codyhouse.co/gem/animate-svg-icons-with-css-and-snap/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "icon",
+      "snap.svg",
+      "css"
+    ],
+    "description": "How to optimize SVG code and animate an SVG icon using CSS and Snap.svg library."
+  },
+  {
+    "title": "Styling And Animating SVGs With CSS",
+    "url": "http://www.smashingmagazine.com/2014/11/03/styling-and-animating-svgs-with-css/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css"
+    ],
+    "description": "Sara Soueidan explains how to export and optimize SVGs, how each one affects the styles and animations applied, and introduces techniques for embedding them."
+  },
+  {
+    "title": "SVG Animation and CSS Transforms: A Complicated Love Story",
+    "url": "http://css-tricks.com/svg-animation-on-css-transforms/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css"
+    ],
+    "description": "The following is a guest post by Jack Doyle, author of the GreenSock Animation Platform (GSAP). Jack has been deep in the woods of web animation for a long"
+  },
+  {
+    "title": "Run, run, Ruuun !",
+    "url": "http://codepen.io/CyrilLevallois/pen/JbrfI/",
+    "tags": [
+      "svg",
+      "animation",
+      "inspiration",
+      "cool stuff"
+    ],
+    "description": "SVG animation test, W.I.P.  as usual :  no .css, no .Js  updated: you can select and display your weapon. Added : LightSaber (you can change color, and..."
+  },
+  {
+    "title": "Greensock Introduces DrawSVG",
+    "url": "https://ihatetomatoes.net/greensock-introduces-drawsvgplugin/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ],
+    "description": "What’s new in the DrawSVGPlugin from GreenSock and how can it help you to animate your SVGs?"
+  },
+  {
+    "title": "How to Self Drawing SVG Animation",
+    "url": "http://codepen.io/MyXoToD/blog/howto-self-drawing-svg-animation",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "drawing",
+      "inspiration"
+    ],
+    "description": "There are a couple of options to give users a great experience on your website. The most comon would be text and images/illustrations. Work always and doesn't really need to be upgraded. But how about some more interaction? A good example would be this amazing Xbox One Review by Polygon. Looks way better, yet not too much. With this post I'd like to give you a short wrap up on how to create these kind of animations with SVG."
+  },
+  {
+    "title": "How to use animateTransform for inline SVG",
+    "url": "https://webdesign.tutsplus.com/tutorials/how-to-use-animatetransform-for-inline-svg-animation--cms-22296",
+    "tags": [
+      "svg",
+      "animation",
+      "resource"
+    ]
+  },
+  {
+    "title": "How to create an infographic with SVG",
+    "url": "http://designmodo.com/svg-infographic/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "infographic"
+    ],
+    "description": "In this tutorial, I'm exploring how to make a scalable infographic in the browser using SVG as graphical format. I'm also using CSS3 animation techniques to animate most elements."
+  },
+  {
+    "title": "Jump Loader Animation with GSAP",
+    "url": "http://tympanus.net/codrops/2015/03/25/jump-loader-animation-svg-gsap/",
+    "tags": [
+      "svg",
+      "animation",
+      "tympanus",
+      "loader",
+      "inspiration"
+    ],
+    "description": "Learn how to create a playful \"Jump Loader\" animation with SVG and GSAP, the animation platform by GreenSock."
+  },
+  {
+    "title": "SVG Animations Using CSS and Snap.svg",
+    "url": "http://davidwalsh.name/svg-animations-snap",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css",
+      "snap.svg"
+    ],
+    "description": "Snap.svg SVG animation example using CSS and JavaScript."
+  },
+  {
+    "title": "Create an SVG Animation using CSS and JavaScript",
+    "url": "http://designmodo.com/svg-animation/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css",
+      "javascript"
+    ],
+    "description": "I am going to show you how you can animation SVG using CSS and JavaScript using some icons, text and vector graphics that I created on Adobe Illustrator."
+  },
+  {
+    "title": "Sign on the Dotted Line: Animating Your Own SVG Signature",
+    "url": "http://webdesign.tutsplus.com/tutorials/sign-on-the-dotted-line-animating-your-own-svg-signature--cms-23846",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "signature"
+    ]
+  },
+  {
+    "title": "SVG Dabbles - Tutorials about snap.svg",
+    "url": "http://svg.dabbles.info/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "snap.svg",
+      "tutorial"
+    ]
+  },
+  {
+    "title": "Weighing SVG Animation Techniques",
+    "url": "https://css-tricks.com/weighing-svg-animation-techniques-benchmarks/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "css",
+      "trick"
+    ],
+    "description": "The following is a guest post by Sarah Drasner (@sarah_edo). Sarah has been researching and giving talks about animation lately. I jumped at the chance to"
+  },
+  {
+    "title": "How to create a Buffer Animation",
+    "url": "https://cssanimation.rocks/buffer/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "load",
+      "buffer",
+      "css",
+      "cool stuff"
+    ],
+    "description": "I love finding examples of subtle animation in websites. Recently, when I was logging into Buffer, I noticed a nice loading effect in their logo. Here’s how ..."
+  },
+  {
+    "title": "SVG Animation with Greensock",
+    "url": "https://www.august.com.au/blog/svg-animation-with-greensock/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "gsap"
+    ],
+    "description": "Allan gives us a run down of the GreenSock Animation platform and create an awesome animation for this blog article in the process. Check it out!"
+  },
+  {
+    "title": "Elastic Progress with SVG and GSAP",
+    "url": "http://tympanus.net/codrops/2015/09/23/elastic-progress",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "gsap",
+      "progress bar",
+      "tympanus",
+      "inspiration"
+    ],
+    "description": "An elastic SVG progress loader based on the Dribbble shot \"Download\" by xjw."
+  },
+  {
+    "title": "Creating Material Design Ripple Effects with SVG",
+    "url": "http://tympanus.net/codrops/2015/09/14/creating-material-design-ripple-effects-svg/",
+    "tags": [
+      "svg",
+      "animation",
+      "resource",
+      "material design",
+      "inspiration",
+      "tympanus",
+      "tutorial"
+    ],
+    "description": "A tutorial on how to build the ripple effect outlined in Google Material Design's Radial Action specification and combine it with the powers of SVG and GreenSock."
+  },
+  {
+    "title": "Hotjar - Heatmaps, Visitor Recordings, Conversion Funnels, Form Analytics, Feedback Polls and Surveys in One Platform",
+    "url": "https://www.hotjar.com/",
+    "tags": [
+      "analytics",
+      "service",
+      "visitor",
+      "feedback",
+      "survey"
+    ],
+    "description": "See how visitors are really using your website, collect user feedback and turn more visitors into customers."
+  },
+  {
+    "title": "moroshko/react-autosuggest: WAI-ARIA compliant React autosuggest component",
+    "url": "https://github.com/moroshko/react-autosuggest",
+    "tags": [
+      "javascript",
+      "reactjs",
+      "tag",
+      "library"
+    ],
+    "description": "react-autosuggest - WAI-ARIA compliant React autosuggest component"
   }
 ]
