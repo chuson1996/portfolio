@@ -8,6 +8,8 @@ import get from 'lodash/get';
 import debounce from 'lodash/debounce';
 import { Loader, TagInput } from 'components';
 import Button from 'react-bootstrap/lib/Button';
+import config from 'config';
+import Helmet from 'react-helmet';
 // import update from 'react-addons-update';
 
 @reduxForm({
@@ -40,7 +42,9 @@ export default class SuggestResource extends Component {
     values: PropTypes.object,
     metaData: PropTypes.object,
     metaDataLoading: PropTypes.bool,
-    handleSubmit: PropTypes.func
+    handleSubmit: PropTypes.func,
+    postSuggestion: PropTypes.func,
+    reset: PropTypes.func
   };
 
   constructor(props) {
@@ -71,13 +75,21 @@ export default class SuggestResource extends Component {
     this.setState({ showModal: false });
   };
 
+  handleSubmit = (values) => {
+    console.log(values);
+    const {postSuggestion, reset} = this.props;
+    const { url, email, tags } = values;
+    postSuggestion({ url, email, tags }).then(reset);
+  }
+
   render() {
     const styles = require('./SuggestResource.scss');
     const { /* inputTags, allTags, addTag, removeTag, */
-      metaData, metaDataLoading, handleSubmit } = this.props;
+      metaData, metaDataLoading, handleSubmit, values: {url} } = this.props;
 
     return (
       <div>
+        <Helmet {...config.app}/>
         <Modal
           onHide={this.closeModal}
           show={this.state.showModal}>
@@ -85,13 +97,19 @@ export default class SuggestResource extends Component {
             <Modal.Title>Suggest a resource</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(this.handleSubmit)}>
+              <Field
+                component="input"
+                type="email"
+                placeholder="Your email"
+                className="form-control"
+                name="email" />
+
               <Field
                 component="input"
                 type="text"
                 className="form-control"
                 placeholder="Resource Url"
-                // onChange={this.getMetaData}
                 name="url" />
 
               <Field
@@ -99,7 +117,7 @@ export default class SuggestResource extends Component {
                 component={TagInput} />
 
               { metaDataLoading && <Loader />}
-              { metaData &&
+              { !metaDataLoading && !!url && metaData &&
                 <div>
                   <p>
                     <b>Title: </b>

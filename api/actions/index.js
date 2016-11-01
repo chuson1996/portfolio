@@ -6,3 +6,4 @@
 // export * as survey from './survey/index';
 export loadTags from './loadTags';
 export getMetaData from './getMetaData';
+export postSuggestion from './postSuggestion';

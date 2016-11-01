@@ -5,6 +5,9 @@ const REMOVE_TAG = 'frontend-advisor/suggestResource/REMOVE_TAG';
 const LOAD_METADATA = 'frontend-advisor/suggestResource/LOAD_METADATA';
 const LOAD_METADATA_SUCCESS = 'frontend-advisor/suggestResource/LOAD_METADATA_SUCCESS';
 const LOAD_METADATA_FAIL = 'frontend-advisor/suggestResource/LOAD_METADATA_FAIL';
+const POST_SUGGESTION = 'frontend-advisor/suggestResource/POST_SUGGESTION';
+const POST_SUGGESTION_SUCCESS = 'frontend-advisor/suggestResource/POST_SUGGESTION_SUCCESS';
+const POST_SUGGESTION_FAIL = 'frontend-advisor/suggestResource/POST_SUGGESTION_FAIL';
 
 const inital = {
   tags: [],
@@ -75,5 +78,14 @@ export function getMetaData(url) {
   return {
     types: [LOAD_METADATA, LOAD_METADATA_SUCCESS, LOAD_METADATA_FAIL],
     promise: (client) => client.get('/getMetaData', { params: { url } })
+  };
+}
+
+export function postSuggestion({ url, tags, email }) {
+  return {
+    types: [POST_SUGGESTION, POST_SUGGESTION_SUCCESS, POST_SUGGESTION_FAIL],
+    promise: (client) => client.post('/postSuggestion', {
+      data: { url, tags, email }
+    })
   };
 }
