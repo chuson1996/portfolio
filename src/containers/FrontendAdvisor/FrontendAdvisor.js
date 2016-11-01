@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react';
-import { WithContext as ReactTags } from 'react-tag-input';
+// import { WithContext as ReactTags } from 'react-tag-input';
 import { connect } from 'react-redux';
 import * as tagsActions from 'redux/modules/tags';
 import { asyncConnect } from 'redux-async-connect';
@@ -12,7 +12,8 @@ import Col from 'react-bootstrap/lib/Col';
 import xor from 'lodash/xor';
 import { AlwaysVisible,
   CTA,
-  SuggestResource } from 'components';
+  SuggestResource,
+  ReactTags } from 'components';
 
 @asyncConnect([{
   promise: ({ store: { dispatch, getState }}) => {
@@ -31,7 +32,7 @@ import { AlwaysVisible,
 @connect(
   (state) => ({
     allTags: state.tags.data,
-    inputTags: state.tags.inputTags.map((tag, id) => ({ ...tag, id })),
+    inputTags: state.tags.inputTags,
     inputTagsInfo: state.tags.inputTagsInfo,
     resources: state.tags.resources
   }),
@@ -44,6 +45,7 @@ export default class FrontendAdvisor extends Component {
     addTag: PropTypes.func,
     removeTag: PropTypes.func,
     inputTagsInfo: PropTypes.object,
+    changeTags: PropTypes.func,
     loadTag: PropTypes.func,
     resources: PropTypes.array
   };
@@ -64,17 +66,32 @@ export default class FrontendAdvisor extends Component {
     }
   };
 
+  handleChange = (tags) => {
+    const { isTagLoaded } = tagsActions;
+    const {
+      inputTagsInfo,
+      loadTag
+    } = this.props;
+
+    this.props.changeTags(tags);
+    tags.forEach((tag) => {
+      if (!isTagLoaded(inputTagsInfo, tag)) {
+        loadTag(tag);
+      }
+    });
+  };
+
   render() {
     const styles = require('./FrontendAdvisor.scss');
     const {
       allTags,
       inputTags,
-      removeTag,
+      // removeTag,
       // inputTagsInfo,
       resources
     } = this.props;
 
-    const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags.map((tag) => tag.text)) : allTags;
+    const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
 
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
@@ -90,17 +107,19 @@ export default class FrontendAdvisor extends Component {
 
           <AlwaysVisible style={{ height: 70 }}>
             <ReactTags
-              classNames={{
-                tag: styles.tag,
-                remove: styles.remove,
-                suggestions: styles.suggestions,
-                tagInputField: `form-control`
-              }}
+              // classNames={{
+              //   tag: styles.tag,
+              //   remove: styles.remove,
+              //   suggestions: styles.suggestions,
+              //   tagInputField: `form-control`
+              // }}
               tags={inputTags}
               suggestions={possibleTags}
-              handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
-              handleAddition={this.handleAddition}
-              autocomplete={!false} />
+              handleChange={this.handleChange}
+              // handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
+              // handleAddition={this.handleAddition}
+              autocomplete={!false}
+            />
           </AlwaysVisible>
 
           <Row>

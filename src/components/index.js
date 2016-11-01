@@ -11,3 +11,5 @@ export CTA from './CTA/CTA';
 export SuggestResource from './SuggestResource/SuggestResource';
 export Loader from './Loader/Loader';
 export TagInput from './TagInput/TagInput';
+export ReactTags from './ReactTags/ReactTags';
+export AutocompleteRenderInput from './AutocompleteRenderInput/AutocompleteRenderInput';

@@ -11,6 +11,7 @@ const LOAD_TAG_SUCCESS = 'frontend-advisor/tags/LOAD_TAG_SUCCESS';
 const LOAD_TAG_FAIL = 'frontend-advisor/tags/LOAD_TAG_FAIL';
 const ADD_TAG = 'frontend-advisor/tags/ADD_TAG';
 const REMOVE_TAG = 'frontend-advisor/tags/REMOVE_TAG';
+const CHANGE_TAGS = 'frontend-advisor/tags/CHANGE_TAGS';
 
 const initialState = {
   loaded: false,
@@ -20,10 +21,10 @@ const initialState = {
 };
 
 const getResources = (state, { inputTags, inputTagsInfo }) => {
-  const _inputTags = (inputTags || state.inputTags).map((tag, id) => ({ ...tag, id }));
+  const _inputTags = (inputTags || state.inputTags);
   const _inputTagsInfo = inputTagsInfo || state.inputTagsInfo;
   return intersectionBy(..._inputTags.map((tag) => {
-    return get(_inputTagsInfo, `${tag.text}.data`, []);
+    return get(_inputTagsInfo, `${tag}.data`, []);
   }), '_id');
 };
 
@@ -82,7 +83,7 @@ export default function reducer(state = initialState, action = {}) {
       };
     case ADD_TAG:
       return (() => {
-        const inputTags = [...state.inputTags, action.tag];
+        const inputTags = [...state.inputTags, action.tag.text];
         return {
           ...state,
           inputTags: inputTags,
@@ -102,6 +103,12 @@ export default function reducer(state = initialState, action = {}) {
           resources: getResources(state, {inputTags}),
         };
       })();
+    case CHANGE_TAGS:
+      return {
+        ...state,
+        inputTags: action.tags,
+        resources: getResources(state, { inputTags: action.tags })
+      };
     default:
       return state;
   }
@@ -140,5 +147,12 @@ export function removeTag(text) {
   return {
     type: REMOVE_TAG,
     tag: { text }
+  };
+}
+
+export function changeTags(tags) {
+  return {
+    type: CHANGE_TAGS,
+    tags: tags
   };
 }
