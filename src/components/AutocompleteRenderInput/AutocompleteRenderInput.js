@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Autosuggest from 'react-autosuggest';
+import get from 'lodash/get';
 
 export default class AutocompleteRenderInput extends Component {
   static propTypes = {
@@ -8,11 +9,24 @@ export default class AutocompleteRenderInput extends Component {
     value: PropTypes.string,
     suggestions: PropTypes.array,
     ref: PropTypes.any,
-    autocomplete: PropTypes.bool
+    autocomplete: PropTypes.bool,
+    classNames: PropTypes.object
   };
 
   render() {
-    const {addTag, autocomplete, ...other} = this.props;
+    const {addTag, autocomplete, classNames, ...other} = this.props;
+    // const styles = require('./AutocompleteRenderInput.scss');
+    const theme = {
+      // container: ,
+      // containerOpen: styles['container--open'],
+      // input: styles['input'],
+      suggestionsContainer: get(classNames, 'suggestions'),
+      // suggestionsList: styles['suggestions-list'],
+      // suggestion: styles['suggestion'],
+      suggestionFocused: 'active',
+      // sectionContainer: styles['section-container'],
+      // sectionTitle: styles['section-title']
+    };
 
     const handleOnChange = (e, {method}) => {
       if (method === 'enter') {
@@ -32,6 +46,7 @@ export default class AutocompleteRenderInput extends Component {
 
     return (
       <Autosuggest
+        theme={theme}
         ref={this.props.ref}
         suggestions={suggestions}
         shouldRenderSuggestions={(value) => value && value.trim().length > 0}

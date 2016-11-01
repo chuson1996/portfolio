@@ -16,6 +16,9 @@ $border-color: rgba(160,160,160,0.3);
       margin-top: 200px;
     }
   }
+  .tagInputField {
+
+  }
   .tag {
     border: 1px solid $border-color;
     padding: 4px 11px;
@@ -28,12 +31,12 @@ $border-color: rgba(160,160,160,0.3);
     margin-left: 5px;
   }
   .suggestions {
-    position: absolute;
+    // position: absolute;
     z-index: 1;
     ul {
       list-style-type: none;
       box-shadow: .05em .01em .5em rgba(0,0,0,.2);
-      width: 200px;
+      // width: 200px;
       background: white;
       padding-left: 0;
       li {

@@ -33,7 +33,8 @@ export default class AlwaysVisible extends Component {
           style: {
             position: 'fixed',
             width: get(parDivCoordinates, 'width'),
-            top: 0
+            top: 0,
+            zIndex: 1
           }
         });
       }

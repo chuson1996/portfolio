@@ -107,12 +107,12 @@ export default class FrontendAdvisor extends Component {
 
           <AlwaysVisible style={{ height: 70 }}>
             <ReactTags
-              // classNames={{
-              //   tag: styles.tag,
-              //   remove: styles.remove,
-              //   suggestions: styles.suggestions,
-              //   tagInputField: `form-control`
-              // }}
+              classNames={{
+                tag: styles.tag,
+                remove: styles.remove,
+                suggestions: styles.suggestions,
+                tagInputField: `form-control ${styles.tagInputField}`
+              }}
               tags={inputTags}
               suggestions={possibleTags}
               handleChange={this.handleChange}

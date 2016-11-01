@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import TagsInput from 'react-tagsinput';
-// import last from 'lodash/last';
+import get from 'lodash/get';
 import intersection from 'lodash/intersection';
 import {AutocompleteRenderInput} from 'components';
 
@@ -10,7 +10,8 @@ export default class ReactTags extends Component {
     suggestions: PropTypes.array,
     handleChange: PropTypes.func,
     tags: PropTypes.array,
-    autocomplete: PropTypes.bool
+    autocomplete: PropTypes.bool,
+    classNames: PropTypes.object
   };
 
   handleChange(newTags) {
@@ -23,11 +24,17 @@ export default class ReactTags extends Component {
   }
 
   render() {
-    const { suggestions, autocomplete } = this.props;
+    const { suggestions, autocomplete, classNames } = this.props;
 
     return (<TagsInput
+      inputProps={{
+        className: get(classNames, 'tagInputField')
+      }}
+      tagProps={{
+        className: get(classNames, 'tag')
+      }}
       renderInput={(props) => <AutocompleteRenderInput
-        {...{...props, autocomplete, suggestions}
+        {...{...props, autocomplete, suggestions, classNames}
       }/>}
       value={this.props.tags}
       onChange={::this.handleChange} />);

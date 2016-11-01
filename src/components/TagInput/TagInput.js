@@ -46,6 +46,9 @@ export default class TagInput extends Component {
     } = this.props;
     return (
       <ReactTags
+        classNames={{
+          tagInputField: `form-control`
+        }}
         tags={value}
         suggestions={allTags}
         handleChange={this.handleChange}
