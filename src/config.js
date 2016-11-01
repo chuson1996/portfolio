@@ -21,6 +21,7 @@ module.exports = Object.assign({
     head: {
       titleTemplate: 'Front-end Advisor: %s',
       meta: [
+        {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1'},
         {name: 'description', content: 'Answer to all questions about front-end development'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'Answer to all questions about front-end development'},
