@@ -1,5 +1,6 @@
 import update from 'react-addons-update';
-import { WithContext as ReactTags } from 'react-tag-input';
+// import { WithContext as ReactTags } from 'react-tag-input';
+import { ReactTags } from 'components';
 import { connect } from 'react-redux';
 import React, {Component, PropTypes} from 'react';
 
@@ -29,6 +30,11 @@ export default class TagInput extends Component {
     }
   };
 
+  handleChange = (tags) => {
+    const {input: { onChange }} = this.props;
+    onChange(tags);
+  };
+
   transformTags(text, id) {
     return {text, id};
   }
@@ -40,13 +46,10 @@ export default class TagInput extends Component {
     } = this.props;
     return (
       <ReactTags
-        tags={value.map(this.transformTags)}
+        tags={value}
         suggestions={allTags}
-        classNames={{
-          tagInputField: `form-control`
-        }}
-        handleAddition={this.handleAddition}
-        handleDelete={this.handleDelete} />
-      );
+        handleChange={this.handleChange}
+      />
+    );
   }
 }

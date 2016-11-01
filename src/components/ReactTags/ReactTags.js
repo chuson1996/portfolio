@@ -14,8 +14,12 @@ export default class ReactTags extends Component {
   };
 
   handleChange(newTags) {
-    const { handleChange, suggestions, tags: oldTags } = this.props;
-    handleChange(intersection(newTags, [...suggestions, ...oldTags]));
+    const { handleChange, suggestions, tags: oldTags, autocomplete } = this.props;
+    if (autocomplete) {
+      handleChange(intersection(newTags, [...suggestions, ...oldTags]));
+    } else {
+      handleChange(newTags);
+    }
   }
 
   render() {
