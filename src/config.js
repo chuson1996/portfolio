@@ -10,9 +10,9 @@ const environment = {
 }[process.env.NODE_ENV || 'development'];
 
 module.exports = Object.assign({
-  host: process.env.HOST || 'localhost',
+  host: process.env.HOST || '0.0.0.0',
   port: process.env.PORT,
-  apiHost: process.env.APIHOST || 'localhost',
+  apiHost: process.env.APIHOST || '0.0.0.0',
   apiPort: process.env.APIPORT,
   mongoDB: process.env.MONGO_DB || 'mongodb://localhost:27017/codeadvisor',
   app: {
