@@ -3,6 +3,7 @@ import TagsInput from 'react-tagsinput';
 import get from 'lodash/get';
 import intersection from 'lodash/intersection';
 import {AutocompleteRenderInput} from 'components';
+import { Tag } from 'components';
 
 export default class ReactTags extends Component {
   static propTypes = {
@@ -25,14 +26,13 @@ export default class ReactTags extends Component {
 
   render() {
     const { suggestions, autocomplete, classNames } = this.props;
+    // const styles = require('./ReactTags.scss');
 
     return (<TagsInput
       inputProps={{
         className: get(classNames, 'tagInputField')
       }}
-      tagProps={{
-        className: get(classNames, 'tag')
-      }}
+      renderTag={(props) => <Tag index={props.key} {...props} />}
       renderInput={(props) => <AutocompleteRenderInput
         {...{...props, autocomplete, suggestions, classNames}
       }/>}

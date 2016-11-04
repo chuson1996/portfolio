@@ -1,0 +1,19 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+.tag {
+  background-color: $brand-info;
+  padding: ($line-height-computed / 3) $padding-small-horizontal;
+  margin-right: 10px;
+  color: $white;
+  display: inline-block;
+
+  a {
+    background-color: $brand-danger;
+    border-radius: 50%;
+    width: 16px;
+    text-align: center;
+    color: $white;
+    margin-left: 5px;
+  }
+}

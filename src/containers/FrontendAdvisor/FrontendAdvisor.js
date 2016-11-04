@@ -15,7 +15,8 @@ import { AlwaysVisible,
   CTA,
   SuggestResource,
   ReactTags,
-  Pagination } from 'components';
+  Pagination,
+  Tag } from 'components';
 
 @asyncConnect([{
   promise: ({ store: { dispatch, getState }}) => {
@@ -69,6 +70,7 @@ export default class FrontendAdvisor extends Component {
   };
 
   handleChange = (tags) => {
+    console.log('Handle change: ', tags);
     const { isTagLoaded } = tagsActions;
     const {
       inputTagsInfo,
@@ -101,7 +103,12 @@ export default class FrontendAdvisor extends Component {
         <p><a href={url} target={'_blank'}>
           <i className={`fa fa-globe`}></i> {url}
         </a></p>
-        <p>Tags: {tags.map((tag, _i) => <span key={_i}><a onClick={() => this.handleAddition(tag)}>{tag}</a>, </span>)}</p>
+        <p>Tags: {tags.map((tag, _i) =>
+          <Tag
+            key={_i}
+            onClick={() => this.handleAddition(tag)} >
+            {tag}
+          </Tag>)}</p>
       </Panel>) : [];
 
     return (
@@ -119,7 +126,7 @@ export default class FrontendAdvisor extends Component {
           <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}>
             <ReactTags
               classNames={{
-                tag: styles.tag,
+                // tag: styles.tag,
                 remove: styles.remove,
                 suggestions: styles.suggestions,
                 tagInputField: `form-control ${styles.tagInputField}`
