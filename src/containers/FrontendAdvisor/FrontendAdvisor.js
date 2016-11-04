@@ -123,22 +123,22 @@ export default class FrontendAdvisor extends Component {
             Enter what you want to learn today:
           </h2>
 
-          <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}>
-            <ReactTags
-              classNames={{
-                // tag: styles.tag,
-                // remove: styles.remove,
-                // suggestions: styles.suggestions,
-                tagInputField: `${styles.tagInputField}`
-              }}
-              tags={inputTags}
-              suggestions={possibleTags}
-              handleChange={this.handleChange}
-              // handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
-              // handleAddition={this.handleAddition}
-              autocomplete={!false}
-            />
-          </AlwaysVisible>
+          {/* <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}> */}
+          <ReactTags
+            classNames={{
+              // tag: styles.tag,
+              // remove: styles.remove,
+              // suggestions: styles.suggestions,
+              tagInputField: `${styles.tagInputField}`
+            }}
+            tags={inputTags}
+            suggestions={possibleTags}
+            handleChange={this.handleChange}
+            // handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
+            // handleAddition={this.handleAddition}
+            autocomplete={!false}
+          />
+          {/* </AlwaysVisible> */}
 
           <Row>
             <Col xs={12} className="m-t-20 m-b-20">

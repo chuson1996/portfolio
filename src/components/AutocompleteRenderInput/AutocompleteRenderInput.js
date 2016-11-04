@@ -61,15 +61,29 @@ export default class AutocompleteRenderInput extends Component {
         onSuggestionsFetchRequested={() => {}}
         onSuggestionsClearRequested={clearSuggestions}
         focusFirstSuggestion={this.props.autocomplete}
-        renderInputComponent={({ className, ...props }) => <div className="input-group">
-          <input type="text" className="form-control" {...props}/>
-          <span className="input-group-btn">
-            <button className="btn" onClick={clearSuggestions}>
-              <i className="fa fa-close"></i>
-            </button>
-          </span>
-        </div>}
-        shouldRenderSuggestions={() => true}
+        renderInputComponent={(props) => {
+          const onInputFocus = (e) => {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+            if (props.onFocus) {
+              props.onFocus(e);
+            }
+          };
+          return (<div className="input-group">
+            <input
+              {...props}
+              type="text"
+              className="form-control"
+              onFocus={onInputFocus} />
+
+            <span className="input-group-btn">
+              <button className="btn btn-default" onClick={clearSuggestions}>
+                <i className="fa fa-close"></i>
+              </button>
+            </span>
+          </div>);
+        }}
+        // shouldRenderSuggestions={() => true}
       />
     );
   }

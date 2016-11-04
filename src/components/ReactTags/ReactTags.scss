@@ -5,6 +5,7 @@
 $border-color: rgba(160,160,160,0.3);
 
 .tagsInput {
+  background-color: rgba(255, 255, 255, 0.84);
   @media (max-width: $screen-sm + 1) {
     &.focused {
       position: fixed;
@@ -30,10 +31,10 @@ $border-color: rgba(160,160,160,0.3);
       // width: 200px;
       background: white;
       padding-left: 0;
-      @media (max-width: $screen-sm + 1) {
-        max-height: calc(100vh - 82px);
-        overflow-y: auto;
-      }
+      // @media (max-width: $screen-sm + 1) {
+      max-height: calc(100vh - 82px);
+      overflow-y: auto;
+      // }
       // max-height: calc(100vh - 100%);
       li {
         border-bottom: 1px solid $border-color;
