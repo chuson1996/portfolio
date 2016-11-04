@@ -69,6 +69,7 @@ export default class AutocompleteRenderInput extends Component {
             </button>
           </span>
         </div>}
+        shouldRenderSuggestions={() => true}
       />
     );
   }
