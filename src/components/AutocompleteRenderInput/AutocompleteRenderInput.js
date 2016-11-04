@@ -59,6 +59,14 @@ export default class AutocompleteRenderInput extends Component {
         onSuggestionsFetchRequested={() => {}}
         onSuggestionsClearRequested={() => suggestions = []}
         focusFirstSuggestion={this.props.autocomplete}
+        renderInputComponent={({ className, ...props }) => <div className="input-group">
+          <input type="text" className="form-control" {...props}/>
+          <span className="input-group-btn">
+            <button className="btn">
+              <i className="fa fa-close"></i>
+            </button>
+          </span>
+        </div>}
       />
     );
   }

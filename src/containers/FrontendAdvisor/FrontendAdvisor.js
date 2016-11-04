@@ -127,9 +127,9 @@ export default class FrontendAdvisor extends Component {
             <ReactTags
               classNames={{
                 // tag: styles.tag,
-                remove: styles.remove,
-                suggestions: styles.suggestions,
-                tagInputField: `form-control ${styles.tagInputField}`
+                // remove: styles.remove,
+                // suggestions: styles.suggestions,
+                tagInputField: `${styles.tagInputField}`
               }}
               tags={inputTags}
               suggestions={possibleTags}

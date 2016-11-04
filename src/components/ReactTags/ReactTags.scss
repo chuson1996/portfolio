@@ -1,0 +1,48 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+$border-color: rgba(160,160,160,0.3);
+
+.tagsInput {
+  @media (max-width: $screen-sm + 1) {
+    &.focused {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      // @media (max-width: $screen-xs + 1) {
+      //   width: $container-sm;
+      // }
+      @include container-fixed;
+      height: 100vh;
+      z-index: 2;
+    }
+  }
+  .suggestions {
+    // position: absolute;
+    z-index: 1;
+    ul {
+      list-style-type: none;
+      box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+      // width: 200px;
+      background: white;
+      padding-left: 0;
+      @media (max-width: $screen-sm + 1) {
+        max-height: calc(100vh - 82px);
+        overflow-y: auto;
+      }
+      // max-height: calc(100vh - 100%);
+      li {
+        border-bottom: 1px solid $border-color;
+        padding: 5px 10px;
+        &:global(.active) {
+          cursor: pointer;
+          background: #b7cfe0;
+        }
+      }
+    }
+  }
+}

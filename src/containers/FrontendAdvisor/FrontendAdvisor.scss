@@ -1,7 +1,5 @@
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
 
-$border-color: rgba(160,160,160,0.3);
-
 .frontendAdvisor {
   .masthead {
     // min-height: 100vh;
@@ -23,24 +21,5 @@ $border-color: rgba(160,160,160,0.3);
   .remove {
     border-bottom: 0;
     margin-left: 5px;
-  }
-  .suggestions {
-    // position: absolute;
-    z-index: 1;
-    ul {
-      list-style-type: none;
-      box-shadow: .05em .01em .5em rgba(0,0,0,.2);
-      // width: 200px;
-      background: white;
-      padding-left: 0;
-      li {
-        border-bottom: 1px solid $border-color;
-        padding: 5px 10px;
-        &:global(.active) {
-          cursor: pointer;
-          background: #b7cfe0;
-        }
-      }
-    }
   }
 }

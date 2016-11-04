@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import TagsInput from 'react-tagsinput';
-import get from 'lodash/get';
+// import get from 'lodash/get';
 import intersection from 'lodash/intersection';
 import {AutocompleteRenderInput} from 'components';
 import { Tag } from 'components';
@@ -26,17 +26,19 @@ export default class ReactTags extends Component {
 
   render() {
     const { suggestions, autocomplete, classNames } = this.props;
-    // const styles = require('./ReactTags.scss');
+    const styles = require('./ReactTags.scss');
+    classNames.suggestions = styles.suggestions;
 
-    return (<TagsInput
-      inputProps={{
-        className: get(classNames, 'tagInputField')
-      }}
-      renderTag={(props) => <Tag index={props.key} {...props} />}
-      renderInput={(props) => <AutocompleteRenderInput
-        {...{...props, autocomplete, suggestions, classNames}
-      }/>}
-      value={this.props.tags}
-      onChange={::this.handleChange} />);
+    return (
+      <TagsInput
+        className={styles.tagsInput}
+        focusedClassName={styles.focused}
+        renderTag={(props) => <Tag index={props.key} {...props} />}
+        renderInput={(props) => <AutocompleteRenderInput
+          {...{...props, autocomplete, suggestions, classNames}
+        }/>}
+        value={this.props.tags}
+        onChange={::this.handleChange} />
+    );
   }
 }
