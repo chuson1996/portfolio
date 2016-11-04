@@ -7,7 +7,6 @@ import { Tag } from 'components';
 
 export default class ReactTags extends Component {
   static propTypes = {
-    addTag: PropTypes.func,
     suggestions: PropTypes.array,
     handleChange: PropTypes.func,
     tags: PropTypes.array,
@@ -31,12 +30,14 @@ export default class ReactTags extends Component {
 
     return (
       <TagsInput
+        ref={(elem) => this.tagsInputRef = elem}
         className={styles.tagsInput}
         focusedClassName={styles.focused}
         renderTag={(props) => <Tag index={props.key} {...props} />}
         renderInput={(props) => <AutocompleteRenderInput
-          {...{...props, autocomplete, suggestions, classNames}
-        }/>}
+          {...{autocomplete, suggestions, classNames}}
+          {...props} />
+        }
         value={this.props.tags}
         onChange={::this.handleChange} />
     );

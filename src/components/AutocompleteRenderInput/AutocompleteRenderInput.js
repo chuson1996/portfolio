@@ -44,12 +44,17 @@ export default class AutocompleteRenderInput extends Component {
       return state.toLowerCase().slice(0, inputLength) === inputValue;
     });
 
-    const clearSuggestions = () => suggestions = [];
+    const clearSuggestions = () => {
+      suggestions = [];
+      // console.log(this.props);
+    };
+    // console.log(this.props);
 
     return (
       <Autosuggest
+        // ref={inputRef}
         theme={theme}
-        ref={this.props.ref}
+        // ref={this.props.ref}
         suggestions={suggestions}
         shouldRenderSuggestions={(value) => value && value.trim().length > 0}
         getSuggestionValue={(suggestion) => suggestion}
@@ -72,6 +77,7 @@ export default class AutocompleteRenderInput extends Component {
           return (<div className="input-group">
             <input
               {...props}
+              // ref={this.props.ref}
               type="text"
               className="form-control"
               onFocus={onInputFocus} />
