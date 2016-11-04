@@ -1,3 +1,4 @@
+/* eslint-disable */
 var WebpackIsomorphicToolsPlugin = require('webpack-isomorphic-tools/plugin');
 
 // see this link for more info on what all of this means
