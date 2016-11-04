@@ -64,55 +64,6 @@ a {
   }
 }
 
-@mixin button-variant($text-color, $bg-color, $border-color) {
-  &:hover {
-    background-color: $bg-color;
-    color: $text-color;
-    border-color: $border-color;
-    transition: background-color .5s ease-out, color .5s ease-out, border .5s ease-out;
-    box-shadow: none;
-  }
-  &.hvr-bounce-to-right {
-    &:hover {
-      background-color: transparent;
-    }
-    &:before {
-      background-color: $bg-color;
-    }
-  }
-  &.hvr-sweep-to-top {
-    &:hover {
-      background-color: transparent;
-    }
-    &:before {
-      background-color: $bg-color;
-    }
-  }
-  &.hvr-sweep-to-bottom {
-    &:hover {
-      background-color: transparent;
-    }
-    &:before {
-      background-color: $bg-color;
-    }
-  }
-}
-
-
-// Buttons
-.btn.btn-warning {
-  @include button-variant(#000, $btn-warning-color, #000);
-}
-.btn.btn-primary {
-  @include button-variant(#000, $btn-primary-color, #000);
-}
-.btn.btn-info {
-  @include button-variant(#000, $btn-info-color, #000);
-}
-.btn.btn-default {
-  @include button-variant(#000, $btn-default-color, #000);
-}
-
 // Button circle
 .btn.btn-circle {
   border-radius: 50%;

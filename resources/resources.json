@@ -4,7 +4,9 @@
     "tags": [
       "javascript",
       "asynchronous",
-      "rxjs"
+      "rxjs",
+      "tutorial",
+      "getting-started"
     ],
     "title": "RxJS/doc at master · Reactive-Extensions/RxJS",
     "url": "https://github.com/Reactive-Extensions/RxJS/tree/master/doc#getting-started-with-rxjs"
@@ -34,7 +36,8 @@
     "tags": [
       "javascript",
       "asynchronous",
-      "rxjs"
+      "rxjs",
+      "helper"
     ],
     "title": "RxMarbles: Interactive diagrams of Rx Observables",
     "url": "http://rxmarbles.com/"
@@ -57,7 +60,9 @@
       "css",
       "design",
       "theme",
-      "material design"
+      "material design",
+      "mobile",
+      "library"
     ],
     "title": "Material Design Lite",
     "url": "http://www.getmdl.io/index.html"
@@ -69,7 +74,8 @@
       "inspiration",
       "design",
       "javascript",
-      "tympanus"
+      "tympanus",
+      "slider"
     ],
     "title": "Blueprint: Zoom Slider | Codrops",
     "url": "http://tympanus.net/codrops/2015/07/06/zoom-slider/"
@@ -78,7 +84,8 @@
     "description": "Too many articles will tell you what is cool in web design. I’m going to take you past the obvious to make some real predictions.",
     "tags": [
       "css",
-      "design"
+      "design",
+      "trend"
     ],
     "title": "7 future web design trends",
     "url": "http://delighten.co.uk/7-future-web-design-trends/"
@@ -87,7 +94,9 @@
     "description": "Learn how to design good looking, accessible forms for the web.",
     "tags": [
       "design",
-      "inspiration"
+      "inspiration",
+      "ui",
+      "form"
     ],
     "title": "The 10 Commandments of Good Form Design on the Web – Mono",
     "url": "http://mono.company/journal/design-practice/the-10-commandments-of-good-form-design-on-the-web/"
@@ -96,7 +105,8 @@
     "description": "Calltoidea is the unique place where you can find inspiration. A great tool created by a deisnger for web professionals.",
     "tags": [
       "design",
-      "inspiration"
+      "inspiration",
+      "tool"
     ],
     "title": "Calltoidea",
     "url": "http://www.calltoidea.com/"
@@ -104,7 +114,8 @@
   {
     "tags": [
       "design",
-      "design principles"
+      "design principles",
+      "inspiration"
     ],
     "title": "Design Principles",
     "url": "http://learndesignprinciples.com/"
@@ -114,7 +125,8 @@
     "tags": [
       "design",
       "hero images",
-      "ui"
+      "ui",
+      "responsive"
     ],
     "title": "Responsive Hero Images Cloud Four Blog",
     "url": "http://blog.cloudfour.com/responsive-hero-images/"
@@ -234,7 +246,6 @@
     "tags": [
       "design",
       "inspiration",
-      "article",
       "tympanus",
       "javascript"
     ],
@@ -369,7 +380,6 @@
     "tags": [
       "library",
       "javascript",
-      "article",
       "cool stuff"
     ],
     "title": "ReadRemaining.js - How long you'll need to read any text.",
@@ -821,7 +831,6 @@
   {
     "description": "Share: The Icon No One Agrees On",
     "tags": [
-      "article",
       "icon",
       "share"
     ],
@@ -1598,19 +1607,12 @@
     "url": "https://github.com/sorrycc/awesome-javascript"
   },
   {
-    "description": "Manually curated collection of resources for frontend web developers.",
-    "tags": [
-      "resource"
-    ],
-    "title": "Frontend Development",
-    "url": "https://github.com/dypsilon/frontend-dev-bookmarks"
-  },
-  {
     "description": "Some practical ARIA examples to enhance your application accessibility (by @heydonworks).",
     "tags": [
       "html",
       "aria",
-      "basics"
+      "accessibility",
+      "dom"
     ],
     "title": "Practical ARIA Examples",
     "url": "http://heydonworks.com/practical_aria_examples/"
@@ -1728,7 +1730,8 @@
     "description": "A quick reference to best practices for writing JavaScript -- links to code patterns and tutorials from around the web",
     "tags": [
       "javascript",
-      "resource"
+      "resource",
+      "tutorial"
     ],
     "title": "JS: The Right Way",
     "url": "http://jstherightway.org/"
@@ -1756,7 +1759,6 @@
     "tags": [
       "tutorial",
       "basics",
-      "resource",
       "javascript"
     ],
     "title": "A re-introduction to JavaScript (JS tutorial) - JavaScript | MDN",
@@ -1768,8 +1770,7 @@
       "basics",
       "notification",
       "javascript",
-      "tutorial",
-      "resource"
+      "tutorial"
     ],
     "title": "Your first push notifications web app | Web Fundamentals - Google Developers",
     "url": "https://developers.google.com/web/fundamentals/getting-started/push-notifications/?hl=en"
@@ -1826,7 +1827,8 @@
     "description": "Find resources that help you build lightning fast websites",
     "tags": [
       "performance",
-      "optimization"
+      "optimization",
+      "resource"
     ],
     "title": "Perf.Rocks",
     "url": "http://perf.rocks/"
@@ -1847,8 +1849,8 @@
     "url": "http://bjorn.tipling.com/advanced-objects-in-javascript",
     "tags": [
       "javascript",
-      "basics",
-      "resource"
+      "fundamental",
+      "object"
     ]
   },
   {
@@ -1857,8 +1859,7 @@
     "url": "https://quickleft.com/blog/18-surprises-from-reading-jquery-s-source-code/",
     "tags": [
       "jquery",
-      "javascript",
-      "resource"
+      "javascript"
     ]
   },
   {
@@ -1867,7 +1868,6 @@
     "url": "http://devdocs.io/",
     "tags": [
       "javascript",
-      "documentation",
       "css",
       "resource",
       "html"
@@ -1880,8 +1880,7 @@
     "tags": [
       "css",
       "design",
-      "basics",
-      "resource"
+      "fundamentals"
     ]
   },
   {
@@ -1895,12 +1894,22 @@
     ]
   },
   {
+    "url": "https://learn.humanjavascript.com/react-ampersand/introduction",
+    "title": "Human JavaScript videos",
+    "tags": [
+      "video",
+      "javascript",
+      "tutorial",
+      "react"
+    ]
+  },
+  {
     "description": "“Café Allongé, also called Espresso Lungo, is a drink midway between an Espresso and Americano in strength. There are two different ways to make it. The first, and the one I prefer, is to add a small amount of hot water to a double or quadruple Espresso Ristretto. Like adding a splash of water to whiskey, the small dilution releases more of the complex flavours in the mouth.",
     "title": "Read JavaScript Allongé (ES5) | Leanpub",
     "url": "https://leanpub.com/javascript-allonge/read",
     "tags": [
       "javascript",
-      "resource",
+      "fundamental",
       "ebook"
     ]
   },
@@ -1910,8 +1919,6 @@
     "url": "http://frontendbabel.info/articles/webpage-rendering-101/",
     "tags": [
       "javascript",
-      "article",
-      "resource",
       "browser",
       "rendering"
     ]
@@ -1931,7 +1938,7 @@
     "title": "A Hacker's Guide to Git | Wildly Inaccurate",
     "url": "http://wildlyinaccurate.com/a-hackers-guide-to-git/",
     "tags": [
-      "resource",
+      "guide",
       "git",
       "ebook"
     ]
@@ -1949,7 +1956,8 @@
     "title": "felixge/node-style-guide: A guide for styling your node.js / JavaScript code. Fork & adjust to your taste.",
     "url": "https://github.com/felixge/node-style-guide",
     "tags": [
-      "resource"
+      "style guide",
+      "nodejs"
     ]
   },
   {
@@ -1957,7 +1965,6 @@
     "title": "Error Handling in Nodejs - Developer Center - Joyent",
     "url": "https://www.joyent.com/developers/node/design/errors",
     "tags": [
-      "resource",
       "nodejs",
       "error",
       "javascript"
@@ -1980,7 +1987,8 @@
       "data",
       "angularjs",
       "javascript",
-      "resource"
+      "data",
+      "model"
     ]
   },
   {
@@ -1999,8 +2007,7 @@
     "tags": [
       "javascript",
       "seo",
-      "angularjs",
-      "resource"
+      "angularjs"
     ]
   },
   {
@@ -2010,8 +2017,7 @@
     "tags": [
       "javascript",
       "seo",
-      "angularjs",
-      "resource"
+      "angularjs"
     ]
   },
   {
@@ -2038,7 +2044,6 @@
     "title": "C#er : IMage: The Top 5 Mistakes AngularJS Developers Make Part 2: Abusing $watch",
     "url": "http://csharperimage.jeremylikness.com/2014/11/the-top-5-mistakes-angularjs-developers_28.html",
     "tags": [
-      "resource",
       "javascript",
       "angularjs",
       "mistake"
@@ -2049,7 +2054,6 @@
     "title": "C#er : IMage: The Top 5 Mistakes AngularJS Developers Make Part 3: Overusing $broadcast and $emit",
     "url": "http://csharperimage.jeremylikness.com/2014/12/the-top-5-mistakes-angularjs-developers.html",
     "tags": [
-      "resource",
       "angularjs",
       "javascript",
       "mistake"
@@ -2081,7 +2085,7 @@
     "title": "Introduction to ui-router - AngularJS Video Tutorial #free @eggheadio",
     "url": "https://egghead.io/lessons/angularjs-introduction-ui-router?__s=bykrskecjp6b4vz8rfpn&pl=learn-ui-router&utm_campaign=ui-router-cheat-sheet&utm_medium=email&utm_source=angular-email-course",
     "tags": [
-      "resource",
+      "video",
       "angularjs",
       "router",
       "javascript"
@@ -2102,7 +2106,8 @@
     "url": "http://www.adequatelygood.com/JavaScript-Module-Pattern-In-Depth.html",
     "tags": [
       "javascript",
-      "resource",
+      "pattern",
+      "module pattern",
       "module",
       "basics"
     ]
@@ -2112,7 +2117,8 @@
     "title": "jsfiddle.net",
     "url": "http://jsfiddle.net",
     "tags": [
-      "code editor"
+      "code editor",
+      "tool"
     ]
   },
   {
@@ -2121,8 +2127,7 @@
     "url": "https://en.wikipedia.org/wiki/List_of_HTTP_status_codes",
     "tags": [
       "http",
-      "network",
-      "resource"
+      "network"
     ]
   },
   {
@@ -2183,7 +2188,6 @@
     "url": "http://nvie.com/posts/a-successful-git-branching-model/",
     "tags": [
       "git",
-      "resource",
       "branching",
       "git flow"
     ]
@@ -2236,7 +2240,7 @@
     "url": "http://thedailywtf.com/",
     "tags": [
       "cool stuff",
-      "resource"
+      "news"
     ]
   },
   {
@@ -2286,7 +2290,8 @@
       "design",
       "ux",
       "ui",
-      "resource"
+      "resource",
+      "inspiration"
     ]
   },
   {
@@ -2297,8 +2302,7 @@
       "angular2",
       "javascript",
       "dom",
-      "shadow dom",
-      "resource"
+      "shadow dom"
     ]
   },
   {
@@ -2307,7 +2311,6 @@
     "url": "https://www.ng-book.com/2/#packages",
     "tags": [
       "angular2",
-      "resource",
       "book",
       "ebook",
       "javascript"
@@ -2321,8 +2324,7 @@
       "angular2",
       "resource",
       "javascript",
-      "tutorial",
-      "resource"
+      "tutorial"
     ]
   },
   {
@@ -2332,7 +2334,7 @@
     "tags": [
       "angular2",
       "javascript",
-      "resource"
+      "model"
     ]
   },
   {
@@ -2342,8 +2344,7 @@
     "tags": [
       "angular2",
       "javascript",
-      "dependency",
-      "resource"
+      "dependency"
     ]
   },
   {
@@ -2353,8 +2354,7 @@
     "tags": [
       "angular2",
       "javascript",
-      "change detection",
-      "resource"
+      "change detection"
     ]
   },
   {
@@ -2376,7 +2376,6 @@
     "tags": [
       "reactjs",
       "javascript",
-      "resource",
       "news"
     ]
   },
@@ -2386,7 +2385,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video"
     ],
     "description": "http://WatchMeCode.net presents A Gentle Introduction to Functional JavaScript, Part 2: Mondads, Monoids and Composition Check out these resources from the s..."
@@ -2397,7 +2395,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource"
+      "introduction"
     ],
     "description": "A-Gentle-Introduction-to-Functional-JavaScript - Notes and code from the 3 part crowdcast with Derick Bailey summer, 2016"
   },
@@ -2407,7 +2405,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video",
       "basics"
     ],
@@ -2419,7 +2416,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video",
       "loop",
       "recursion"
@@ -2452,7 +2448,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "memoization"
     ],
     "description": "was (and I didn't have a calculator), it would take a few minutes to work out. Right now, I don't need to know.  Maybe I'll never need to know. I could put those two numbers and the + sign on a piece of paper and stick it in my pocket."
@@ -2482,8 +2477,7 @@
     "url": "https://medium.com/javascript-scene/curry-or-partial-application-8150044c78b8",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "The Difference Between\nPartial Application and Curry"
   },
@@ -2494,7 +2488,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video"
     ]
   },
@@ -2514,8 +2507,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "debug",
-      "resource"
+      "debug"
     ],
     "description": "What’s the problem"
   },
@@ -2557,7 +2549,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "curry"
     ],
     "description": "Before I understood the concept of currying, I was always filled with anxiety when hearing other developers describe it. They always made it seem so complicated and difficult to understand; as if an ominous thundercloud arrived every time the topic was mentioned. Well I assure you that the concept of currying, at least applied to programming, is not hard to understand at all. It’s actually quite easy to grasp and once you do, opens the door to a powerful functional programming technique."
@@ -2567,8 +2558,7 @@
     "url": "http://www.mokacoding.com/blog/functional-core-reactive-shell/",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "This is a blogpost version of the content of my talk \"Functional Core, Reactive Shell\""
   },
@@ -2589,7 +2579,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource"
+      "book"
     ],
     "description": "Mini and Brief Intro to FP in JS"
   },
@@ -2599,7 +2589,8 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource"
+      "workshop",
+      "tutorial"
     ],
     "description": "functional-javascript-workshop - A functional javascript workshop. No libraries required (i.e. no underscore), just ES5."
   },
@@ -2609,7 +2600,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "reactjs",
       "video"
     ],
@@ -2620,8 +2610,7 @@
     "url": "https://medium.com/@chetcorcos/functional-programming-for-javascript-people-1915d8775504",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "(Japanese, Chinese)"
   },
@@ -2631,7 +2620,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "refactor"
     ],
     "description": "When discussing functional programming we often talk about the machinery, and not the core principles. Functional programming is not about…"
@@ -2662,8 +2650,7 @@
     "url": "https://medium.com/@yelouafi/futures-and-monoids-7e9f4574bd88",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "In the post From Callback to Future -> Functor -> Monad we clearly saw how Futures/Promises map to some well known constructs from FP and…"
   },
@@ -2672,8 +2659,7 @@
     "url": "http://functionaltalks.org/2013/05/27/brian-lonsdorf-hey-underscore-youre-doing-it-wrong/",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "Brilliant people giving brilliant talks on Functional Programming."
   },
@@ -2683,7 +2669,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "immutability",
       "video"
     ],
@@ -2695,7 +2680,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "library",
       "immutability"
     ],
     "description": "immutable-sequence.js - High performance implementation of Immutable Sequence in JavaScript, based on Finger Tree."
@@ -2717,7 +2702,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video"
     ],
     "description": "Episode 003 of the live JavaScript broadcast podcast. Functional programming has been greatly facilitated with ES6. We're going to talk about the how and why of functional programming and immutable design patterns in JavaScript."
@@ -2728,7 +2712,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "type"
     ],
     "description": "At the heart of functional thinking is to ask about the meaning of things. In the case of functions, it’s reasoning about their return…"
@@ -2739,7 +2722,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video",
       "combinator"
     ],
@@ -2761,7 +2743,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video"
     ],
     "description": "Functional Lenses in javascript. Implementation and some use cases."
@@ -2772,7 +2753,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "dom",
       "virtual dom",
       "lenses"
@@ -2797,7 +2777,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "guide",
       "lodash",
       "curry"
     ],
@@ -2808,8 +2788,7 @@
     "url": "http://alistapart.com/article/making-your-javascript-pure",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ]
   },
   {
@@ -2840,7 +2819,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "monads"
     ],
     "description": "My simple and practical Intro to Monads in JS, where I covered basics of Identity and Maybe monads, seemed to be helpful for a lot of folks, so I’ve decide to continue the topic. Now it’s time for Either – a tool for fast-failing,  synchronous computation chains. A tool that may increase readability and quality of code while reducing error proneness. The best part is that we can still ignore the category theory!"
@@ -2851,7 +2829,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "callback"
     ],
     "description": "Motivation"
@@ -2862,7 +2839,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "library",
       "callback",
       "promise"
     ],
@@ -2874,8 +2851,8 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
-      "monads"
+      "monads",
+      "introduction"
     ],
     "description": "If you’ve heard about Monads but never had time learn them, here’s a simple explanation. Not a theoretical nonsense. It’s a simple, practical tutorial for JavaScript developers showing how some monads can be used. It’s for engineers, not scientists."
   },
@@ -2885,7 +2862,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "monads"
     ],
     "description": "For the past weeks I've been working hard studying monads. I'm still learning\nHaskell, and to be honest I thought I knew what monads are all about, but when\nI wanted to write a little Haskell library, just to sharpen up my skills, I\nrealized that while I understood the way monadic bind (>>=) and return\nwork, I had no understanding of where that state comes from. So, most likely I\nhad no understanding at all. As a result of this I thought I rediscover monads\nmyself using JavaScript. The plan was basically the same as that used when I\nderived the Y Combinator: start from the initial problem (dealing with\nexplicit immutable state in this case), and work my way up to the solution by\napplying simple code transformations."
@@ -2896,7 +2872,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "introduction",
       "monads"
     ],
     "description": "Sean Voisen's compendium of projects and musings."
@@ -2907,7 +2883,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "monads"
     ],
     "description": "Extending Fold and Unfold to Exponential Embarassing-ness"
@@ -2918,7 +2893,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "monads"
     ],
     "description": "I was hesitant to publishing this article right from the beginning and even more so afteI wrote this post mainr reading Letter to a Young Haskell Enthusiast. ly for myself, because explaining a concept to someone else is oftentimes the best way of... | Pascal Hartig | Writing code at Twitter"
@@ -2929,7 +2903,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video",
       "monads"
     ],
@@ -2941,7 +2914,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "library",
       "monads",
       "array"
     ],
@@ -2953,7 +2926,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "introduction",
       "monads",
       "validation"
     ],
@@ -2965,7 +2938,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "guide",
       "book"
     ],
     "description": "This is a book on the functional paradigm in general. We'll use the world's most popular functional programming language: JavaScript. Some may feel this is a poor choice as it's against the grain of the current culture which, at the moment, feels predominately imperative. However, I believe it is the best way to learn FP for several reasons:"
@@ -2976,7 +2949,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource"
+      "library"
     ],
     "description": "Point free wrappers for fantasy land js."
   },
@@ -2985,8 +2958,7 @@
     "url": "http://lucasmreis.github.io/blog/pointfree-javascript/",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "Javascript is really a very flexible language. It has functional and object oriented characteristics, and it allows for programming in a lot of different styles. In this post I will present what is called pointfree style programming, and I will go through some common scenarios to demonstrate its benefits."
   },
@@ -2996,7 +2968,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "promise"
     ],
     "description": "Reactive Streams built with ADTs and pure FP"
@@ -3007,7 +2978,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "video"
     ],
     "description": "Are you comfortable passing functions around, returning them from other functions, and generally enjoy the pleasures of higher-order functions? Join in on an hour…"
@@ -3029,7 +2999,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "library",
       "ramda"
     ],
     "description": "ramda-fantasy - :ram::sparkles: Fantasy-Land compatible types for easy integration with Ramda.js"
@@ -3049,8 +3019,7 @@
     "url": "http://jaysoo.ca/2016/01/13/functional-programming-little-ideas/",
     "tags": [
       "javascript",
-      "functional programming",
-      "resource"
+      "functional programming"
     ],
     "description": "A little known fact about me is that I took Wing Chun\nlessons for four months back in 2006. A student starting in Wing Chun will begin by learning\nthe first form, called Siu Lim Tao (小練頭). This form’s name translates to “little idea,”\nand it provides the foundation in which succeeding forms and techniques depend upon."
   },
@@ -3060,7 +3029,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ]
   },
@@ -3070,7 +3038,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer",
       "video"
     ],
@@ -3082,7 +3049,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ],
     "description": "I’ve been aware of transducers for a little while, but haven’t actually used them, or even really felt like I fully grokked what they were good for. They come from the clojure community, but are making their way into plenty of other languages and libraries too. I’ve seen claims that they are a game-changing, breathtaking new concept, which didn’t really square with what they looked like."
@@ -3093,7 +3059,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
+      "library",
       "transducer"
     ],
     "description": ":radio: JavaScript transducers"
@@ -3126,7 +3092,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ],
     "description": "A few weeks ago I released my transducers library and explained the algorithm behind it. It's a wonderfully simple technique for high-performant transformations like map and filter and was created by Clojure (mostly Rich Hickey I think)."
@@ -3137,7 +3102,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ],
     "description": "If you didn't grab a few cups of coffee for my last post, you're going to want to for this one. While writing my last post about js-csp, a port of Clojure's core.async, they announced transducers which solves a key problem when working with transformation of data. The technique works particularly well with channels (exactly what js-csp uses), so I dug into it."
@@ -3148,7 +3112,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer",
       "ramda"
     ],
@@ -3160,7 +3123,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ],
     "description": "An introduction to transducers using JavaScript. We will work from reducing over arrays, to defining transformations as transformers, then incrementally introducing transducers and using them with transduce. We will conclude with a summary of what we've learned, what is coming in future articles, and links to additional resources and existing transducer libraries."
@@ -3171,7 +3133,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer",
       "pipeline"
     ],
@@ -3183,7 +3144,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ]
   },
@@ -3193,7 +3153,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer",
       "observable"
     ],
@@ -3205,7 +3164,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "resource",
       "transducer"
     ],
     "description": "I’ve found a very good article explaining Transducers. If you are familiar with Clojure, go and read it: “Understanding Transducers”. But…"
@@ -3216,7 +3174,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "css"
     ],
     "description": "Animating SVG with CSS is like animating any other element with CSS—it can be done with transitions, transforms, and keyframe animations. Once you’re familiar with the markup of an SVG, the rest is fairly straight forward."
@@ -3228,7 +3185,6 @@
       "svg",
       "animation",
       "library",
-      "resource",
       "snap.svg"
     ],
     "description": "Get started with animating SVGs using using the popular Snap.svg library"
@@ -3239,7 +3195,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource"
+      "introduction"
     ],
     "description": "Velocity.js creator Julian Shapiro provides an introduction to SVG animation!"
   },
@@ -3248,8 +3204,7 @@
     "url": "http://stylecampaign.com/blog/2014/02/svg-animation/",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ],
     "description": "Going from a static SVG to an animated SVG is a big jump, unless you want to float a balloon up the screen (even that takes a bijillion lines of code). There’s three ways to animate an SVG: CSS, native SVG animation and JavaScript. As email devs we can’t use  JavaScript, so we started with the more familiar CSS."
   },
@@ -3258,8 +3213,7 @@
     "url": "http://playgroundinc.com/blog/the-playground-vector-animation-process/",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ],
     "description": "Playground is a digital creative agency that strives to make the web a better place. "
   },
@@ -3268,8 +3222,7 @@
     "url": "https://developer.mozilla.org/en-US/docs/Web/SVG/SVG_animation_with_SMIL",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ],
     "description": "Chrome 45 deprecated SMIL in favor of CSS animations and Web animations."
   },
@@ -3279,7 +3232,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "snap.svg",
       "svg.js"
     ],
@@ -3290,8 +3242,7 @@
     "url": "http://jakearchibald.com/2013/animated-line-drawing-svg/",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ],
     "description": "I like using diagrams as a way of showing information flow or browser behaviour, but large diagrams can be daunting at first glance. When I gave talks about the Application Cache and rendering performance I started with a blank screen and made the diagrams appear to draw themselves bit by bit as I described the process. Here's how it's done:"
   },
@@ -3301,10 +3252,9 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "vector"
     ],
-    "description": "\n                \n                    \n                        \n                        Brian Suda\n                    \n                \n                "
+    "description": "Brian Suda"
   },
   {
     "title": "Animated SVG icons with Snap.svg",
@@ -3312,7 +3262,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "tympanus",
       "snap.svg"
     ],
     "description": "Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example."
@@ -3323,7 +3273,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "tutorial",
       "css",
       "icon"
     ]
@@ -3334,7 +3284,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource"
+      "polygon"
     ],
     "description": "The Polygon PlayStation 4 Review and Xbox One Review involved an unprecedented level of coordination between the editorial and product teams at Vox Media. The goal was to create a pair of..."
   },
@@ -3344,7 +3294,8 @@
     "tags": [
       "svg",
       "animation",
-      "resource"
+      "tympanus",
+      "drawing"
     ],
     "description": "A little experiment that explores the usage of SVG line drawing animations to precede the appearance of graphics or website elements, simulating the loading of them."
   },
@@ -3354,7 +3305,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "spinner",
       "loader",
       "loop",
@@ -3369,7 +3319,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "introduction",
       "smil"
     ],
     "description": "It looks deceptively simple, but it's hard to do without a lot of keyframes.  My mind jumped to SVG, and I've been wanting to give SMIL a shot.  I didn't find many resources on SMIL out there, so I thought I'd share what I learned."
@@ -3380,7 +3330,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "tympanus",
       "css"
     ],
     "description": "Learn how to build an interactive animated infographic using SVG, CSS and JavaScript."
@@ -3391,7 +3341,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "infographic",
       "jquery",
       "illustrator"
@@ -3404,7 +3353,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "smil"
     ],
     "description": "We're all for progressive enhancement, but CodePen is a bit unique in that it's all about writing and showing front end code, including JavaScript. It's required to use most of the features of CodePen."
@@ -3415,7 +3363,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "line"
     ],
     "description": "I bet all of you have seen that little trick where an SVG path is animated to look like it's drawing itself. It's super cool. Jake Archibald pioneered the"
@@ -3425,8 +3372,7 @@
     "url": "https://medium.com/@gordonnl/stylised-line-animations-ded23320ffe5",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ],
     "description": "Using Clip-Path to make your animations more beautiful"
   },
@@ -3436,7 +3382,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "library",
       "load",
       "loader"
     ],
@@ -3448,7 +3394,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "smil"
     ],
     "description": "\"SVG's SMIL animations (, , etc.) are deprecated and will be removed. Please use CSS animations or Web animations instead.\""
@@ -3459,7 +3404,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "smil"
     ],
     "description": "Update December 2015: At the time of this update, SMIL seems to be kinda dying. Sarah Drasner has a guide on how you can replace some of it's features. The"
@@ -3470,7 +3414,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "icon",
       "snap.svg",
       "css"
@@ -3483,7 +3426,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "css"
     ],
     "description": "Sara Soueidan explains how to export and optimize SVGs, how each one affects the styles and animations applied, and introduces techniques for embedding them."
@@ -3494,7 +3436,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "css"
     ],
     "description": "The following is a guest post by Jack Doyle, author of the GreenSock Animation Platform (GSAP). Jack has been deep in the woods of web animation for a long"
@@ -3515,8 +3456,7 @@
     "url": "https://ihatetomatoes.net/greensock-introduces-drawsvgplugin/",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ],
     "description": "What’s new in the DrawSVGPlugin from GreenSock and how can it help you to animate your SVGs?"
   },
@@ -3526,7 +3466,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "drawing",
       "inspiration"
     ],
@@ -3537,8 +3476,7 @@
     "url": "https://webdesign.tutsplus.com/tutorials/how-to-use-animatetransform-for-inline-svg-animation--cms-22296",
     "tags": [
       "svg",
-      "animation",
-      "resource"
+      "animation"
     ]
   },
   {
@@ -3547,7 +3485,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "tutorial",
       "infographic"
     ],
     "description": "In this tutorial, I'm exploring how to make a scalable infographic in the browser using SVG as graphical format. I'm also using CSS3 animation techniques to animate most elements."
@@ -3570,7 +3508,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "css",
       "snap.svg"
     ],
@@ -3582,7 +3519,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "tutorial",
       "css",
       "javascript"
     ],
@@ -3594,7 +3531,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "signature"
     ]
   },
@@ -3604,7 +3540,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "snap.svg",
       "tutorial"
     ]
@@ -3615,7 +3550,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "css",
       "trick"
     ],
@@ -3627,7 +3561,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "tutorial",
       "load",
       "buffer",
       "css",
@@ -3641,7 +3575,7 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
+      "greensock",
       "gsap"
     ],
     "description": "Allan gives us a run down of the GreenSock Animation platform and create an awesome animation for this blog article in the process. Check it out!"
@@ -3652,7 +3586,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "gsap",
       "progress bar",
       "tympanus",
@@ -3666,7 +3599,6 @@
     "tags": [
       "svg",
       "animation",
-      "resource",
       "material design",
       "inspiration",
       "tympanus",

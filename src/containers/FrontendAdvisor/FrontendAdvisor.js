@@ -9,11 +9,13 @@ import flatten from 'lodash/flatten';
 // import uniq from 'lodash/uniq';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
+import Panel from 'react-bootstrap/lib/Panel';
 import xor from 'lodash/xor';
 import { AlwaysVisible,
   CTA,
   SuggestResource,
-  ReactTags } from 'components';
+  ReactTags,
+  Pagination } from 'components';
 
 @asyncConnect([{
   promise: ({ store: { dispatch, getState }}) => {
@@ -93,6 +95,15 @@ export default class FrontendAdvisor extends Component {
 
     const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
 
+    const items = (resources && !!resources.length) ? resources.map(({ title, tags, url, description }, i) => <Panel key={i}>
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <p><a href={url} target={'_blank'}>
+          <i className={`fa fa-globe`}></i> {url}
+        </a></p>
+        <p>Tags: {tags.map((tag, _i) => <span key={_i}><a onClick={() => this.handleAddition(tag)}>{tag}</a>, </span>)}</p>
+      </Panel>) : [];
+
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
         <div className={`${styles.masthead}`}>
@@ -105,7 +116,7 @@ export default class FrontendAdvisor extends Component {
             Enter what you want to learn today:
           </h2>
 
-          <AlwaysVisible style={{ height: 70 }}>
+          <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}>
             <ReactTags
               classNames={{
                 tag: styles.tag,
@@ -140,16 +151,9 @@ export default class FrontendAdvisor extends Component {
         </div>
 
         <div>
-          { resources && !!resources.length &&
-            resources.map(({ title, tags, url, description }, i) => <div key={i}>
-              <h3>{title}</h3>
-              <p>{description}</p>
-              <p><a href={url} target={'_blank'}>
-                <i className={`fa fa-globe`}></i> {url}
-              </a></p>
-              <p>Tags: {tags.map((tag, _i) => <span key={_i}><a onClick={() => this.handleAddition(tag)}>{tag}</a>, </span>)}</p>
-            </div>)
-          }
+          <Pagination
+            items={items}
+            itemsPerPage={10} />
         </div>
 
         <CTA />

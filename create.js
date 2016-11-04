@@ -21,7 +21,7 @@ export default class ${name} extends Component {
 
 if (componentType !== 'component' && componentType !== 'container') {
   console.log('Wrong type of component');
-  return;
+  process.exit();
 }
 
 // fs.ensureFileSync(`./src/${componentType}s/${componentName}.js`);

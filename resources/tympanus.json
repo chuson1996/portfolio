@@ -1,0 +1,41 @@
+[
+  {
+    "url": "http://tympanus.net/Development/ProgressButtonStyles/",
+    "tags": [
+      "tympanus",
+      "progress",
+      "button",
+      "inspiration",
+      "css",
+      "design"
+    ],
+    "description": "Progress Button Styles: Creative effects for loading buttons",
+    "title": "Progress Button Styles"
+  },
+  {
+    "url": "http://tympanus.net/codrops/2016/09/29/transition-effect-with-css-masks/",
+    "tags": [
+      "tympanus",
+      "javascript",
+      "css",
+      "inpsiration",
+      "transition",
+      "tutorial"
+    ],
+    "description": "A tutorial on how to use CSS Masks to create some interesting looking slide transitions. The demos are highly experimental as support is limited.",
+    "title": "Transition Effect with CSS Masks | Codrops"
+  },
+  {
+    "url": "http://tympanus.net/codrops/2016/09/02/inspiration-navigation-indicators/",
+    "description": "Some navigation style ideas for slideshows, pages and other components that require a navigation. Shown on the example of a vertical slideshow.",
+    "title": "Inspiration for Navigation Indicators | Codrops",
+    "tags": [
+      "tympanus",
+      "navigation",
+      "css",
+      "javascript",
+      "design",
+      "inspiration"
+    ]
+  }
+]
