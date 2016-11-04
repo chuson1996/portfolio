@@ -44,6 +44,8 @@ export default class AutocompleteRenderInput extends Component {
       return state.toLowerCase().slice(0, inputLength) === inputValue;
     });
 
+    const clearSuggestions = () => suggestions = [];
+
     return (
       <Autosuggest
         theme={theme}
@@ -57,12 +59,12 @@ export default class AutocompleteRenderInput extends Component {
           this.props.addTag(suggestion);
         }}
         onSuggestionsFetchRequested={() => {}}
-        onSuggestionsClearRequested={() => suggestions = []}
+        onSuggestionsClearRequested={clearSuggestions}
         focusFirstSuggestion={this.props.autocomplete}
         renderInputComponent={({ className, ...props }) => <div className="input-group">
           <input type="text" className="form-control" {...props}/>
           <span className="input-group-btn">
-            <button className="btn">
+            <button className="btn" onClick={clearSuggestions}>
               <i className="fa fa-close"></i>
             </button>
           </span>

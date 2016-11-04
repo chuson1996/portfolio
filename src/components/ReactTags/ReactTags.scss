@@ -37,7 +37,7 @@ $border-color: rgba(160,160,160,0.3);
       // max-height: calc(100vh - 100%);
       li {
         border-bottom: 1px solid $border-color;
-        padding: 5px 10px;
+        padding: ($line-height-computed / 2) $padding-small-horizontal;
         &:global(.active) {
           cursor: pointer;
           background: #b7cfe0;
