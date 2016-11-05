@@ -5,13 +5,14 @@
 $border-color: rgba(160,160,160,0.3);
 
 .tagsInput {
-  background-color: rgba(255, 255, 255, 0.84);
+  background-color: rgba(255, 255, 255, 0.93);
   @media (max-width: $screen-sm + 1) {
     &.focused {
       position: fixed;
       top: 0;
       left: 0;
-      right: 0;
+      // right: 0;
+      width: 100vw;
       margin-left: auto;
       margin-right: auto;
       // @media (max-width: $screen-xs + 1) {

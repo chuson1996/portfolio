@@ -13,6 +13,17 @@ export default class AutocompleteRenderInput extends Component {
     classNames: PropTypes.object
   };
 
+  onFocus() {
+    document.body.style.overflowY = 'hidden';
+    console.log('Focusing');
+  }
+
+  onBlur() {
+    document.body.style.overflowY = 'auto';
+    console.log('Blurring');
+  }
+
+
   render() {
     const {addTag, autocomplete, classNames, ...other} = this.props;
     // const styles = require('./AutocompleteRenderInput.scss');
@@ -56,10 +67,16 @@ export default class AutocompleteRenderInput extends Component {
         theme={theme}
         // ref={this.props.ref}
         suggestions={suggestions}
+        // shouldRenderSuggestions={(value) => value && value.trim().length > 0}
         shouldRenderSuggestions={(value) => value && value.trim().length > 0}
         getSuggestionValue={(suggestion) => suggestion}
         renderSuggestion={(suggestion) => <span>{suggestion}</span>}
-        inputProps={{...other, onChange: handleOnChange}}
+        inputProps={{
+          ...other,
+          onChange: handleOnChange,
+          onFocus: () => { other.onFocus(); this.onFocus(); },
+          onBlur: () => { other.onBlur(); this.onBlur(); }
+        }}
         onSuggestionSelected={(e, {suggestion}) => {
           this.props.addTag(suggestion);
         }}
@@ -67,6 +84,7 @@ export default class AutocompleteRenderInput extends Component {
         onSuggestionsClearRequested={clearSuggestions}
         focusFirstSuggestion={this.props.autocomplete}
         renderInputComponent={(props) => {
+          // console.log(props);
           const onInputFocus = (e) => {
             window.scrollTo(0, 0);
             document.body.scrollTop = 0;

@@ -5,6 +5,11 @@
 
 @import './main.scss';
 
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .navbar-brand {
   position: relative;
   padding-left: 50px;
