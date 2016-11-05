@@ -11,36 +11,129 @@ require('colors');
 const jsonfile = require('jsonfile');
 const readlineSync = require('readline-sync');
 const cloneDeep = require('lodash/cloneDeep');
+const R = require('ramda');
 
 const filePath = process.argv[2];
 const option = process.argv[3];
 const content = jsonfile.readFileSync(filePath);
+
+const filePaths = [
+  './resources/resources.json',
+  './resources/tympanus.json'
+];
+
+const allResources = R.chain(
+  (path) => jsonfile.readFileSync(path)
+)(filePaths);
+
 let resources = [];
 
 
 const writeToDest = (_filePath, contentJson) => {
-  // console.log(contentJson);
+  console.log(contentJson);
   jsonfile.writeFileSync(_filePath, contentJson);
 };
 
-if (option === '--all') {
-  resources = content;
-} else if (option === '---non-tagged' || !option) {
-  resources = content.filter((resource) => !resource.tags || !resource.tags.length);
-} else {
-  throw new Error(`Unknow option ${option}`);
-}
+resources = content;
+
+const has = R.curry((array, item) => array.indexOf(item) > -1);
+const turnPluralToSingular = (str) => {
+  const _exceptions = ['js', 'css', 'angularjs', 'reactjs'];
+  if (has(_exceptions, str)) return str;
+  if (R.pipe(
+    R.split(''),
+    R.last,
+    R.equals('s'),
+  )(str)) {
+    return str.slice(0, str.length - 1);
+  }
+  return str;
+};
+const turnToArray = ([ keyPropName, valuePropName ]) => (object) => {
+  const array = [];
+  Object.keys(object).forEach((key) => {
+    const val = object[key];
+    array.push({
+      [keyPropName]: key,
+      [valuePropName]: val
+    });
+  });
+  return array;
+};
+const turnToObject = ([ keyPropName, valuePropName ]) => (array) => {
+  const object = {};
+  array.forEach((item) => {
+    object[item[keyPropName]] = item[valuePropName];
+  });
+  return object;
+};
+
+const ignoreWords = [
+  'and', 'to', 'with', 'the', 'or', 'we', 'can', 'this',
+  'a', 'an', 'for', 'in', 'of', 'how', 'as', 'from',
+  'by', 'your', 'on', 'is', 'that', 'it', 'are', 'be', 'use',
+  'at', 'about', 'some', 'will', 'but', 'more', 'like', 'what',
+  'one', 'make', 'into', 'when', 'no', 'you', 'using', 'has',
+  'best', 'which', 'my', 'was', 'not', 'other', 'so', 'easy',
+  'any', 'out', 'need', `it's`, 'all', 'they', 'most', 'our',
+  'if', 'there', 'used', 'just', 'should', 'through', 'many',
+  'over', 'every', 'also', 'them', 'do', 'have', 'just', 'should',
+  'through', 'go', 'its'];
+const getTags = R.pipe(
+  R.chain(({description, title}) => ((title || ' ') + (description || '')).split(/[ \.]/)),
+  R.map(R.compose(turnPluralToSingular, R.toLower)),
+  R.countBy((word) => word),
+  turnToArray(['word', 'count']),
+  R.filter(R.compose(R.test(/^[a-z]{2,}?$/), R.prop('word'))),
+  R.reject(R.compose(
+    // R.tap(console.log.bind(console)),
+    (n) => n > -1,
+    R.flip(R.indexOf)(ignoreWords),
+    R.prop('word')
+  )),
+  R.sort(({count: after}, {count: before}) => before - after),
+  R.slice(0, 100),
+  turnToObject(['word', 'count'])
+);
+const possibleTags = getTags(allResources);
+const suggestTags = R.pipe(
+  getTags,
+  turnToArray(['word', 'count']),
+  R.reject(({ word }) => !possibleTags[word]),
+  R.map(({word, count}) => ({ word, count, globalCount: possibleTags[word] }))
+);
 
 const newJson = cloneDeep(resources);
 
+const tagRegExp = (word) => {
+  const [fC, ...rest] = word.split('');
+  return new RegExp(`[${fC}${fC.toUpperCase()}]${rest.join('')}`);
+};
+
+const colorWord = (color) => (str) => R.replace(tagRegExp(str), str[color]);
+
 resources.forEach((resource, index) => {
+  if (option === '---non-tagged' || !option) {
+    if (resource.tags && resource.tags.length) return;
+  }
+
   let tags = resource.tags || [];
+
+  const suggestedTags = R.pipe(
+    suggestTags,
+    R.pluck('word')
+  )([resource]);
+
+  const highlight = R.pipe(...R.map(colorWord('green'))(suggestedTags));
+
+  const highlightedTitle = highlight(resource.title);
+  const highlightedDescription = highlight(resource.description);
 
   const startTag = () => {
     console.log(`---------- ${index + 1}/${resources.length} ----------`);
     console.log('Url'.underline.yellow + ': ' + resource.url);
-    console.log('Title'.underline.yellow + ': ' + resource.title);
-    console.log('Description'.underline.yellow + ': ' + resource.description);
+    console.log('Title'.underline.yellow + ': ' + highlightedTitle);
+    console.log('Description'.underline.yellow + ': ' + highlightedDescription);
 
     console.log('Tags: ');
     if (tags.length) {
@@ -71,9 +164,4 @@ resources.forEach((resource, index) => {
     }
   };
   startTag();
-
-  return {
-    ...resource,
-    tags
-  };
 });
