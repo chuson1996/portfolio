@@ -26,6 +26,8 @@ export default class Pagination extends Component {
     this.setState({
       activePage: eventKey
     });
+    window.scrollTo(0, this.topline.offsetTop);
+    // console.log(this.topline);
   };
 
   render() {
@@ -43,7 +45,7 @@ export default class Pagination extends Component {
 
     return items.length ? (
       <div>
-        <p className={`text-right`}>
+        <p className={`text-right`} ref={(elem) => this.topline = elem}>
           Showing {startIndex + 1} - {endIndex} of {items.length} items
         </p>
         { visibleItems }

@@ -11,7 +11,8 @@ import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Panel from 'react-bootstrap/lib/Panel';
 import xor from 'lodash/xor';
-import { AlwaysVisible,
+import {
+  // AlwaysVisible,
   CTA,
   SuggestResource,
   ReactTags,
