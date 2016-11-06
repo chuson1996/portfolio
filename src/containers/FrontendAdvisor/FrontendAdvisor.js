@@ -104,22 +104,25 @@ export default class FrontendAdvisor extends Component {
         <p><a href={url} target={'_blank'}>
           <i className={`fa fa-globe`}></i> {url}
         </a></p>
-        <p>Tags: {tags.map((tag, _i) =>
-          <Tag
-            key={_i}
-            onClick={() => this.handleAddition(tag)} >
-            {tag}
-          </Tag>)}</p>
+        <p>
+          <span className={`gray-light`}>Tags: </span>
+          {tags.map((tag, _i) =>
+            <Tag
+              key={_i}
+              onClick={() => this.handleAddition(tag)} >
+              {tag}
+            </Tag>)}
+        </p>
       </Panel>) : [];
 
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
         <div className={`${styles.masthead}`}>
-          <h1 className={`text-center`}>
+          <h1 className={`text-center text-uppercase`}>
             Front-end Bookmark
           </h1>
 
-          <h2 className={`text-center`}>
+          <h2 className={`text-center m-b-20`}>
             <small>For example, type "javascript" and "tutorial" to see all javascript tutorials.</small>
           </h2>
 
@@ -142,7 +145,7 @@ export default class FrontendAdvisor extends Component {
 
           <Row>
             <Col xs={12}>
-              <p>
+              <p className="m-t-20 gray-light">
                 Available tags:
                 <span> </span>
                 { possibleTags.map((tag, i) => (

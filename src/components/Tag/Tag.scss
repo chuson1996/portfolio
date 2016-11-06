@@ -4,9 +4,11 @@
 .tag {
   background-color: $brand-info;
   padding: ($line-height-computed / 3) $padding-small-horizontal;
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-bottom: 1px;
   color: $white;
   display: inline-block;
+  border-radius: $border-radius-large;
 
   a {
     background-color: $brand-danger;

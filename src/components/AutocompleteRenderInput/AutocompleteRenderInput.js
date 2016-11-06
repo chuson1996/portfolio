@@ -98,7 +98,7 @@ export default class AutocompleteRenderInput extends Component {
               props.onFocus(e);
             }
           };
-          return (<div className="input-group">
+          return (<div className="input-group tags-input-group">
             <input
               {...props}
               // ref={this.props.ref}

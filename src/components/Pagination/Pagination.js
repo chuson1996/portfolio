@@ -45,24 +45,26 @@ export default class Pagination extends Component {
 
     return items.length ? (
       <div>
-        <p className={`text-right`} ref={(elem) => this.topline = elem}>
+        <p className={`text-right gray-light`} ref={(elem) => this.topline = elem}>
           Showing {startIndex + 1} - {endIndex} of {items.length} items
         </p>
         { visibleItems }
 
         { numberOfPages > 1 &&
-          <BsPagination
-            prev
-            next
-            first
-            last
-            ellipsis
-            boundaryLinks
-            bsSize="medium"
-            maxButtons={5}
-            items={numberOfPages}
-            activePage={activePage}
-            onSelect={this.handleSelect} />
+          <div className={`text-center`}>
+            <BsPagination
+              prev
+              next
+              first
+              last
+              ellipsis
+              boundaryLinks
+              bsSize="medium"
+              maxButtons={5}
+              items={numberOfPages}
+              activePage={activePage}
+              onSelect={this.handleSelect} />
+          </div>
         }
       </div>
     ) : null;

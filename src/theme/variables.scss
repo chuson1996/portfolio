@@ -9,6 +9,14 @@
 // Custom Colors
 $cyan: #33e0ff;
 $humility: #777;
+$white: #fff;
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           #f9f9f9;
+
 
 // Bootstrap Variables
 $brand-primary: darken(#428bca, 6.5%);
@@ -18,15 +26,21 @@ $brand-warning: #f0ad4e;
 $brand-danger: #d9534f;
 $brand-info: #5bc0de;
 
-$white: #fff;
-
+$headings-font-weight: 600;
 $text-color: #333;
-
 $font-size-base: 16px;
 $font-family-sans-serif: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
+
+
+$body-bg: $gray-lighter;
 
 $container-lg: 970px;
 $container-md: 670px;
 
 $padding-base-vertical: 20px;
 $line-height-base: 1.25;
+
+$border-radius-base: 1px;
+$border-radius-large: 2px;
+$border-radius-small: 0;
+$border-box-shadow-color: rgba(0, 0, 0, 0.075)

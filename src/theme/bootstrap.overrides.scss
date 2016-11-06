@@ -3,7 +3,14 @@
  *
  */
 
-@import './main.scss';
+@import '../../node_modules/hover.css/scss/hover.scss';
+// @import 'font-awesome.min.css';
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+.gray-light {
+  color: $gray-light;
+}
 
 body {
   overflow-x: hidden;
@@ -26,24 +33,34 @@ body {
   border: 0;
 }
 
-$line-color: rgb(46, 186, 174);
-.underline {
-  text-decoration: none;
-    background-image: linear-gradient(to bottom,rgb(255, 255, 255) 50%,rgba(255, 255, 255, 0) 50%);
-    background-repeat: repeat-x;
-    background-size: 2px .1em;
-    background-position: 0 1.07em;
-
-}
-a.underline:hover {
-  background-image: linear-gradient(to bottom,rgb(46, 186, 174) 50%,rgba(46, 186, 174, 0) 50%);
+.form-control {
+  @include box-shadow(inset 0 0px 0px $border-box-shadow-color);
+  &:focus {
+    outline: 0;
+    // border-color: transparent;
+    border: 1px solid $input-border;
+    @include box-shadow(inset 0 0px 0px $border-box-shadow-color);
+  }
 }
 
-hr.hr-yellow {
-  border-bottom-color: $brand-warning;
-  width: 10em;
-    margin-left: auto;
-    margin-right: auto;
+.input-group.tags-input-group {
+  .form-control:first-child {
+    border-right-width: 0;
+  }
+  .input-group-btn {
+    .btn.btn-default:first-child {
+      border-left-width: 0;
+      color: $gray-light;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $white;
+        outline-width: 0;
+        border-color: $input-border;
+        box-shadow: none;
+      }
+    }
+  }
 }
 
 @for $i from 0 through 30 {

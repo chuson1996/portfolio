@@ -5,7 +5,27 @@
 $border-color: rgba(160,160,160,0.3);
 
 .tagsInput {
-  background-color: rgba(255, 255, 255, 0.93);
+  background-color: $body-bg;
+  :global(.input-group.tags-input-group) {
+    display: block;
+    :global(.form-control) {
+      border-right-width: 1px;
+    }
+  }
+  :global(.input-group-btn) {
+    display: none;
+  }
+  &.focused {
+    :global(.input-group.tags-input-group) {
+      display: table;
+      :global(.form-control) {
+        border-right-width: 0;
+      }
+    }
+    :global(.input-group-btn) {
+      display: table-cell;
+    }
+  }
   @media (max-width: $screen-sm + 1) {
     &.focused {
       position: fixed;
