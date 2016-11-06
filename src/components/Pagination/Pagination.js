@@ -52,7 +52,14 @@ export default class Pagination extends Component {
 
         { numberOfPages > 1 &&
           <BsPagination
+            prev
+            next
+            first
+            last
+            ellipsis
+            boundaryLinks
             bsSize="medium"
+            maxButtons={5}
             items={numberOfPages}
             activePage={activePage}
             onSelect={this.handleSelect} />

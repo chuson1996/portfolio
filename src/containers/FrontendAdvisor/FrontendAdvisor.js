@@ -14,7 +14,7 @@ import xor from 'lodash/xor';
 import {
   // AlwaysVisible,
   CTA,
-  SuggestResource,
+  // SuggestResource,
   ReactTags,
   Pagination,
   Tag } from 'components';
@@ -116,12 +116,11 @@ export default class FrontendAdvisor extends Component {
       <div className={`container ${styles.frontendAdvisor}`}>
         <div className={`${styles.masthead}`}>
           <h1 className={`text-center`}>
-            FrontendAdvisor <br/>
-            <small>is here to help!</small>
+            Front-end Bookmark
           </h1>
 
           <h2 className={`text-center`}>
-            Enter what you want to learn today:
+            <small>For example, type "javascript" and "tutorial" to see all javascript tutorials.</small>
           </h2>
 
           {/* <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}> */}
@@ -142,18 +141,16 @@ export default class FrontendAdvisor extends Component {
           {/* </AlwaysVisible> */}
 
           <Row>
-            <Col xs={12} className="m-t-20 m-b-20">
-              <button className={`btn btn-default`}>Suprise me!</button>
-            </Col>
-          </Row>
-
-          <Row>
             <Col xs={12}>
-              { possibleTags.map((tag, i) => (
-                <a
-                  key={i}
-                  onClick={() => this.handleAddition(tag)}>
-                  {tag}, </a>)) }
+              <p>
+                Available tags:
+                <span> </span>
+                { possibleTags.map((tag, i) => (
+                  <a
+                    key={i}
+                    onClick={() => this.handleAddition(tag)}>
+                    {tag}, </a>)) }
+              </p>
             </Col>
           </Row>
         </div>
@@ -166,7 +163,7 @@ export default class FrontendAdvisor extends Component {
 
         <CTA />
 
-        <SuggestResource />
+        {/* <SuggestResource /> */}
       </div>
     );
   }
