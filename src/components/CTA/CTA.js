@@ -1,4 +1,5 @@
 import React, { Component, /* PropTypes */ } from 'react';
+import config from 'config';
 
 export default class CTA extends Component {
   static propTypes = {};
@@ -10,7 +11,7 @@ export default class CTA extends Component {
           Help us enrich front-end resources! <br/>
           <small>If you think some resources should be here, click here to suggest them to us.</small>
         </h2>
-        <div className="fb-comments" data-href="https://frontend-advisor.herokuapp.com" data-numposts="5"></div>
+        <div className="fb-comments" data-href={config.domain} data-numposts="5"></div>
       </div>
     );
   }

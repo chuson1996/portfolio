@@ -14,7 +14,9 @@ module.exports = Object.assign({
   port: process.env.PORT,
   apiHost: process.env.APIHOST || '0.0.0.0',
   apiPort: process.env.APIPORT,
+  domain: environment.isProduction ? 'https://frontend-advisor.herokuapp.com' : 'http://localhost:3000',
   mongoDB: process.env.MONGO_DB || 'mongodb://localhost:27017/codeadvisor',
+  fbSDK: environment.isProduction ? '/fb-sdk.js' : '/fb-sdk.dev.js',
   app: {
     title: 'Front-end Advisor',
     description: 'Answer to all questions about front-end development',
