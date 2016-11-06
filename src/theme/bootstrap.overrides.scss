@@ -57,7 +57,7 @@ body {
         background-color: $white;
         outline-width: 0;
         border-color: $input-border;
-        box-shadow: none;
+        @include box-shadow(none);
       }
     }
   }
