@@ -14,12 +14,16 @@ export default class AutocompleteRenderInput extends Component {
   };
 
   onFocus() {
-    document.body.style.overflowY = 'hidden';
+    if (window.innerWidth < 769) {
+      document.body.style.overflowY = 'hidden';
+    }
     console.log('Focusing');
   }
 
   onBlur() {
-    document.body.style.overflowY = 'auto';
+    if (window.innerWidth < 769) {
+      document.body.style.overflowY = 'auto';
+    }
     console.log('Blurring');
   }
 
@@ -86,8 +90,10 @@ export default class AutocompleteRenderInput extends Component {
         renderInputComponent={(props) => {
           // console.log(props);
           const onInputFocus = (e) => {
-            window.scrollTo(0, 0);
-            document.body.scrollTop = 0;
+            if (window.innerWidth < 769) {
+              window.scrollTo(0, 0);
+              document.body.scrollTop = 0;
+            }
             if (props.onFocus) {
               props.onFocus(e);
             }
