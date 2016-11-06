@@ -30,7 +30,7 @@ let resources = [];
 
 
 const writeToDest = (_filePath, contentJson) => {
-  console.log(contentJson);
+  // console.log(contentJson);
   jsonfile.writeFileSync(_filePath, contentJson);
 };
 
@@ -78,7 +78,7 @@ const ignoreWords = [
   'any', 'out', 'need', `it's`, 'all', 'they', 'most', 'our',
   'if', 'there', 'used', 'just', 'should', 'through', 'many',
   'over', 'every', 'also', 'them', 'do', 'have', 'just', 'should',
-  'through', 'go', 'its'];
+  'through', 'go', 'its', 'only'];
 const getTags = R.pipe(
   R.chain(({description, title}) => ((title || ' ') + (description || '')).split(/[ \.]/)),
   R.map(R.compose(turnPluralToSingular, R.toLower)),
@@ -110,7 +110,7 @@ const tagRegExp = (word) => {
   return new RegExp(`[${fC}${fC.toUpperCase()}]${rest.join('')}`);
 };
 
-const colorWord = (color) => (str) => R.replace(tagRegExp(str), str[color]);
+const colorWordReplace = (color) => (str) => R.replace(tagRegExp(str), str[color]);
 
 resources.forEach((resource, index) => {
   if (option === '---non-tagged' || !option) {
@@ -124,10 +124,15 @@ resources.forEach((resource, index) => {
     R.pluck('word')
   )([resource]);
 
-  const highlight = R.pipe(...R.map(colorWord('green'))(suggestedTags));
+  console.log(suggestedTags);
 
-  const highlightedTitle = highlight(resource.title);
-  const highlightedDescription = highlight(resource.description);
+  const highlight = R.pipe(
+    R.tap(() => {}),
+    ...R.map(colorWordReplace('green'))(suggestedTags)
+  );
+
+  const highlightedTitle = highlight(resource.title || '');
+  const highlightedDescription = highlight(resource.description || '');
 
   const startTag = () => {
     console.log(`---------- ${index + 1}/${resources.length} ----------`);
