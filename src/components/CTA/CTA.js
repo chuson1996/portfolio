@@ -10,6 +10,7 @@ export default class CTA extends Component {
           Help us enrich front-end resources! <br/>
           <small>If you think some resources should be here, click here to suggest them to us.</small>
         </h2>
+        <div className="fb-comments" data-href="https://frontend-advisor.herokuapp.com" data-numposts="5"></div>
       </div>
     );
   }
