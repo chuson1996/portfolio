@@ -25,6 +25,7 @@
   "main": "bin/server.js",
   "scripts": {
     "start": "concurrent --kill-others \"npm run start-prod\" \"npm run start-prod-api\"",
+    "start-prod-local": "npm run build && better-npm-run start-prod-local",
     "start-prod": "better-npm-run start-prod",
     "start-prod-api": "better-npm-run start-prod-api",
     "build": "better-npm-run build",
@@ -45,6 +46,15 @@
         "NODE_PATH": "./src",
         "NODE_ENV": "production",
         "APIPORT": 3030
+      }
+    },
+    "start-prod-local": {
+      "command": "node ./bin/server.js",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "production",
+        "APIPORT": 3030,
+        "PORT": 4000
       }
     },
     "start-prod-api": {

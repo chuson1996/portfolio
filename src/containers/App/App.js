@@ -49,7 +49,7 @@ export default class App extends Component {
 
     return (
       <div className={styles.app}>
-        <Helmet {...config.app.head}/>
+        <Helmet {...config.app}/>
         <div id="fb-root"></div>
         <script src={config.fbSDK}></script>
         {/* <Navbar fixedTop bsStyle="inverse">

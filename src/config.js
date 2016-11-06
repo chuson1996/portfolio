@@ -21,7 +21,7 @@ module.exports = Object.assign({
     title: 'Front-end Bookmark',
     description: 'The richest bookmark of front-end resources',
     head: {
-      // titleTemplate: 'Front-end Bookmark: %s',
+      titleTemplate: 'Front-end Bookmark: %s',
       meta: [
         {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1'},
         {name: 'description', content: 'The richest bookmark of front-end resources'},
