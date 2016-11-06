@@ -34,12 +34,14 @@ body {
 }
 
 .form-control {
-  @include box-shadow(inset 0 0px 0px $border-box-shadow-color);
+  // http://stackoverflow.com/questions/3062968/remove-textarea-inner-shadow-on-mobile-safari-iphone
+  -webkit-appearance: none;
+  @include box-shadow(none);
   &:focus {
     outline: 0;
     // border-color: transparent;
     border: 1px solid $input-border;
-    @include box-shadow(inset 0 0px 0px $border-box-shadow-color);
+    @include box-shadow(none);
   }
 }
 
