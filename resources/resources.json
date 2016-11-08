@@ -4,9 +4,7 @@
     "tags": [
       "javascript",
       "asynchronous",
-      "rxjs",
-      "tutorial",
-      "getting-started"
+      "rxjs"
     ],
     "title": "RxJS/doc at master · Reactive-Extensions/RxJS",
     "url": "https://github.com/Reactive-Extensions/RxJS/tree/master/doc#getting-started-with-rxjs"
@@ -297,7 +295,8 @@
     "tags": [
       "design",
       "inspiration",
-      "cool stuff"
+      "cool stuff",
+      "portfolio"
     ],
     "title": "angela.io by Angela Paguirigan",
     "url": "http://angela.io/"
@@ -1232,7 +1231,7 @@
     "description": "An extensive CSS reference with all the important CSS properties and info to learn CSS from the basics.",
     "tags": [
       "css",
-      "basics"
+      "resource"
     ],
     "title": "CSS Reference | Codrops",
     "url": "http://tympanus.net/codrops/css_reference/#section_css-pseudo-class"
@@ -1327,8 +1326,7 @@
     "description": "High-level advice and guidelines for writing sane, manageable, scalable CSS",
     "tags": [
       "css",
-      "guideline",
-      "basics"
+      "guideline"
     ],
     "title": "CSS Guidelines (2.2.4) – High-level advice and guidelines for writing sane, manageable, scalable CSS",
     "url": "http://cssguidelin.es/"
@@ -1387,7 +1385,7 @@
     "description": "Front-end Director at Code School",
     "tags": [
       "css",
-      "basics"
+      "article"
     ],
     "title": "Single Responsibility - Drew Barontini",
     "url": "http://drewbarontini.com/articles/single-responsibility/?utm_source=html5weekly&utm_medium=email"
@@ -1740,8 +1738,7 @@
     "description": "A quick reference to best practices for writing JavaScript -- links to code patterns and tutorials from around the web",
     "tags": [
       "javascript",
-      "resource",
-      "tutorial"
+      "resource"
     ],
     "title": "JS: The Right Way",
     "url": "http://jstherightway.org/"
@@ -1768,7 +1765,6 @@
     "description": "Why a re-introduction? Because JavaScript is notorious for being the world's most misunderstood programming language. It is often derided as being a toy, but beneath its layer of deceptive simplicity, powerful language features await. JavaScript is now used by an incredible number of high-profile applications, showing that deeper knowledge of this technology is an important skill for any web or mobile developer.",
     "tags": [
       "tutorial",
-      "basics",
       "javascript"
     ],
     "title": "A re-introduction to JavaScript (JS tutorial) - JavaScript | MDN",
@@ -1777,7 +1773,6 @@
   {
     "description": "In this codelab, you will learn how to enable push messaging and notifications for web apps and sites.",
     "tags": [
-      "basics",
       "notification",
       "javascript",
       "tutorial"
@@ -1910,7 +1905,7 @@
       "video",
       "javascript",
       "tutorial",
-      "react"
+      "reactjs"
     ]
   },
   {
@@ -1958,7 +1953,7 @@
     "title": "Web Fundamentals | Web Fundamentals - Google Developers",
     "url": "https://developers.google.com/web/fundamentals/",
     "tags": [
-      "basics"
+      "notification"
     ]
   },
   {
@@ -2119,7 +2114,7 @@
       "pattern",
       "module pattern",
       "module",
-      "basics"
+      "functional programming"
     ]
   },
   {
@@ -2415,8 +2410,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "video",
-      "basics"
+      "video"
     ],
     "description": "http://WatchMeCode.net present A Gentle Introduction to Functional JavaScript. Get all the referenced materials, here: http://bit.ly/gentle-fp For updates on..."
   },
