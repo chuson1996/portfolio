@@ -13,7 +13,7 @@ import Panel from 'react-bootstrap/lib/Panel';
 import xor from 'lodash/xor';
 import {
   // AlwaysVisible,
-  CTA,
+  // CTA,
   // SuggestResource,
   ReactTags,
   Pagination,
@@ -171,14 +171,15 @@ export default class FrontendAdvisor extends Component {
           <Row>
             <Col xs={12}>
               <p className={`gray ${styles.tagsSuggestionLabel}`}>
-                Try:
-                <span> </span>
-                { possibleTags.map((tag, i) => (
-                  <a
-                    className="link link-dark"
-                    key={i}
-                    onClick={() => this.handleAddition(tag)}>
-                    {tag}, </a>)) }
+                Try:&nbsp;
+                <span className={styles.suggestedTags}>
+                  { possibleTags.map((tag, i) => (
+                    <a
+                      className="link link-dark"
+                      key={i}
+                      onClick={() => this.handleAddition(tag)}>
+                      {tag}, </a>)) }
+                </span>
               </p>
             </Col>
           </Row>
