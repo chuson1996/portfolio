@@ -43,20 +43,25 @@ body {
   border: 0;
   padding-left: 0;
   padding-bottom: 16px;
-  @include box-shadow(0 2px 0 0 $input-border);
+  @include box-shadow(none);
+  border-bottom: 2px solid $input-border;
+  @include transition(border-bottom .3s ease-in);
   &:focus {
     outline: 0;
     border: 0;
-    @include box-shadow(0 2px 0 0 $brand-sea-serpent);
+    @include box-shadow(none);
+    border-bottom: 2px solid $brand-sea-serpent;
   }
 }
 
 .input-group.tags-input-group {
   .form-control:focus + .input-group-btn {
-    @include box-shadow(0 2px 0 0 $brand-sea-serpent);
+    @include box-shadow(none);
+    border-bottom: 2px solid $brand-sea-serpent;
   }
   .input-group-btn {
-    @include box-shadow(0 2px 0 0 $input-border);
+    @include box-shadow(none);
+    border-bottom: 2px solid $input-border;
     .btn {
       border: 0;
       color: $gray-light;
