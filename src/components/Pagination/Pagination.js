@@ -4,7 +4,8 @@ import BsPagination from 'react-bootstrap/lib/Pagination';
 export default class Pagination extends Component {
   static propTypes = {
     items: PropTypes.array,
-    itemsPerPage: PropTypes.number
+    itemsPerPage: PropTypes.number,
+    renderItem: PropTypes.func
   };
 
   constructor(props) {
@@ -16,6 +17,8 @@ export default class Pagination extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.items !== this.props.items) {
+      // console.log(nextProps.items);
+      // console.log(this.props.items);
       this.setState({
         activePage: 1
       });
@@ -31,7 +34,7 @@ export default class Pagination extends Component {
   };
 
   render() {
-    const { items, itemsPerPage } = this.props;
+    const { items, itemsPerPage, renderItem } = this.props;
     const { activePage } = this.state;
     const startIndex = (activePage - 1) * itemsPerPage;
     let endIndex = activePage * itemsPerPage;
@@ -41,7 +44,7 @@ export default class Pagination extends Component {
     const visibleItems = items.slice(
       startIndex,
       endIndex
-    );
+    ).map(renderItem);
 
     return items.length ? (
       <div>

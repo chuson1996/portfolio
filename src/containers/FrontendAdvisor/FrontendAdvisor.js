@@ -58,7 +58,7 @@ export default class FrontendAdvisor extends Component {
   };
 
   componentDidMount() {
-    this.interval = setInterval(() => {
+    const cb = () => {
       const {
         allTags,
         inputTags,
@@ -70,7 +70,9 @@ export default class FrontendAdvisor extends Component {
       this.setState({
         pickedSuggestedTags: sampleSize(possibleTags || [], 3)
       });
-    }, 3000);
+    };
+    this.interval = setInterval(cb, 3000);
+    cb();
   }
 
   componentWillUnmount() {
@@ -123,7 +125,7 @@ export default class FrontendAdvisor extends Component {
 
     const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
 
-    const items = (resources && !!resources.length) ? resources.map(({ title, tags, url, description }, i) => <Panel key={i}>
+    const renderItem = ({ title, tags, url, description }, i) => <Panel key={i}>
         <h3 className="m-b-12">{title}</h3>
         <p className="m-b-12">{description}</p>
         <p className="m-b-12">
@@ -142,7 +144,9 @@ export default class FrontendAdvisor extends Component {
             </span>
           )}
         </p>
-      </Panel>) : [];
+      </Panel>;
+
+    // const items = (resources && !!resources.length) ? resources.map() : [];
 
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
@@ -225,7 +229,8 @@ export default class FrontendAdvisor extends Component {
 
         <div>
           <Pagination
-            items={items}
+            items={resources || []}
+            renderItem={renderItem}
             itemsPerPage={10} />
         </div>
 
