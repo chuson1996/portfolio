@@ -4,6 +4,7 @@
  */
 
 @import '../../node_modules/hover.css/scss/hover.scss';
+@import '../../node_modules/animate.css/animate.min.css';
 // @import 'font-awesome.min.css';
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
@@ -41,6 +42,7 @@ body {
   -webkit-appearance: none;
   border: 0;
   padding-left: 0;
+  padding-bottom: 16px;
   @include box-shadow(0 2px 0 0 $input-border);
   &:focus {
     outline: 0;

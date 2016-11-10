@@ -4,12 +4,14 @@ import { connect } from 'react-redux';
 import * as tagsActions from 'redux/modules/tags';
 import { asyncConnect } from 'redux-async-connect';
 import includes from 'lodash/includes';
-// import get from 'lodash/get';
+import get from 'lodash/get';
 import flatten from 'lodash/flatten';
+import sampleSize from 'lodash/sampleSize';
 // import uniq from 'lodash/uniq';
 import Row from 'react-bootstrap/lib/Row';
 import Col from 'react-bootstrap/lib/Col';
 import Panel from 'react-bootstrap/lib/Panel';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import xor from 'lodash/xor';
 import {
   // AlwaysVisible,
@@ -54,6 +56,28 @@ export default class FrontendAdvisor extends Component {
     loadTag: PropTypes.func,
     resources: PropTypes.array
   };
+
+  componentDidMount() {
+    this.interval = setInterval(() => {
+      const {
+        allTags,
+        inputTags,
+        // removeTag,
+        // inputTagsInfo,
+        resources
+      } = this.props;
+      const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
+      this.setState({
+        pickedSuggestedTags: sampleSize(possibleTags || [], 3)
+      });
+    }, 3000);
+  }
+
+  componentWillUnmount() {
+    if (this.interval) {
+      clearInterval(this.interval);
+    }
+  }
 
   handleAddition = (tag) => {
     const { isTagLoaded } = tagsActions;
@@ -172,14 +196,28 @@ export default class FrontendAdvisor extends Component {
             <Col xs={12}>
               <p className={`gray ${styles.tagsSuggestionLabel}`}>
                 Try:&nbsp;
-                <span className={styles.suggestedTags}>
-                  { possibleTags.map((tag, i) => (
-                    <a
-                      className="link link-dark"
-                      key={i}
-                      onClick={() => this.handleAddition(tag)}>
-                      {tag}, </a>)) }
-                </span>
+                <ReactCSSTransitionGroup
+                  transitionEnterTimeout={1000}
+                  transitionLeaveTimeout={1000}
+                  transitionName={{
+                    enter: 'animated',
+                    enterActive: 'fadeInUp',
+                    leave: 'animated',
+                    leaveActive: 'fadeOutUp'
+                  }} >
+                  <span className={styles.suggestedTags} key={get(this.state, 'pickedSuggestedTags', []).toString()}>
+                    { get(this.state, 'pickedSuggestedTags', []).map((tag, i) => (
+                      <span key={tag}>
+                        {i !== 0 && <span>, </span>}
+                        <a
+                          className="link link-dark"
+                          onClick={() => this.handleAddition(tag)}>
+                          {tag}
+                        </a>
+                      </span>
+                    )) }
+                  </span>
+                </ReactCSSTransitionGroup>
               </p>
             </Col>
           </Row>
