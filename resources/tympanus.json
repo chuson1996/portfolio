@@ -2,7 +2,6 @@
   {
     "url": "http://tympanus.net/Development/ProgressButtonStyles/",
     "tags": [
-      "tympanus",
       "progress",
       "button",
       "inspiration",
@@ -16,12 +15,8 @@
   {
     "url": "http://tympanus.net/codrops/2016/09/29/transition-effect-with-css-masks/",
     "tags": [
-      "tympanus",
-      "javascript",
-      "css",
       "inspiration",
-      "transition",
-      "tutorial"
+      "transition"
     ],
     "description": "A tutorial on how to use CSS Masks to create some interesting looking slide transitions. The demos are highly experimental as support is limited.",
     "title": "Transition Effect with CSS Masks | Codrops"
@@ -33,7 +28,7 @@
     "tags": [
       "inspiration",
       "slideshow",
-      "Navigation"
+      "navigation"
     ]
   }
 ]

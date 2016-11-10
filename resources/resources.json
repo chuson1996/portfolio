@@ -25,7 +25,6 @@
       "javascript",
       "asynchronous",
       "rxjs",
-      "introduction",
       "tutorial"
     ],
     "title": "The introduction to Reactive Programming you've been missing · GitHub",
@@ -45,10 +44,8 @@
   {
     "description": "Bryan James explores the inspiration for the project, aspects of how different parts were built, and how you can use this underrated line of CSS.",
     "tags": [
-      "css",
       "inspiration",
       "design",
-      "javascript",
       "cool stuff"
     ],
     "title": "The Making Of \"In Pieces\"",
@@ -70,11 +67,8 @@
   {
     "description": "A simple content slider with depth-like zoom functionality for a predefined area in each slide.",
     "tags": [
-      "css",
       "inspiration",
       "design",
-      "javascript",
-      "tympanus",
       "slider"
     ],
     "title": "Blueprint: Zoom Slider | Codrops",
@@ -83,9 +77,7 @@
   {
     "description": "Too many articles will tell you what is cool in web design. I’m going to take you past the obvious to make some real predictions.",
     "tags": [
-      "css",
       "design",
-      "trend",
       "article"
     ],
     "title": "7 future web design trends",
@@ -158,9 +150,7 @@
     "description": "That little three-lined button is the devil. Whether you call it a side menu, navigation drawer, or a hamburger, hiding your features off-screen behind a..",
     "tags": [
       "design",
-      "design principles",
       "hamburger",
-      "techcrunch",
       "article"
     ],
     "title": "Kill The Hamburger Button | TechCrunch",
@@ -181,7 +171,6 @@
     "description": "Learn what makes responsive web design work. Responsive vs Adaptive design, The Flow, Relative units, When to choose web fonts and when go with system fonts",
     "tags": [
       "design",
-      "design principles",
       "responsive",
       "article"
     ],
@@ -204,8 +193,7 @@
       "design",
       "ui",
       "inspiration",
-      "tab",
-      "tympanus"
+      "tab"
     ],
     "title": "Tab Styles Inspiration | Codrops",
     "url": "http://tympanus.net/codrops/2014/09/02/tab-styles-inspiration/"
@@ -215,10 +203,9 @@
     "tags": [
       "design",
       "ux",
-      "javascript",
+      "inspiration",
       "css",
-      "drag and drop",
-      "tympanus"
+      "drag and drop"
     ],
     "title": "Drag and Drop Interaction Ideas | Codrops",
     "url": "http://tympanus.net/codrops/2014/11/11/drag-and-drop-interaction-ideas/"
@@ -227,11 +214,11 @@
     "description": "Some creative and subtle hover effect inspiration using modern CSS techniques including 3D translate and pseudo elements.",
     "tags": [
       "design",
+      "inspiration",
       "css",
       "hover",
       "ux",
-      "ui",
-      "tympanus"
+      "ui"
     ],
     "title": "Ideas for Subtle Hover Effects",
     "url": "http://tympanus.net/codrops/2014/06/19/ideas-for-subtle-hover-effects/"
@@ -240,10 +227,9 @@
     "description": "Inline Anchor Styles: Modern styles and effects for links in a text flow",
     "tags": [
       "design",
-      "css",
+      "inspiration",
       "anchor",
-      "link",
-      "tympanus"
+      "link"
     ],
     "title": "Inline Anchor Styles",
     "url": "http://tympanus.net/Development/InlineAnchorStyles/"
@@ -253,8 +239,7 @@
     "tags": [
       "design",
       "inspiration",
-      "tympanus",
-      "javascript"
+      "transition"
     ],
     "title": "Inspiration for Article Intro Effects",
     "url": "http://tympanus.net/codrops/2014/05/22/inspiration-for-article-intro-effects/"
@@ -263,7 +248,6 @@
     "description": "Some inspiration for a morphing button concept where the action element (button) morphs into a component. The examples show different types of components, i.e. fullscreen overlay, modal window, sidebar and more.",
     "tags": [
       "design",
-      "tympanus",
       "button",
       "inspiration"
     ],
@@ -340,7 +324,6 @@
     "description": "A morphing card expansion effect enhanced by a low poly background animation, using SVG clipPath and Trianglify.",
     "tags": [
       "design",
-      "tympanus",
       "svg",
       "card",
       "css",
@@ -438,16 +421,6 @@
     ],
     "title": "Space.js – HTML-driven narrative 3D-scrolling",
     "url": "http://www.slashie.org/space.js/"
-  },
-  {
-    "description": "Kamran Ahmed",
-    "tags": [
-      "javascript",
-      "library",
-      "toast message"
-    ],
-    "title": "JQuery Toast",
-    "url": "http://kdemos.github.io/jquery-toast-plugin"
   },
   {
     "description": "Selectivity.js : Modular and light-weight selection library",
@@ -711,7 +684,6 @@
   {
     "description": "Sidebar Transitions: Transition effects for off-canvas views",
     "tags": [
-      "tympanus",
       "design",
       "inspiration",
       "sidebar"
@@ -955,7 +927,7 @@
     "description": "\n  \n    Sometimes you need to clip an image to a certain height, even though the image may be taller. This article shows you how to clip the image and center it vertically.\n  \n  ",
     "tags": [
       "css",
-      "trick",
+      "article",
       "center"
     ],
     "title": "How to vertically center a clipped image in CSS — Jon Rohan",
@@ -1032,8 +1004,6 @@
     "tags": [
       "animation",
       "text",
-      "css",
-      "tympanus",
       "inspiration",
       "design"
     ],
@@ -1055,8 +1025,7 @@
     "tags": [
       "css",
       "flexbox",
-      "alignment",
-      "trick"
+      "alignment"
     ],
     "title": "Useful Flexbox Technique: Alignment Shifting Wrapping | CSS-Tricks",
     "url": "https://css-tricks.com/useful-flexbox-technique-alignment-shifting-wrapping/"
@@ -1075,8 +1044,7 @@
     "description": "Centering in CSS is a pain in the ass. There seems to be a gazillion ways to do it, depending on a variety of factors. This consolidates them and gives you the code you need for each situation.",
     "tags": [
       "css",
-      "center",
-      "trick"
+      "center"
     ],
     "title": "How to Center in CSS",
     "url": "http://howtocenterincss.com/"
@@ -1085,7 +1053,7 @@
     "description": "The following is a collaborative post by guest Joe Richardson, Robin Rendle, and a bunch of the CSS-Tricks staff. Joe wanted to do a post about BEM, which",
     "tags": [
       "css",
-      "trick"
+      "unit"
     ],
     "title": "BEM 101 | CSS-Tricks",
     "url": "https://css-tricks.com/bem-101/"
@@ -1094,7 +1062,6 @@
     "description": "This is a fairly old UX concept that I haven't heard talked about in a while, but is still relevant in the case of multi-level dropdown menus. A fine-grain",
     "tags": [
       "css",
-      "trick",
       "dropdown",
       "menu"
     ],
@@ -1116,8 +1083,7 @@
       "design",
       "css",
       "image",
-      "text",
-      "trick"
+      "text"
     ],
     "title": "Design Considerations: Text on Images | CSS-Tricks",
     "url": "https://css-tricks.com/design-considerations-text-images/"
@@ -1126,8 +1092,7 @@
     "description": "I was working on a client’s project that required headlines to sync perfectly to the user’s screen size and this is how I solved it.",
     "tags": [
       "responsive",
-      "css",
-      "trick"
+      "css"
     ],
     "title": "Responsive Type With Only CSS — Medium",
     "url": "https://medium.com/@ryanallen_com/responsive-type-with-only-css-82b846370cc9#.xw3za696l"
@@ -1136,7 +1101,7 @@
     "description": "The following is a post by Lucas Bebber. Lucas the originator of some of the most creative effects I've ever seen on the web. So much so I couldn't resist",
     "tags": [
       "css",
-      "trick",
+      "animation",
       "cool stuff"
     ],
     "title": "The Gooey Effect | CSS-Tricks",
@@ -1146,8 +1111,7 @@
     "description": "Using CSS Shapes we can create experiences that we have never been able to create on the web before.",
     "tags": [
       "css",
-      "trick",
-      "shape",
+      "design",
       "cool stuff"
     ],
     "title": "Getting Started with CSS Shapes: Wrapping content around custom paths - HTML5 Rocks",
@@ -1168,7 +1132,8 @@
     "tags": [
       "css",
       "parallax",
-      "trick"
+      "animatino",
+      "article"
     ],
     "title": "Pure CSS Parallax Websites by Keith Clark",
     "url": "http://keithclark.co.uk/articles/pure-css-parallax-websites/"
@@ -1189,9 +1154,7 @@
     "description": "A guest post by David Walsh who writes about his experience as a first time Sass user redesigning his own website with it.",
     "tags": [
       "css",
-      "sass",
-      "design",
-      "trick"
+      "sass"
     ],
     "title": "David Walsh on Redesigning with Sass | CSS-Tricks",
     "url": "https://css-tricks.com/redesigning-with-sass/"
@@ -1201,7 +1164,8 @@
     "tags": [
       "css",
       "parallax",
-      "trick"
+      "animation",
+      "article"
     ],
     "title": "Parallax Done Right — Medium",
     "url": "https://medium.com/@dhg/parallax-done-right-82ced812e61c#.y3o42dqga"
@@ -1239,8 +1203,6 @@
   {
     "description": "Smarter link underlines for every website",
     "tags": [
-      "css",
-      "trick",
       "link",
       "design",
       "medium",
@@ -1286,7 +1248,7 @@
       "typography",
       "font",
       "css",
-      "trick"
+      "unit"
     ],
     "title": "CSS Font Sizing",
     "url": "http://bitsofco.de/css-font-sizing/"
@@ -1336,7 +1298,7 @@
     "tags": [
       "favicon",
       "css",
-      "trick",
+      "design",
       "icon"
     ],
     "title": "Favicons, Touch Icons, Tile Icons, etc. Which Do You Need? | CSS-Tricks",
@@ -1376,7 +1338,7 @@
     "description": "CSS Blend Modes provide a way to specify how one layer will interact or “blend” with the one underneath. Until now, this was the domain of photo editing applications, but now they are available on the web using CSS itself!",
     "tags": [
       "css",
-      "trick"
+      "article"
     ],
     "title": "Dev.Opera — Getting to Know CSS Blend Modes",
     "url": "https://dev.opera.com/articles/getting-to-know-css-blend-modes/"
@@ -1531,7 +1493,6 @@
     "description": "When we make a new component on a website, we’re effectively creating rectangles of different sizes, whether we realise it or not. But what happens i",
     "tags": [
       "css",
-      "trick",
       "shape",
       "design"
     ],
@@ -1639,13 +1600,10 @@
   {
     "description": "A tutorial on how to create a motion blur effect on HTML elements using JavaScript and an SVG blur filter.",
     "tags": [
-      "tympanus",
       "blur",
       "svg",
       "inspiration",
-      "design",
-      "css",
-      "javascript"
+      "design"
     ],
     "title": "Motion Blur Effect with SVG | Codrops",
     "url": "http://tympanus.net/codrops/2015/04/08/motion-blur-effect-svg/"
@@ -2399,8 +2357,7 @@
     "url": "https://github.com/ChetHarrison/A-Gentle-Introduction-to-Functional-JavaScript",
     "tags": [
       "javascript",
-      "functional programming",
-      "introduction"
+      "functional programming"
     ],
     "description": "A-Gentle-Introduction-to-Functional-JavaScript - Notes and code from the 3 part crowdcast with Derick Bailey summer, 2016"
   },
@@ -2855,8 +2812,7 @@
     "tags": [
       "javascript",
       "functional programming",
-      "monads",
-      "introduction"
+      "monads"
     ],
     "description": "If you’ve heard about Monads but never had time learn them, here’s a simple explanation. Not a theoretical nonsense. It’s a simple, practical tutorial for JavaScript developers showing how some monads can be used. It’s for engineers, not scientists."
   },
@@ -2876,7 +2832,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "introduction",
       "monads"
     ],
     "description": "Sean Voisen's compendium of projects and musings."
@@ -2930,7 +2885,6 @@
     "tags": [
       "javascript",
       "functional programming",
-      "introduction",
       "monads",
       "validation"
     ],
@@ -3198,8 +3152,7 @@
     "url": "http://davidwalsh.name/svg-animation",
     "tags": [
       "svg",
-      "animation",
-      "introduction"
+      "animation"
     ],
     "description": "Velocity.js creator Julian Shapiro provides an introduction to SVG animation!"
   },
@@ -3266,7 +3219,6 @@
     "tags": [
       "svg",
       "animation",
-      "tympanus",
       "snap.svg"
     ],
     "description": "Using SVGs on websites is becoming more and more easy with great libraries like Snap.svg. Today we want to explore what we can do with it and animate some SVG icons as a practical example."
@@ -3298,7 +3250,6 @@
     "tags": [
       "svg",
       "animation",
-      "tympanus",
       "drawing"
     ],
     "description": "A little experiment that explores the usage of SVG line drawing animations to precede the appearance of graphics or website elements, simulating the loading of them."
@@ -3323,7 +3274,6 @@
     "tags": [
       "svg",
       "animation",
-      "introduction",
       "smil"
     ],
     "description": "It looks deceptively simple, but it's hard to do without a lot of keyframes.  My mind jumped to SVG, and I've been wanting to give SMIL a shot.  I didn't find many resources on SMIL out there, so I thought I'd share what I learned."
@@ -3334,7 +3284,6 @@
     "tags": [
       "svg",
       "animation",
-      "tympanus",
       "css"
     ],
     "description": "Learn how to build an interactive animated infographic using SVG, CSS and JavaScript."
@@ -3500,7 +3449,6 @@
     "tags": [
       "svg",
       "animation",
-      "tympanus",
       "loader",
       "inspiration"
     ],
@@ -3554,8 +3502,7 @@
     "tags": [
       "svg",
       "animation",
-      "css",
-      "trick"
+      "css"
     ],
     "description": "The following is a guest post by Sarah Drasner (@sarah_edo). Sarah has been researching and giving talks about animation lately. I jumped at the chance to"
   },
@@ -3592,7 +3539,6 @@
       "animation",
       "gsap",
       "progress bar",
-      "tympanus",
       "inspiration"
     ],
     "description": "An elastic SVG progress loader based on the Dribbble shot \"Download\" by xjw."
@@ -3605,7 +3551,6 @@
       "animation",
       "material design",
       "inspiration",
-      "tympanus",
       "tutorial"
     ],
     "description": "A tutorial on how to build the ripple effect outlined in Google Material Design's Radial Action specification and combine it with the powers of SVG and GreenSock."
