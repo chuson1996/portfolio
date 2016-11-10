@@ -11,6 +11,9 @@
 .gray-light {
   color: $gray-light;
 }
+.gray {
+  color: $gray;
+}
 
 body {
   overflow-x: hidden;
@@ -36,30 +39,32 @@ body {
 .form-control {
   // http://stackoverflow.com/questions/3062968/remove-textarea-inner-shadow-on-mobile-safari-iphone
   -webkit-appearance: none;
-  @include box-shadow(none);
+  border: 0;
+  padding-left: 0;
+  @include box-shadow(0 2px 0 0 $input-border);
   &:focus {
     outline: 0;
-    // border-color: transparent;
-    border: 1px solid $input-border;
-    @include box-shadow(none);
+    border: 0;
+    @include box-shadow(0 2px 0 0 $brand-sea-serpent);
   }
 }
 
 .input-group.tags-input-group {
-  .form-control:first-child {
-    border-right-width: 0;
+  .form-control:focus + .input-group-btn {
+    @include box-shadow(0 2px 0 0 $brand-sea-serpent);
   }
   .input-group-btn {
-    .btn.btn-default:first-child {
-      border-left-width: 0;
+    @include box-shadow(0 2px 0 0 $input-border);
+    .btn {
+      border: 0;
       color: $gray-light;
+      background-color: $body-bg;
+      @include box-shadow(none);
+
       &:hover,
       &:focus,
       &:active {
-        background-color: $white;
         outline-width: 0;
-        border-color: $input-border;
-        @include box-shadow(none);
       }
     }
   }
@@ -80,13 +85,18 @@ body {
   }
 }
 
-a {
+a,
+.link {
   cursor: pointer;
 
-  &:hover {
-    text-decoration: none;
+  &.link-dark {
+    color: $brand-independence;
   }
+  // &:hover {
+  //   text-decoration: none;
+  // }
 }
+
 
 // Button circle
 .btn.btn-circle {
@@ -100,5 +110,28 @@ a {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+}
+
+.panel {
+  border-width: 0;
+  @include box-shadow(none);
+}
+
+.pagination {
+  > li {
+    > a,
+    > span {
+      border-width: 0;
+    }
+  }
+
+  > .active > a,
+  > .active > span {
+    &,
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }

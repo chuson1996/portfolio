@@ -45,8 +45,9 @@ export default class Pagination extends Component {
 
     return items.length ? (
       <div>
-        <p className={`text-right gray-light`} ref={(elem) => this.topline = elem}>
-          Showing {startIndex + 1} - {endIndex} of {items.length} items
+        <p className={`text-right gray`} ref={(elem) => this.topline = elem}>
+          {/* Showing {startIndex + 1} - {endIndex} of {items.length} items */}
+          &nbsp;
         </p>
         { visibleItems }
 

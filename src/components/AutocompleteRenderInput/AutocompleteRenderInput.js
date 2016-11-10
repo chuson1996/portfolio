@@ -10,7 +10,8 @@ export default class AutocompleteRenderInput extends Component {
     suggestions: PropTypes.array,
     ref: PropTypes.any,
     autocomplete: PropTypes.bool,
-    classNames: PropTypes.object
+    classNames: PropTypes.object,
+    renderInputComponent: PropTypes.func,
   };
 
   onFocus() {
@@ -87,32 +88,7 @@ export default class AutocompleteRenderInput extends Component {
         onSuggestionsFetchRequested={() => {}}
         onSuggestionsClearRequested={clearSuggestions}
         focusFirstSuggestion={this.props.autocomplete}
-        renderInputComponent={(props) => {
-          // console.log(props);
-          const onInputFocus = (e) => {
-            if (window.innerWidth < 769) {
-              window.scrollTo(0, 0);
-              document.body.scrollTop = 0;
-            }
-            if (props.onFocus) {
-              props.onFocus(e);
-            }
-          };
-          return (<div className="input-group tags-input-group">
-            <input
-              {...props}
-              // ref={this.props.ref}
-              type="text"
-              className="form-control"
-              onFocus={onInputFocus} />
-
-            <span className="input-group-btn">
-              <button className="btn btn-default" onClick={clearSuggestions}>
-                <i className="fa fa-close"></i>
-              </button>
-            </span>
-          </div>);
-        }}
+        renderInputComponent={this.props.renderInputComponent}
         // shouldRenderSuggestions={() => true}
       />
     );

@@ -48,9 +48,9 @@ $border-color: rgba(160,160,160,0.3);
     z-index: 1;
     ul {
       list-style-type: none;
-      box-shadow: .05em .01em .5em rgba(0,0,0,.2);
+      @include box-shadow(none);
       // width: 200px;
-      background: white;
+      background: $white;
       padding-left: 0;
       // @media (max-width: $screen-sm + 1) {
       max-height: calc(100vh - 82px);
@@ -58,11 +58,12 @@ $border-color: rgba(160,160,160,0.3);
       // }
       // max-height: calc(100vh - 100%);
       li {
-        border-bottom: 1px solid $border-color;
-        padding: ($line-height-computed / 2) $padding-small-horizontal;
+        border-width: 0;
+        padding: 12px 17px;
         &:global(.active) {
           cursor: pointer;
-          background: #b7cfe0;
+          background: $brand-info;
+          color: $white;
         }
       }
     }

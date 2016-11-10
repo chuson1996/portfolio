@@ -11,7 +11,8 @@ export default class ReactTags extends Component {
     handleChange: PropTypes.func,
     tags: PropTypes.array,
     autocomplete: PropTypes.bool,
-    classNames: PropTypes.object
+    classNames: PropTypes.object,
+    renderInputComponent: PropTypes.func
   };
 
   handleChange(newTags) {
@@ -24,7 +25,7 @@ export default class ReactTags extends Component {
   }
 
   render() {
-    const { suggestions, autocomplete, classNames } = this.props;
+    const { suggestions, autocomplete, classNames, renderInputComponent } = this.props;
     const styles = require('./ReactTags.scss');
     classNames.suggestions = styles.suggestions;
 
@@ -35,7 +36,7 @@ export default class ReactTags extends Component {
         focusedClassName={styles.focused}
         renderTag={(props) => <Tag index={props.key} {...props} />}
         renderInput={(props) => <AutocompleteRenderInput
-          {...{autocomplete, suggestions, classNames}}
+          {...{autocomplete, suggestions, classNames, renderInputComponent}}
           {...props} />
         }
         value={this.props.tags}

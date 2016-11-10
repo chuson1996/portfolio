@@ -2,20 +2,19 @@
 @import '../../theme/variables.scss';
 
 .tag {
-  background-color: $brand-info;
+  background-color: $gray-light;
   padding: ($line-height-computed / 3) $padding-small-horizontal;
   margin-right: 5px;
   margin-bottom: 1px;
-  color: $white;
   display: inline-block;
   border-radius: $border-radius-large;
 
   a {
-    background-color: $brand-danger;
-    border-radius: 50%;
+    // background-color: $brand-danger;
+    // border-radius: 50%;
     width: 16px;
     text-align: center;
-    color: $white;
+    color: $brand-independence;
     margin-left: 5px;
   }
 }

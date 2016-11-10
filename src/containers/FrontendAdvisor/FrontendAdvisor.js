@@ -17,7 +17,8 @@ import {
   // SuggestResource,
   ReactTags,
   Pagination,
-  Tag } from 'components';
+  // Tag,
+} from 'components';
 
 @asyncConnect([{
   promise: ({ store: { dispatch, getState }}) => {
@@ -99,32 +100,30 @@ export default class FrontendAdvisor extends Component {
     const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
 
     const items = (resources && !!resources.length) ? resources.map(({ title, tags, url, description }, i) => <Panel key={i}>
-        <h3>{title}</h3>
-        <p>{description}</p>
-        <p><a href={url} target={'_blank'}>
-          <i className={`fa fa-globe`}></i> {url}
-        </a></p>
-        <p>
-          <span className={`gray-light`}>Tags: </span>
+        <h3 className="m-b-12">{title}</h3>
+        <p className="m-b-12">{description}</p>
+        <p className="m-b-12">
+          <a href={url} target={'_blank'}>
+            <i className={`fa fa-globe`}></i> {url}
+          </a>
+        </p>
+        <p className="m-b-12">
+          <span className={`gray`}>Tags: </span>
           {tags.map((tag, _i) =>
-            <Tag
-              key={_i}
-              onClick={() => this.handleAddition(tag)} >
-              {tag}
-            </Tag>)}
+            <span key={_i}>
+              { _i !== 0 && <span>, </span>}
+              <a
+                className="link link-dark"
+                onClick={() => this.handleAddition(tag)}>{tag}</a>
+            </span>
+          )}
         </p>
       </Panel>) : [];
 
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
         <div className={`${styles.masthead}`}>
-          <h1 className={`text-center text-uppercase`}>
-            Front-end Bookmark
-          </h1>
-
-          <h2 className={`text-center m-b-20`}>
-            <small>For example, type "javascript" and "tutorial" to see all javascript tutorials.</small>
-          </h2>
+          <div className={styles.logo}></div>
 
           {/* <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}> */}
           <ReactTags
@@ -140,16 +139,43 @@ export default class FrontendAdvisor extends Component {
             // handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
             // handleAddition={this.handleAddition}
             autocomplete={!false}
+            renderInputComponent={(props) => {
+              // console.log(props);
+              const onInputFocus = (e) => {
+                if (window.innerWidth < 769) {
+                  window.scrollTo(0, 0);
+                  document.body.scrollTop = 0;
+                }
+                if (props.onFocus) {
+                  props.onFocus(e);
+                }
+              };
+              return (<div className="input-group tags-input-group">
+                <input
+                  {...props}
+                  // ref={this.props.ref}
+                  type="text"
+                  className="form-control"
+                  onFocus={onInputFocus} />
+
+                <span className="input-group-btn">
+                  <button className="btn">
+                    <i className="fa fa-close"></i>
+                  </button>
+                </span>
+              </div>);
+            }}
           />
           {/* </AlwaysVisible> */}
 
           <Row>
             <Col xs={12}>
-              <p className="m-t-20 gray-light">
-                Available tags:
+              <p className={`gray ${styles.tagsSuggestionLabel}`}>
+                Try:
                 <span> </span>
                 { possibleTags.map((tag, i) => (
                   <a
+                    className="link link-dark"
                     key={i}
                     onClick={() => this.handleAddition(tag)}>
                     {tag}, </a>)) }
@@ -164,7 +190,7 @@ export default class FrontendAdvisor extends Component {
             itemsPerPage={10} />
         </div>
 
-        <CTA />
+        {/* <CTA /> */}
 
         {/* <SuggestResource /> */}
       </div>

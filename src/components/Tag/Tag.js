@@ -27,8 +27,7 @@ export default class Tag extends Component {
     ) : (
       <span className={styles.tag} key={index} {...rest}>
         {getTagDisplayValue(tag)}
-        <a className="fa fa-minus" onClick={() => {
-          // console.log(this.props);
+        <a className="fa fa-close" onClick={() => {
           onRemove(index);
         }} />
       </span>

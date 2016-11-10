@@ -2,6 +2,17 @@
 
 .frontendAdvisor {
   .masthead {
+    .logo {
+      background-image: url('./Logo2x.png');
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-bottom: 67px;
+      width: 231px;
+      height: 101px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
     // min-height: 100vh;
     position: relative;
     margin-bottom: 100px;
@@ -21,5 +32,8 @@
   .remove {
     border-bottom: 0;
     margin-left: 5px;
+  }
+  .tagsSuggestionLabel {
+    margin-top: 43px;
   }
 }
