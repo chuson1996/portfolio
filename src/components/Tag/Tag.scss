@@ -4,10 +4,13 @@
 .tag {
   background-color: $gray-light;
   padding: ($line-height-computed / 3) $padding-small-horizontal;
-  margin-right: 5px;
   margin-bottom: 1px;
   display: inline-block;
   border-radius: $border-radius-large;
+
+  & + .tag {
+    margin-left: 5px;
+  }
 
   a {
     // background-color: $brand-danger;

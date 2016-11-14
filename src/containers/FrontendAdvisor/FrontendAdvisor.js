@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 // import { WithContext as ReactTags } from 'react-tag-input';
 import { connect } from 'react-redux';
 import * as tagsActions from 'redux/modules/tags';
+import * as instructionActions from 'redux/modules/isInstructionRead';
 import { asyncConnect } from 'redux-async-connect';
 import includes from 'lodash/includes';
 import get from 'lodash/get';
@@ -13,6 +14,7 @@ import Col from 'react-bootstrap/lib/Col';
 import Panel from 'react-bootstrap/lib/Panel';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import xor from 'lodash/xor';
+import classNames from 'classnames';
 import {
   // AlwaysVisible,
   // CTA,
@@ -20,6 +22,7 @@ import {
   ReactTags,
   Pagination,
   // Tag,
+  Instruction,
 } from 'components';
 
 @asyncConnect([{
@@ -41,9 +44,13 @@ import {
     allTags: state.tags.data,
     inputTags: state.tags.inputTags,
     inputTagsInfo: state.tags.inputTagsInfo,
-    resources: state.tags.resources
+    resources: state.tags.resources,
+    isInstructionRead: state.isInstructionRead,
   }),
-  tagsActions
+  {
+    ...tagsActions,
+    ...instructionActions,
+  }
 )
 export default class FrontendAdvisor extends Component {
   static propTypes = {
@@ -54,7 +61,9 @@ export default class FrontendAdvisor extends Component {
     inputTagsInfo: PropTypes.object,
     changeTags: PropTypes.func,
     loadTag: PropTypes.func,
-    resources: PropTypes.array
+    resources: PropTypes.array,
+    readInstruction: PropTypes.func,
+    isInstructionRead: PropTypes.bool
   };
 
   componentDidMount() {
@@ -120,7 +129,9 @@ export default class FrontendAdvisor extends Component {
       inputTags,
       // removeTag,
       // inputTagsInfo,
-      resources
+      resources,
+      readInstruction,
+      isInstructionRead,
     } = this.props;
 
     const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
@@ -151,7 +162,11 @@ export default class FrontendAdvisor extends Component {
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
         <div className={`${styles.masthead}`}>
-          <div className={styles.logo}></div>
+          <div className={`${styles.logo} hidden-xs`}></div>
+
+          <Instruction
+            className={classNames('hidden-xs', { hide: isInstructionRead })}
+            read={readInstruction} />
 
           {/* <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}> */}
           <ReactTags

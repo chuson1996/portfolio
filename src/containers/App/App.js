@@ -14,7 +14,7 @@ import config from '../../config';
 import { asyncConnect } from 'redux-async-connect';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import last from 'lodash/last';
-import { Footer } from 'components';
+import { Footer, Header } from 'components';
 
 @asyncConnect([{
   promise: () => Promise.all([]) // Without this line, server-side rendering breaks!?
@@ -50,20 +50,10 @@ export default class App extends Component {
     return (
       <div className={styles.app}>
         <Helmet {...config.app}/>
-        <div id="fb-root"></div>
-        <script src={config.fbSDK}></script>
-        {/* <Navbar fixedTop bsStyle="inverse">
-          <Navbar.Header>
-            <Navbar.Toggle/>
-          </Navbar.Header>
-          <Navbar.Collapse eventKey={0}>
-            <Nav nav pullRight>
-              <NavItem eventKey={0}>Something</NavItem>
-              <NavItem eventKey={0}>Else</NavItem>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar> */}
+        {/* <div id="fb-root"></div>
+        <script src={config.fbSDK}></script> */}
         <div className={styles.appContent}>
+          <Header />
           {this.props.children}
           {/* <ReactCSSTransitionGroup
             transitionName={{

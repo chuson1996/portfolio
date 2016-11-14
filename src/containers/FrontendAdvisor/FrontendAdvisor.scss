@@ -6,13 +6,13 @@
   min-height: calc(100vh - #{$footer-height});
   .masthead {
     .logo {
-      background-image: url('./Logo2x.png');
+      background-image: url('./Logo@2x.png');
       margin-left: auto;
       margin-right: auto;
       display: block;
       margin-bottom: 67px;
       width: 231px;
-      height: 101px;
+      height: 163px;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -20,12 +20,12 @@
     position: relative;
     margin-bottom: 20px;
 
-    margin-top: 10vh;
+    margin-top: 88px;
     @media only screen and (min-width : $screen-sm) {
-      margin-top: 100px;
+      margin-top: 137px;
     }
     @media only screen and (min-width : $screen-md) {
-      margin-top: 110px;
+      margin-top: 147px;
     }
   }
   .suggestedTags {

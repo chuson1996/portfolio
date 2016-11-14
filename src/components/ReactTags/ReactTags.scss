@@ -40,7 +40,7 @@ $border-color: rgba(160,160,160,0.3);
       // }
       @include container-fixed;
       height: 100vh;
-      z-index: 2;
+      z-index: 4;
     }
   }
   .suggestions {

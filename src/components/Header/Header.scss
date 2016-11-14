@@ -1,0 +1,14 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+.header {
+  z-index: 3;
+}
+
+.logo {
+  height: 52px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

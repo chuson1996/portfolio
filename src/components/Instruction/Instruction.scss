@@ -1,0 +1,13 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+.instruction {
+  background-color: $gray-lighter;
+  border-left: 3px solid $brand-primary;
+  padding-left: 41px;
+  padding-right: 41px;
+  ul {
+    padding: 0 17px;
+  }
+}

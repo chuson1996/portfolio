@@ -12,7 +12,7 @@ import { Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
 import { ReduxAsyncConnect } from 'redux-async-connect';
 import useScroll from 'scroll-behavior/lib/useStandardScroll';
-
+import { initialize as initalizeIsInstructionRead } from 'redux/modules/isInstructionRead';
 import getRoutes from './routes';
 
 const client = new ApiClient();
@@ -71,3 +71,7 @@ if (__DEVTOOLS__ && !window.devToolsExtension) {
     dest
   );
 }
+
+setTimeout(() => {
+  store.dispatch(initalizeIsInstructionRead());
+});

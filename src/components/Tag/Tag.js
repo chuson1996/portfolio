@@ -21,9 +21,9 @@ export default class Tag extends Component {
     const styles = require('./Tag.scss');
 
     return children ? (
-      <a className={styles.tag} {...rest}>
+      <span className={styles.tag} {...rest}>
         {children}
-      </a>
+      </span>
     ) : (
       <span className={styles.tag} key={index} {...rest}>
         {getTagDisplayValue(tag)}
