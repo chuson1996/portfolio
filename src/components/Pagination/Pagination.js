@@ -29,8 +29,11 @@ export default class Pagination extends Component {
     this.setState({
       activePage: eventKey
     });
-    window.scrollTo(0, this.topline.offsetTop);
-    // console.log(this.topline);
+    window.scroll({
+      top: this.topline.offsetTop - 84,
+      behavior: 'smooth'
+    });
+    // console.log(this.topline.offsetTop - 84);
   };
 
   render() {
@@ -59,12 +62,10 @@ export default class Pagination extends Component {
             <BsPagination
               prev
               next
-              first
-              last
               ellipsis
               boundaryLinks
               bsSize="medium"
-              maxButtons={5}
+              maxButtons={4}
               items={numberOfPages}
               activePage={activePage}
               onSelect={this.handleSelect} />

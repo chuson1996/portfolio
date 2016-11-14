@@ -2,6 +2,7 @@
  * THIS IS THE ENTRY POINT FOR THE CLIENT, JUST LIKE server.js IS THE ENTRY POINT FOR THE SERVER.
  */
 import 'babel-polyfill';
+require('smoothscroll-polyfill').polyfill();
 import React from 'react';
 import ReactDOM from 'react-dom';
 import createStore from './redux/create';
