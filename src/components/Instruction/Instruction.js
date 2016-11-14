@@ -40,15 +40,15 @@ export default class Instruction extends Component {
             </li>
           </ul>
           <br/>
-          <Button bsStyle={'success'} onClick={read}>
+          <Button bsStyle={'success'} onClick={read} className={`${styles.button} ${styles.buttonSuccess}`}>
             <i className="fa fa-thumbs-o-up"></i>
             This is helpful
           </Button>
-          <Button bsStyle={'danger'} className="m-l-8" onClick={read}>
+          <Button bsStyle={'danger'} className={`${styles.button} ${styles.buttonDanger}`} onClick={read}>
             <i className="fa fa-thumbs-o-down"></i>
             This is not helpful
           </Button>
-          <Button bsStyle={'default'} className="pull-right" onClick={read}>
+          <Button bsStyle={'default'} className={`${styles.button} ${styles.buttonDefault}`} onClick={read}>
             I already know
           </Button>
         </Col>

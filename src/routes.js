@@ -8,7 +8,8 @@ import {
     // Home,
     // About,
     NotFound,
-    FrontendAdvisor
+    FrontendAdvisor,
+    Instruction
   } from 'containers';
 
 export default (/* store */) => {
@@ -36,6 +37,7 @@ export default (/* store */) => {
     <Route path="/" component={App}>
       { /* Home (main) route */ }
       <IndexRoute component={FrontendAdvisor}/>
+      <Route path="/instruction" component={Instruction}/>
 
       { /* Routes requiring login */ }
       {/* <Route onEnter={requireLogin}>

@@ -413,7 +413,7 @@
     "url": "http://bitwiser.in/medium-style-confirm/"
   },
   {
-    "description": "",
+    "description": "Tweet !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');\nStar",
     "tags": [
       "javascript",
       "library",
@@ -1377,7 +1377,7 @@
       "image",
       "tool"
     ],
-    "title": "WebPonize - Converting images into WebP",
+    "title": "WebPonize - webponize.github.io",
     "url": "https://webponize.github.io/"
   },
   {
@@ -1858,7 +1858,7 @@
   },
   {
     "url": "https://learn.humanjavascript.com/react-ampersand/introduction",
-    "title": "Human JavaScript videos",
+    "title": "Human JavaScript Videos",
     "tags": [
       "video",
       "javascript",
@@ -1934,7 +1934,7 @@
     ]
   },
   {
-    "title": "Angular Chat Room",
+    "title": "freenode Web IRC (qwebirc)",
     "url": "http://webchat.freenode.net/?channels=angularjs&uio=d4",
     "tags": [
       "angularjs",
@@ -2165,7 +2165,7 @@
     ]
   },
   {
-    "title": "➊ FreeCodeCamp/FreeCodeCamp - Gitter",
+    "title": "FreeCodeCamp/FreeCodeCamp - Gitter",
     "url": "https://gitter.im/FreeCodeCamp/FreeCodeCamp",
     "tags": [
       "gitter",
@@ -3485,7 +3485,7 @@
     ]
   },
   {
-    "title": "SVG Dabbles - Tutorials about snap.svg",
+    "title": "Snap.svg Tutorial",
     "url": "http://svg.dabbles.info/",
     "tags": [
       "svg",
@@ -3575,5 +3575,14 @@
       "library"
     ],
     "description": "react-autosuggest - WAI-ARIA compliant React autosuggest component"
+  },
+  {
+    "url": "https://www.juicer.io",
+    "tags": [
+      "social media",
+      "service"
+    ],
+    "description": "Juicer is a simple way to aggregate all of your social media into a beautiful social media feed and embed it on your site.",
+    "title": "Social Media Feeds for your website. - Juicer"
   }
 ]

@@ -2,11 +2,19 @@
 @import '../../theme/variables.scss';
 
 .footer {
-	background-image: linear-gradient(-139deg, #708DA0 0%, #3D5467 100%);
-	color: $white;
-	height: $footer-height;
-
-	@media only screen and (min-width : $screen-sm) {
-		text-align: left;
-	}
+  color: $white;
+  :global(.fa) {
+    font-size: 2em;
+  }
+  :global(.col-xs-4) {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footerBtn {
+    color: $white;
+    &:hover {
+      background-color: lighten($navbar-inverse-bg, 5%);
+    }
+  }
 }
