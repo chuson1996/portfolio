@@ -5,8 +5,13 @@
 .instruction {
   background-color: $gray-lighter;
   border-left: 3px solid $brand-primary;
-  padding-left: 41px;
-  padding-right: 41px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  @media (min-width: $container-sm) {
+    padding-left: 41px;
+    padding-right: 41px;
+  }
   ul {
     padding: 0 17px;
   }

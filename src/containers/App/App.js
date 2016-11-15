@@ -17,7 +17,7 @@ import { asyncConnect } from 'redux-async-connect';
 import { Footer, Header } from 'components';
 import ProgressBar from 'react-progress-bar-plus';
 import { isGlobalLoading } from 'redux/middleware/clientMiddleware';
-import random from 'lodash/random';
+// import random from 'lodash/random';
 
 @asyncConnect([{
   promise: () => Promise.all([]) // Without this line, server-side rendering breaks!?

@@ -38,10 +38,6 @@ $font-size-h3:            ceil(($font-size-base * 1.5));
 
 $body-bg: $white;
 
-// $container-lg: 970px;
-// $container-md: 670px;
-// $container-sm: 
-
 $padding-base-vertical: 20px;
 $line-height-base: 1.375;
 
@@ -55,7 +51,7 @@ $input-bg: $body-bg;
 
 // Panel
 $panel-body-padding: 15px 0;
-$panel-bg: $body-bg;
+$panel-bg: transparent;
 
 // Pagination
 $pagination-bg: $body-bg;
