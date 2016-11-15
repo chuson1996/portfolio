@@ -14,7 +14,7 @@ import Col from 'react-bootstrap/lib/Col';
 import Panel from 'react-bootstrap/lib/Panel';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import xor from 'lodash/xor';
-import classNames from 'classnames';
+import cl from 'classnames';
 import {
   // AlwaysVisible,
   // CTA,
@@ -23,6 +23,7 @@ import {
   Pagination,
   // Tag,
   Instruction,
+  LogoSVG,
 } from 'components';
 
 @asyncConnect([{
@@ -91,39 +92,47 @@ export default class FrontendAdvisor extends Component {
   }
 
   handleAddition = (tag) => {
-    const { isTagLoaded } = tagsActions;
+    // const { isTagLoaded } = tagsActions;
     const {
       addTag,
       allTags,
-      inputTagsInfo,
+      // inputTagsInfo,
       loadTag
     } = this.props;
     if (includes(allTags, tag)) {
       addTag(tag);
-      if (!isTagLoaded(inputTagsInfo, tag)) {
-        loadTag(tag);
-      }
+      /* Load even when it's not available */
+      loadTag(tag);
+
+      /* Only load when it's not available */
+      // if (!isTagLoaded(inputTagsInfo, tag)) {
+      //   loadTag(tag);
+      // }
     }
   };
 
   handleChange = (tags) => {
     console.log('Handle change: ', tags);
-    const { isTagLoaded } = tagsActions;
+    // const { isTagLoaded } = tagsActions;
     const {
-      inputTagsInfo,
+      // inputTagsInfo,
       loadTag
     } = this.props;
 
     this.props.changeTags(tags);
     tags.forEach((tag) => {
-      if (!isTagLoaded(inputTagsInfo, tag)) {
-        loadTag(tag);
-      }
+      /* Load even when it's not available */
+      loadTag(tag);
+
+      /* Only load when it's not available */
+      // if (!isTagLoaded(inputTagsInfo, tag)) {
+      //   loadTag(tag);
+      // }
     });
   };
 
   render() {
-    const styles = require('./FrontendAdvisor.scss');
+    const styles = require('./Home.scss');
     const {
       allTags,
       inputTags,
@@ -162,11 +171,23 @@ export default class FrontendAdvisor extends Component {
     return (
       <div className={`container ${styles.frontendAdvisor}`}>
         <div className={`${styles.masthead}`}>
-          <div className={`${styles.logo} hidden-xs`}></div>
+          {/* <div className={`${styles.logo} hidden-xs`}></div> */}
+          <LogoSVG className={cl('hidden-xs', styles.logo)} />
 
-          <Instruction
-            className={classNames('hidden-xs', { hide: isInstructionRead })}
-            read={readInstruction} />
+          <ReactCSSTransitionGroup
+            transitionEnterTimeout={1000}
+            transitionLeaveTimeout={1000}
+            transitionName={{
+              enter: 'animatedEnter',
+              enterActive: 'bounceInLeft',
+              leave: 'animated',
+              leaveActive: 'bounceOutRight'
+            }} >
+            { !isInstructionRead && <Instruction
+              className={cl('hidden-xs')}
+              read={readInstruction} />
+            }
+          </ReactCSSTransitionGroup>
 
           {/* <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}> */}
           <ReactTags

@@ -15,12 +15,17 @@ import { asyncConnect } from 'redux-async-connect';
 // import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 // import last from 'lodash/last';
 import { Footer, Header } from 'components';
+import ProgressBar from 'react-progress-bar-plus';
+import { isGlobalLoading } from 'redux/middleware/clientMiddleware';
+import random from 'lodash/random';
 
 @asyncConnect([{
   promise: () => Promise.all([]) // Without this line, server-side rendering breaks!?
 }])
 @connect(
-  null,
+  (state) => ({
+    isGlobalLoading: isGlobalLoading(state)
+  }),
   {
     // logout,
     pushState: push
@@ -32,7 +37,8 @@ export default class App extends Component {
     // user: PropTypes.object,
     // logout: PropTypes.func.isRequired,
     pushState: PropTypes.func.isRequired,
-    location: PropTypes.object
+    location: PropTypes.object,
+    isGlobalLoading: PropTypes.bool
   };
 
   static contextTypes = {
@@ -46,9 +52,16 @@ export default class App extends Component {
     // } = this.props;
     const styles = require('./App.scss');
     // const segment = last(pathname.split('/')) || 'root';
+    const { isGlobalLoading: isLoading } = this.props;
 
     return (
       <div className={styles.app}>
+        <ProgressBar
+          percent={isLoading ? 0 : 100}
+          autoIncrement
+          intervalTime={500}
+          spinner={false} />
+
         <Helmet {...config.app}/>
         {/* <div id="fb-root"></div>
         <script src={config.fbSDK}></script> */}

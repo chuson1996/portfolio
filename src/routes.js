@@ -8,7 +8,7 @@ import {
     // Home,
     // About,
     NotFound,
-    FrontendAdvisor,
+    Home,
     Instruction
   } from 'containers';
 
@@ -36,7 +36,7 @@ export default (/* store */) => {
   return (
     <Route path="/" component={App}>
       { /* Home (main) route */ }
-      <IndexRoute component={FrontendAdvisor}/>
+      <IndexRoute component={Home}/>
       <Route path="/instruction" component={Instruction}/>
 
       { /* Routes requiring login */ }

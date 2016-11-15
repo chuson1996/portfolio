@@ -17,3 +17,4 @@ export Pagination from './Pagination/Pagination';
 export Tag from './Tag/Tag';
 export Header from './Header/Header';
 export Instruction from './Instruction/Instruction';
+export LogoSVG from './LogoSVG/LogoSVG';

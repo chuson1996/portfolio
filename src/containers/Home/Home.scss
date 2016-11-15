@@ -7,15 +7,15 @@
   margin-bottom: 86px;
   .masthead {
     .logo {
-      background-image: url('./Logo@2x.png');
+      // background-image: url('./Logo@2x.png');
+      // background-repeat: no-repeat;
+      // background-size: cover;
       margin-left: auto;
       margin-right: auto;
       display: block;
       margin-bottom: 67px;
       width: 231px;
       height: 163px;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
     // min-height: 100vh;
     position: relative;

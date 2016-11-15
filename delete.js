@@ -7,7 +7,7 @@ var componentName = process.argv[3];
 
 if (componentType !== 'component' && componentType !== 'container') {
   console.log('Wrong type of component');
-  return;
+  process.exit(0);
 }
 
 fs.removeSync(`./src/${componentType}s/${componentName}`);
