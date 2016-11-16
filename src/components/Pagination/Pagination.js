@@ -60,12 +60,10 @@ export default class Pagination extends Component {
         { numberOfPages > 1 &&
           <div className={`text-center`}>
             <BsPagination
-              prev
-              next
               ellipsis
               boundaryLinks
               bsSize="medium"
-              maxButtons={4}
+              maxButtons={3}
               items={numberOfPages}
               activePage={activePage}
               onSelect={this.handleSelect} />

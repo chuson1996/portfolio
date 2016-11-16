@@ -150,7 +150,7 @@ export default class FrontendAdvisor extends Component {
         <p className="m-b-12">{description}</p>
         <p className="m-b-12">
           <a href={url} target={'_blank'}>
-            <i className={`fa fa-globe`}></i> {url}
+            <i className={`fa fa-globe`}></i>&nbsp;{url}
           </a>
         </p>
         <p className="m-b-12">

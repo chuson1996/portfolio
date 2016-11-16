@@ -4,6 +4,21 @@
 
 .header {
   z-index: 3;
+  .navNormalScreen {}
+  .navSmallScreen {
+    @include transition(margin-top .3s ease-in, margin-bottom .3s ease-in);
+
+    .logo {
+      @include transition(height .3s ease-in);
+    }
+    &.scrolled {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .logo {
+        height: 40px;
+      }
+    }
+  }
 }
 
 .logo {
