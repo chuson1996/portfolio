@@ -3586,6 +3586,21 @@
     "title": "Social Media Feeds for your website. - Juicer"
   },
   {
-    "url": "https://uimovement.com/"
+    "url": "https://uimovement.com/",
+    "tags": [
+      "design",
+      "inspiration"
+    ],
+    "description": "UI Movement is a community of design enthusiasts who share and discuss the most interesting and unique UI designs.",
+    "title": "UI Movement - The best UI design inspiration, every day"
+  },
+  {
+    "url": "http://subtlepatterns.com/",
+    "tags": [
+      "design",
+      "background"
+    ],
+    "description": "The seigaiha or wave is a pattern of layered concentric circles creating arches, symbolic of waves or water and representing surges of good luck.",
+    "title": "Subtle Patterns | Free textures for your next web project."
   }
 ]

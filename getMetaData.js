@@ -13,6 +13,10 @@ const resources = jsonfile.readFileSync(filePath);
 
 const promises = [];
 
+const format = (str) => {
+  return str.replace(/\\n/g, ' ').replace(/\s{2,}/, ' ');
+};
+
 const overrideResource = (index) => (callback) => {
   console.log(resources[index].title);
   const client = new MetaInspector(
@@ -24,7 +28,7 @@ const overrideResource = (index) => (callback) => {
     console.log(Math.floor(index / resources.length * 100) + '%');
 
     if (client.description) {
-      resources[index].description = client.description;
+      resources[index].description = format(client.description);
     }
     if (client.title) {
       resources[index].title = client.title;

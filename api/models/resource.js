@@ -22,48 +22,48 @@ const resourceSchema = new mongoose.Schema({
   url: String
 });
 
-resourceSchema.pre('save', async function preSave(next) {
-  const resource = this;
+// resourceSchema.pre('save', async function preSave(next) {
+//   const resource = this;
 
-  const tagPromise = async () => {
-    /* Tags */
-    const resourceTags = this.tags;
-    const foundTags = await Tag.find()
-      .populate('resources')
-      .where('name').in(resourceTags)
-      .exec();
+//   const tagPromise = async () => {
+//     /* Tags */
+//     const resourceTags = this.tags;
+//     const foundTags = await Tag.find()
+//       .populate('resources')
+//       .where('name').in(resourceTags)
+//       .exec();
 
-    const unavailableTags = reject(
-      resourceTags,
-      (rTag) => includes(foundTags.map((fTag) => fTag.name), rTag)
-    ).map((uTag) => new Tag({ name: uTag }));
+//     const unavailableTags = reject(
+//       resourceTags,
+//       (rTag) => includes(foundTags.map((fTag) => fTag.name), rTag)
+//     ).map((uTag) => new Tag({ name: uTag }));
 
-    const allTags = [...unavailableTags, ...foundTags];
+//     const allTags = [...unavailableTags, ...foundTags];
 
-    for (const tag of allTags) {
-      tag.resources = [...tag.resources, resource];
-      await tag.save();
-    }
-    resource._tags = allTags;
-  };
+//     for (const tag of allTags) {
+//       tag.resources = [...tag.resources, resource];
+//       await tag.save();
+//     }
+//     resource._tags = allTags;
+//   };
 
-  const authorPromise = async () => {
-    /* Author */
-    const resourceAuthor = this.author;
-    let author = await Author.where({ name: resourceAuthor })
-      .findOne()
-      .populate('resources')
-      .exec();
+//   const authorPromise = async () => {
+//     /* Author */
+//     const resourceAuthor = this.author;
+//     let author = await Author.where({ name: resourceAuthor })
+//       .findOne()
+//       .populate('resources')
+//       .exec();
 
-    if (!author) author = new Author({ name: resourceAuthor });
-    author.resources = [...author.resources, resource];
-    this._author = author;
-    await author.save();
-  };
+//     if (!author) author = new Author({ name: resourceAuthor });
+//     author.resources = [...author.resources, resource];
+//     this._author = author;
+//     await author.save();
+//   };
 
-  await Promise.all([tagPromise(), authorPromise()]);
-  /* Next */
-  next();
-});
+//   await Promise.all([tagPromise(), authorPromise()]);
+//   /* Next */
+//   next();
+// });
 
 export default mongoose.model('Resource', resourceSchema);
