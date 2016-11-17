@@ -35,6 +35,27 @@ export default class ReactTags extends Component {
         ref={(elem) => this.tagsInputRef = elem}
         className={styles.tagsInput}
         focusedClassName={styles.focused}
+        inputProps={{
+          onFocus: () => {
+            // if (window.innerWidth < 769) {
+            //   document.body.style.overflowY = 'hidden';
+            // }
+            document.body.classList.add(styles.noScrollYForSmallScreen);
+
+            /* For trasition animation */
+            const div = this.tagsInputRef.refs.div;
+            div.style.top = div.getBoundingClientRect().top + 'px';
+            setTimeout(() => {
+              div.style.top = null;
+            }, 1);
+          },
+          onBlur: () => {
+            // if (window.innerWidth < 769) {
+            //   document.body.style.overflowY = 'auto';
+            // }
+            document.body.classList.remove(styles.noScrollYForSmallScreen);
+          }
+        }}
         renderTag={(props) => <Tag index={props.key} {...props} />}
         renderInput={(props) => <AutocompleteRenderInput
           {...{autocomplete, suggestions, classNames, renderInputComponent}}

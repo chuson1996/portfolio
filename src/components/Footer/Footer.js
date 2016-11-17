@@ -1,17 +1,11 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import Row from 'react-bootstrap/lib/Row';
-import { push } from 'react-router-redux';
-import { connect } from 'react-redux';
+import { Link } from 'react-router';
 
-@connect(null, { push })
 export default class Footer extends Component {
-  static propTypes = {
-    push: PropTypes.func
-  };
-
   render() {
     const styles = require('./Footer.scss');
 
@@ -24,15 +18,15 @@ export default class Footer extends Component {
         </Navbar>
         <Navbar fixedBottom inverse className={`${styles.footer} visible-xs`}>
           <Row>
-            <a onClick={() => this.props.push('/')} className={`${styles.footerBtn} col-xs-4`}>
+            <Link to={`/`} className={`${styles.footerBtn} col-xs-4`}>
               <i className="fa fa-search"></i>
-            </a>
-            <a onClick={() => this.props.push('/instruction')} className={`${styles.footerBtn} col-xs-4`}>
+            </Link>
+            <Link to={`/instruction`} className={`${styles.footerBtn} col-xs-4`}>
               <i className="fa fa-question"></i>
-            </a>
-            <a className={`${styles.footerBtn} col-xs-4`}>
+            </Link>
+            <Link to={`/about`} className={`${styles.footerBtn} col-xs-4`}>
               <i className="fa fa-info"></i>
-            </a>
+            </Link>
           </Row>
         </Navbar>
       </div>

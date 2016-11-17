@@ -14,21 +14,6 @@ export default class AutocompleteRenderInput extends Component {
     renderInputComponent: PropTypes.func,
   };
 
-  onFocus() {
-    if (window.innerWidth < 769) {
-      document.body.style.overflowY = 'hidden';
-    }
-    console.log('Focusing');
-  }
-
-  onBlur() {
-    if (window.innerWidth < 769) {
-      document.body.style.overflowY = 'auto';
-    }
-    console.log('Blurring');
-  }
-
-
   render() {
     const {addTag, autocomplete, classNames, ...other} = this.props;
     // const styles = require('./AutocompleteRenderInput.scss');
@@ -79,8 +64,6 @@ export default class AutocompleteRenderInput extends Component {
         inputProps={{
           ...other,
           onChange: handleOnChange,
-          onFocus: () => { other.onFocus(); this.onFocus(); },
-          onBlur: () => { other.onBlur(); this.onBlur(); }
         }}
         onSuggestionSelected={(e, {suggestion}) => {
           this.props.addTag(suggestion);

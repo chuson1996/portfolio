@@ -16,7 +16,7 @@ export default class Header extends Component {
   };
 
   componentDidMount() {
-    this.scrollListener = window.addEventListener('scroll', () => {
+    this.scrollListener = () => {
       if (window.scrollY > 220) {
         this.setState({
           scrolled: true
@@ -26,7 +26,8 @@ export default class Header extends Component {
           scrolled: false
         });
       }
-    });
+    };
+    window.addEventListener('scroll', this.scrollListener);
   }
 
   componentWillUnmount() {

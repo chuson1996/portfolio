@@ -5,6 +5,10 @@
 .frontendAdvisor {
   min-height: calc(100vh - #{$footer-height});
   margin-bottom: 86px;
+  .instruction {
+    margin-bottom: 30px;
+  }
+
   .masthead {
     .logo {
       // background-image: url('./Logo@2x.png');

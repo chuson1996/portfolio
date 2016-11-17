@@ -184,7 +184,7 @@ export default class FrontendAdvisor extends Component {
               leaveActive: 'bounceOutRight'
             }} >
             { !isInstructionRead && <Instruction
-              className={cl('hidden-xs')}
+              className={cl('hidden-xs', styles.instruction)}
               read={readInstruction} />
             }
           </ReactCSSTransitionGroup>

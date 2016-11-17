@@ -19,6 +19,20 @@ module.exports = Object.assign({
   fbSDK: environment.isProduction ? '/fb-sdk.js' : '/fb-sdk.dev.js',
   app: {
     title: 'Front-end Bookmark',
+    link: [
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: '//assets.juicer.io/embed.css',
+        media: 'all'
+      }
+    ],
+    script: [
+      {
+        src: '//assets.juicer.io/embed.js',
+        type: 'text/javascript'
+      }
+    ],
     description: 'The richest bookmark of front-end resources',
     head: {
       titleTemplate: 'Front-end Bookmark: %s',

@@ -11,7 +11,15 @@ $border-color: rgba(160,160,160,0.3);
   // z-index: -1;
 }
 
+.noScrollYForSmallScreen {
+  overflow-y: hidden;
+  @media (min-width: $container-sm) {
+    overflow-y: auto;
+  }
+}
+
 .tagsInput {
+  @include transition(height .3s ease-in);
   background-color: $body-bg;
   :global(.input-group.tags-input-group) {
     display: block;
@@ -34,6 +42,8 @@ $border-color: rgba(160,160,160,0.3);
       display: table-cell;
     }
   }
+
+  @include transition(top .1s ease-in);
   @media (max-width: $screen-sm + 1) {
     &.focused {
       position: fixed;
