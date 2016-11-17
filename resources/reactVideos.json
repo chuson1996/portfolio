@@ -1,0 +1,290 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=x7cQ3mrcKaY",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "Slides: http://www.slideshare.net/floydophone/react-preso-v2 React, the new open-source JS library from Facebook and Instagram, is a different way to write J...",
+    "title": "Pete Hunt: React: Rethinking best practices -- JSConf EU 2013 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=DgVS-zXgMTk",
+    "tags": [
+      "video",
+      "reactjs",
+      "tool",
+      "debug"
+    ],
+    "description": "Announcement of the React Chrome Developer Tools http://facebook.github.io/react/blog/2014/01/02/react-chrome-developer-tools.html \"React, the new open-sourc...",
+    "title": "Pete Hunt: React - Rethinking Best Practices (updated) - JSConf.Asia 2013 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=GW0rj4sNH2w",
+    "tags": [
+      "video",
+      "javascript"
+    ],
+    "title": "[JSConfUS 2013] Tom Occhino and Jordan Walke: JS Apps at Facebook - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=qqVbr_LaCIo",
+    "tags": [
+      "video",
+      "function programming",
+      "reactjs",
+      "meteor"
+    ],
+    "description": "Tech talk @ Meteor Devshop 11",
+    "title": "Pete Hunt: High performance functional programming with React and Meteor -- Devshop 11 Tech Talk - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=SMMRJif5QW0",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "React is a new, open source library from Facebook and Instagram. It's a library for building user interfaces for web applications. Let's talk about how React...",
+    "title": "Joe Dev on Tech - Stoyan Stefanov - Introduction to React - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=h3KksH8gfcQ",
+    "tags": [
+      "video",
+      "functional programming"
+    ],
+    "description": "Functional programming is a great way of managing complexity in user interfaces. User interfaces are very difficult to build due to the difficulty in determi...",
+    "title": "Mountain West JavaScript 2014 - Be Predictable, Not Correct. by Pete Hunt - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-DX3vJiqxm4",
+    "tags": [
+      "video",
+      "reactjs",
+      "virtual dom"
+    ],
+    "description": "This is a talk from Barcelona FutureJS 2014 (http://futurejs.org). In this talk I'll be discussing why we built a virtual DOM, how it compares to other syste...",
+    "title": "Pete Hunt - The Secrets of React's Virtual DOM (FutureJS 2014) - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=nYkdrAPrdcw",
+    "tags": [
+      "video",
+      "architecture"
+    ],
+    "description": "Delivering reliable, high-performance web experiences at Facebook's scale has required us to challenge some long-held assumptions about software development....",
+    "title": "Hacker Way: Rethinking Web App Development at Facebook - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=D-ioDiacTm8",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "We've talked a lot about big concepts such as the Virtual DOM, re-rendering the entire app on every update with a diff algorithm, server-side rendering ... B...",
+    "title": "Christopher Chedeau: Why does React Scale? [JSConf2014] - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=eCf5CquV_Bw",
+    "tags": [
+      "video",
+      "reactjs",
+      "architecture"
+    ],
+    "description": "React is a JavaScript library for building user interfaces developed by Facebook and Instagram. It has a novel rendering architecture that we’re going to exp...",
+    "title": "OSCON 2014 – React's Architecture - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/96639841",
+    "tags": [
+      "video",
+      "functional programming"
+    ],
+    "description": "This video was filmed during The flatMap(Oslo) conference which took place on the 12-13th of May 2014 in Oslo, Norway. flatMap(Oslo) is Norway's first dedicated…",
+    "title": "Christian Johansen - Functional UI Programming on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=IVvHPPcl2TM",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "React is a new a conceptual model for rendering user interfaces in a functional style. In this talk I'll look at how both the user-facing and implementation ...",
+    "title": "\"React: RESTful UI Rendering\" by Pete Hunt - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=VkTCL6Nqm6Y",
+    "tags": [
+      "video",
+      "architecture"
+    ],
+    "description": "Instagram.com renders almost all of its UI in JavaScript. I'll talk about how our packaging and push systems work in great detail, which are clever combinati...",
+    "title": "OSCON 2014: How Instagram.com Works; Pete Hunt - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=i__969noyAM",
+    "tags": [
+      "video",
+      "reactjs",
+      "flux"
+    ],
+    "description": "Facebook engineers Bill Fisher and Jing Chen are here to talk about Flux and React, and how using an application architecture with a unidirectional data flow...",
+    "title": "React and Flux: Building Applications with a Unidirectional Data Flow - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-v9MehRHsNE",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "The hands on session on \"Building single page apps with React.JS\" by Vagmi Mudumbai at the JSFoo 2014 workshops in Bangalore on 18th September, 2014 - https:...",
+    "title": "Vagmi Mudumbai - Building single page apps with React.JS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=uwnjDXtJufs",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "Managing UI complexity is hard. State exists on the server, in browser memory and in the DOM, all mutating over time. Keeping it in sync is easy at first, bu...",
+    "title": "E4E Developer Conf 2014 - Reactive, Component-based UIs with React by Ben Anderson - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=4anAwXYqLG8",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "I’ll explain how React is moving towards a minimal API surface area. Instead of providing many framework features, React is trying to utilize patterns, parad...",
+    "title": "Sebastian Markbage: Minimal API Surface Area | JSConf EU 2014 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1tWCnNgNZm4",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "Pete Hunt, core contributor to Facebook React and manager of the Instagram web team, presents at the Famo.us meetup at Folsom Street Foundry. Follow him on T...",
+    "title": "Facebook React at the Famo.us Meetup, 8/13/14 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=rI0GQc__0SM",
+    "tags": [
+      "video",
+      "refactor",
+      "reactjs"
+    ],
+    "description": "This video Steven Luscher's presentation at the Powered by JavaScript conference",
+    "title": "Steven Luscher: Decomplexifying Code with React - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=m2fuO2wl_3c",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "All Things Open 2014 - Day 2 Thursday, October 23rd, 2014 James Pearce Head of Open Source with Facebook Front Dev 1 An Introduction to ReactJS",
+    "title": "All Things Open 2014 | James Pearce | An Introduction to ReactJS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=M8x0bc81smU",
+    "tags": [
+      "video",
+      "javascript"
+    ],
+    "description": "Avik Chaudhuri, Software Engineer at Facebook and Jeff Morrison, Software Engineer at Facebook To encourage engineers to continue to make changes to the code...",
+    "title": "JavaScript Testing and Static Type Systems at Scale - @Scale 2014 - Web - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=uZgAq1CZ1N8",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "Jonathan Beebe http://www.nodevember.org/speakers/jonathan-beebe",
+    "title": "Real World React - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=a21b-KDHG-Q",
+    "tags": [
+      "video",
+      "virtual dom"
+    ],
+    "title": "Pete Hunt: Secrets of the Virtual DOM | JSConf.au 2014 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=XQM0K6YG18s",
+    "tags": [
+      "video",
+      "reactjs",
+      "angularjs"
+    ],
+    "description": "www.ng-conf.org ng-conf is a two day, single track conference focused on delivering the highest quality training in the Angular JavaScript framework. 500 to ...",
+    "title": "Angular + React = Speed Dave Smith - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=dcLrbiHIX5M",
+    "tags": [
+      "video",
+      "reactjs"
+    ],
+    "description": "OpenVis Conference 2015, Boston.",
+    "title": "INTERACTIVE DATAVIS WITH REACT  TAMING THE COMPLEXITY OF THE CHANGING STATE   Ilya Boyandin - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=X6YbAKiLCLU",
+    "tags": [
+      "video",
+      "react native",
+      "relay"
+    ],
+    "description": "As we introduce React Native & Relay, learn how we use JavaScript libraries and techniques to help our engineers develop great mobile experiences ever more e...",
+    "title": "F8 2015 - React Native & Relay: Bringing Modern Web Techniques to Mobile - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=N3tF7jtbKZY",
+    "tags": [
+      "video",
+      "flux"
+    ],
+    "description": "Flux is the application architecture used at Facebook to build large, client-side applications. Based on a unidirectional data flow and a central dispatcher,...",
+    "title": "Flux: A Unidirectional Data Flow Architecture for React Apps - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=kTSsZrub5iE",
+    "tags": [
+      "video",
+      "reactjs",
+      "rails"
+    ],
+    "description": "By, Michael Chan React is the best way to bring interactive UIs to your Rails apps. But using React.js on Rails can be hard. NPM libraries are difficult to i...",
+    "title": "RailsConf 2015 - React.js on Rails - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=oWPoW0gIzvs",
+    "tags": [
+      "video",
+      "react native"
+    ],
+    "description": "React Native enables developers to build world-class native mobile-apps using the popular React framework. Since its introduction in April, many developers h...",
+    "title": "What's New in React Native - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Pxdgu2XIAAg",
+    "tags": [
+      "video",
+      "relay"
+    ],
+    "description": "This talk will explore the Relay framework in depth: why the team built it, the guiding principles behind the design, and an overview of the architecture. Th...",
+    "title": "Building and Deploying Relay with Facebook - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LQFQl8EsV3k",
+    "tags": [
+      "video",
+      "graphql"
+    ],
+    "description": "The https://citrusbyte.com team is proud to present Nick Schrock on GraphQL @ Facebook: A Horizontal Platform - at NYC Javascript React Group at Facebook NYC...",
+    "title": "Citrusbyte Presents GraphQL: A Horizontal Platform with Nick Schrock @ Facebook - YouTube"
+  }
+]

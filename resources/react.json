@@ -1,1 +1,350 @@
-[{"url":"http://www.reactiflux.com/","tags":["reactjs","community"],"description":"Discord is a chat and voice service with a UI similar to Slack. They've want to work with the Reactiflux community to make sure it's the best home for us, and already host communities larger than ours.","title":"Reactiflux - Open community for all things React"},{"url":"https://discuss.reactjs.org/","tags":["reactjs","community"],"description":"Discussion forum for React, a JavaScript library for building user interfaces.","title":"React Discuss"},{"url":"http://stackoverflow.com/questions/tagged/reactjs","tags":["reactjs","community"],"description":" React is a JavaScript library for building user interfaces. It uses a declarative paradigm and aims to be both efficient and flexible. ","title":"Newest 'reactjs' Questions - Stack Overflow"},{"url":"https://twitter.com/reactjs","tags":["reactjs","community"],"description":"Viimeisimmät twiitit käyttäjältä React (@reactjs). React is a declarative, efficient, and flexible JavaScript library for building user interfaces","title":"React (@reactjs) | Twitter"},{"url":"https://github.com/reactjs/core-notes","tags":["reactjs","community"],"description":"core-notes - Weekly meeting notes from the React core team","title":"GitHub - reactjs/core-notes: Weekly meeting notes from the React core team"},{"url":"https://jsfiddle.net/reactjs/69z2wepo/","tags":["reactjs","playground"],"description":"Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.","title":"React Base Fiddle (JSX) - JSFiddle"},{"url":"https://jsfiddle.net/reactjs/5vjqabv3/","tags":["reactjs","playground"],"description":"Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.","title":"React Base Fiddle (non-JSX) - JSFiddle"},{"url":"https://babeljs.io/repl/","tags":["reactjs","playground"],"description":"The compiler for writing next generation JavaScript"},{"url":"https://facebook.github.io/react/html-jsx.html","tags":["reactjs","playground"]},{"url":"http://react.run/","tags":["reactjs","playground"],"description":"A live environment for React & JavaScript. The fastest way to run React in the browser","title":"React.run - The fastest way to run React"},{"url":"https://facebook.github.io/react/docs/tutorial.html","tags":["reactjs","tutorial"]},{"url":"http://courses.reactjsprogram.com/courses/reactjsfundamentals","tags":["reactjs","tutorial"],"description":"The React.js Fundamentals course is the best place to start learning React and the React ecosystem, and it's free.","title":"React.js Fundamentals | ReactJS Program"},{"url":"https://github.com/mikechau/react-primer-draft","tags":["reactjs","tutorial"],"description":"react-primer-draft - A primer for building web applications with React.","title":"GitHub - mikechau/react-primer-draft: A primer for building web applications with React."},{"url":"https://speakerdeck.com/pedronauck/reactjs-keep-simple-everything-can-be-a-component","tags":["reactjs","tutorial"],"title":"ReactJS: Keep Simple. Everything can be a component! // Speaker Deck"},{"url":"https://github.com/arkency/reactjs_koans","tags":["reactjs","tutorial"],"description":"reactjs_koans - Learn basics of React.js making the tests pass","title":"GitHub - arkency/reactjs_koans: Learn basics of React.js making the tests pass"},{"url":"http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/","tags":["reactjs","tutorial"],"description":"I also heard React.js was good and recently spent some time playing with it. Now that I’m pretty comfortable with React, I decided to write a tutorial on this subject.","title":"\n    \n      React.js Introduction For People Who Know Just Enough jQuery To Get By · React for Designers\n    \n  "},{"url":"https://www.youtube.com/watch?v=MhkGQAoc7bc&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b","tags":["reactjs","tutorial"],"description":"This React JS Course will help you get quickly up to pace with React.js development. React is an AMAZING Javascript framework that allows you to build extrem...","title":"REACT JS TUTORIAL #1 - Reactjs Javascript Introduction & Workspace Setup - YouTube"},{"url":"https://thinkster.io/topics/react","tags":["reactjs","tutorial"],"description":"The best place on the web for tutorials and screencasts covering AngularJS, Ionic, Swift, MEAN, and more!","title":"React Tutorials and Courses - Thinkster"},{"url":"https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/","tags":["reactjs","tutorial"],"description":"As we're writing the Fullstack React book, we get a lot of questions about how to build large applications with React and how to integrate external APIs.","title":"Fullstack React: React Tutorial: Cloning Yelp"},{"url":"https://github.com/mking/react-hn","tags":["reactjs","tutorial"],"description":"react-hn - Learn React by building the Hacker News front page","title":"GitHub - mking/react-hn: Learn React by building the Hacker News front page"},{"url":"http://krasimirtsonev.com/blog/article/react-js-in-design-patterns","tags":["reactjs","tutorial"],"description":" / blog of Krasimir Tsonev - front and back-end developer who writes for web technologies","title":"React.js in patterns"},{"url":"http://nicolashery.com/integrating-d3js-visualizations-in-a-react-app/","tags":["reactjs","chart","article"],"description":"A small example exploring how to integrate D3.js data visualizations into a React app.","title":"Integrating D3.js visualizations in a React app - Nicolas Hery"},{"url":"http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/","tags":["reactjs","chart","article"],"description":" Published on Feb 19, 2014 JavaScript React D3 ","title":"D3 and React - the future of charting components? - Binary Consulting"},{"url":"https://github.com/petehunt/react-server-rendering-example","tags":["reactjs","server-side rendering","article"],"description":"react-server-rendering-example - Super-basic example of how server rendering works","title":"GitHub - petehunt/react-server-rendering-example: Super-basic example of how server rendering works"},{"url":"http://yanns.github.io/blog/2014/03/15/server-side-rendering-for-javascript-reactjs-framework/","tags":["reactjs","server-side rendering","article"],"description":"Flicker effect with JavaScript applications A lot of web applications are nowadays build with a JavaScript framework, rendering the HTML in the …","title":"Server Side Rendering for JavaScript ReactJS Framework - yann's Blog"},{"url":"https://github.com/mhart/react-server-example","tags":["reactjs","server-side rendering","article"],"description":"react-server-example - A simple example of how to do server-side rendering with React (no compilation needed)","title":"GitHub - mhart/react-server-example: A simple example of how to do server-side rendering with React (no compilation needed)"},{"url":"http://augustl.com/blog/2014/jdk8_react_rendering_on_server/","tags":["reactjs","server-side rendering","article"],"description":"I've taken a short break from my OS project in the light of the recent release of JDK8. The addition of Nashorn, a brand spanking new JavaScript engine, makes executing JS from a JVM app really easy and convenient. Much more so than the old Rhino.","title":"JDK8 + Facebook React: Rendering single page apps on the server (August Lilleaas' blog)"},{"url":"http://www.phpied.com/server-side-react-with-php/","tags":["reactjs","server-side rendering","article"],"description":"Problem: Build web UIs\nSolution: React\nProblem: UI built in JS is anti-SEO (assuming search engines are still noscript) and bad for perceived performance (blank page till JS arrives)\nSolution: React page to render the first view\nProblem: Can't host node.js apps / I have tons of PHP code\nSolution: Use PHP then!","title":"  Server-side React with PHP / Stoyan's phpied.com"},{"url":"http://www.phpied.com/server-side-react-with-php-part-2/","tags":["reactjs","server-side rendering","article"],"description":"Part 1 ended with todos. The first one was to couple the server-side generated code with the client-side React, so that any updates past the initial page load will be handled by React's client JS, which is where React shines. Let's see how you can do just that.","title":"  Server-side React with PHP – part 2 / Stoyan's phpied.com"},{"url":"http://bensmithett.com/server-rendered-react-components-in-rails/","tags":["reactjs","server-side rendering","article"],"description":" Warning: experimental stuff ahead. Make sure you know more about running Rails in production than I do before you take this & run with it. Source on GitHub\n","title":"Server-rendered React components in Rails"},{"url":"https://github.com/nambrot/rails-webpack-react-flux","tags":["reactjs","server-side rendering","article"],"description":"rails-webpack-react-flux - A Sample CRUD app in Rails/Webpack/React/Flux with server side rendering","title":"GitHub - nambrot/rails-webpack-react-flux: A Sample CRUD app in Rails/Webpack/React/Flux with server side rendering"},{"url":"https://github.com/olebedev/go-starter-kit","tags":["reactjs","server-side rendering","article"],"description":"go-starter-kit - Golang isomorphic react/hot reloadable/redux/css-modules starter kit","title":"GitHub - olebedev/go-starter-kit: Golang isomorphic react/hot reloadable/redux/css-modules  starter kit"},{"url":"https://github.com/jedireza/hapi-react-views","tags":["reactjs","server-side rendering","article"],"description":"hapi-react-views - :package: A hapi view engine for React components","title":"GitHub - jedireza/hapi-react-views: A hapi view engine for React components"},{"url":"http://ericescalante.com/2015/06/07/isomorphic/","tags":["reactjs","server-side rendering","article"],"description":"The blog of Eric Escalante. covering software development. Node, Ruby, Javascript, life, love and cats.","title":"\n    \n      Isomorphic React apps in PHP via dnode · Eric Escalante\n    \n  "},{"url":"https://github.com/facebookincubator/create-react-app","tags":["reactjs","boilerplate"],"description":"create-react-app - Create React apps with no build configuration.","title":"GitHub - facebookincubator/create-react-app: Create React apps with no build configuration."},{"url":"https://github.com/kriasoft/react-app","tags":["reactjs","boilerplate"],"description":"react-app - CLI tools and templates for authoring React applications with a single dev dependency and no configurations","title":"GitHub - kriasoft/react-app: CLI tools and templates for authoring React applications with a single dev dependency and no configurations"},{"url":"https://github.com/kriasoft/react-starter-kit","tags":["reactjs","boilerplate"],"description":"react-starter-kit - React Starter Kit — isomorphic web app boilerplate (Node.js, Express, GraphQL, React.js, Babel 6, PostCSS, Webpack, Browsersync)","title":"GitHub - kriasoft/react-starter-kit: React Starter Kit — isomorphic web app boilerplate (Node.js, Express, GraphQL, React.js, Babel 6, PostCSS, Webpack, Browsersync)"},{"url":"https://github.com/kriasoft/aspnet-starter-kit","tags":["reactjs","boilerplate"],"description":"aspnet-starter-kit - Cross-platform web development with Visual Studio Code, C#, F#, JavaScript, ASP.NET Core, EF Core, React (ReactJS), Redux, Babel. Single-page application boilerplate.","title":"GitHub - kriasoft/aspnet-starter-kit: Cross-platform web development with Visual Studio Code, C#, F#, JavaScript, ASP.NET Core, EF Core, React (ReactJS), Redux, Babel. Single-page application boilerplate."},{"url":"https://github.com/kriasoft/fsharp-starter-kit","tags":["reactjs","boilerplate"],"description":"fsharp-starter-kit - Cross-platform web development with Visual Studio Code, C#, F#, JS, ASP.NET Core, EF Core, React (ReactJS), Babel and Webpack. Demo =>","title":"GitHub - kriasoft/fsharp-starter-kit: Cross-platform web development with Visual Studio Code, C#, F#, JS, ASP.NET Core, EF Core, React (ReactJS), Babel and Webpack. Demo =>"},{"url":"https://github.com/erikras/react-redux-universal-hot-example","tags":["reactjs","boilerplate"],"description":"react-redux-universal-hot-example - A starter boilerplate for a universal webapp using express, react, redux, webpack, and react-transform","title":"GitHub - erikras/react-redux-universal-hot-example: A starter boilerplate for a universal webapp using express, react, redux, webpack, and react-transform"},{"url":"https://github.com/coryhouse/react-slingshot","tags":["reactjs","boilerplate"],"description":"react-slingshot - React + Redux starter kit / boilerplate with Babel, hot reloading, testing, linting and a working example app, all built in","title":"GitHub - coryhouse/react-slingshot: React + Redux starter kit / boilerplate with Babel, hot reloading, testing, linting and a working example app, all built in"},{"url":"https://github.com/steida/este","tags":["reactjs","boilerplate"],"description":"este - Starter kit for universal full–fledged React apps. One stack for browser, mobile, server.","title":"GitHub - este/este: Starter kit for universal full–fledged React apps. One stack for browser, mobile, server."},{"url":"https://github.com/tj/frontend-boilerplate","tags":["reactjs","boilerplate"],"description":"frontend-boilerplate - webpack-react-redux-babel-autoprefixer-hmr-postcss-css-modules-rucksack-boilerplate","title":"GitHub - tj/frontend-boilerplate: webpack-react-redux-babel-autoprefixer-hmr-postcss-css-modules-rucksack-boilerplate"},{"url":"https://github.com/paypal/react-engine","tags":["reactjs","boilerplate"],"description":"react-engine - a composite render engine for universal (isomorphic) express apps to render both plain react views and react-router views","title":"GitHub - paypal/react-engine: a composite render engine for universal (isomorphic) express apps to render both plain react views and react-router views"},{"url":"https://github.com/choonkending/react-webpack-node","tags":["reactjs","boilerplate"],"description":"reactGo - Your One-Stop solution for a full-stack universal Redux App!","title":"GitHub - reactGo/reactGo: Your One-Stop solution for a full-stack universal Redux App!"},{"url":"https://github.com/benoitvallon/react-native-nw-react-calculator","tags":["reactjs","boilerplate"],"description":"react-native-nw-react-calculator - Mobile, desktop and website Apps with the same code","title":"GitHub - benoitvallon/react-native-nw-react-calculator: Mobile, desktop and website Apps with the same code"},{"url":"https://github.com/FredericHeem/starhackit","tags":["reactjs","boilerplate"],"description":"starhackit - StarHackIt: React/Redux + Node full-stack starter kit with authentication and authorization, data backed by SQL.","title":"GitHub - FredericHeem/starhackit: StarHackIt: React/Redux + Node full-stack starter kit with authentication and authorization, data backed by SQL."},{"url":"https://github.com/unimonkiez/react-cordova-boilerplate","tags":["reactjs","boilerplate"],"description":"react-cordova-boilerplate - TodoMVC example for react with development tools to build a cordova application","title":"GitHub - unimonkiez/react-cordova-boilerplate: TodoMVC example for react with development tools to build a cordova application"},{"url":"https://github.com/codefoundries/UniversalRelayBoilerplate","tags":["reactjs","boilerplate"],"description":"UniversalRelayBoilerplate - Boilerplate + examples for React Native (iOS, Android), React (isomorphic, Material-UI), Relay, GraphQL, JWT, Node.js, Apache Cassandra, DynamoDB, waterline","title":"GitHub - codefoundries/UniversalRelayBoilerplate: Boilerplate + examples for React Native (iOS, Android), React (isomorphic, Material-UI), Relay, GraphQL, JWT, Node.js, Apache Cassandra, DynamoDB, waterline"},{"url":"http://formidable.com/open-source/victory/","tags":["reactjs","chart","library"],"description":"A collection of composable React components for building interactive data visualizations.","title":"Victory"}]
+[
+  {
+    "url": "http://www.reactiflux.com/",
+    "tags": [
+      "reactjs",
+      "community"
+    ],
+    "description": "Discord is a chat and voice service with a UI similar to Slack. They've want to work with the Reactiflux community to make sure it's the best home for us, and already host communities larger than ours.",
+    "title": "Reactiflux - Open community for all things React"
+  },
+  {
+    "url": "https://discuss.reactjs.org/",
+    "tags": [
+      "reactjs",
+      "community"
+    ],
+    "description": "Discussion forum for React, a JavaScript library for building user interfaces.",
+    "title": "React Discuss"
+  },
+  {
+    "url": "http://stackoverflow.com/questions/tagged/reactjs",
+    "tags": [
+      "reactjs",
+      "community"
+    ],
+    "description": " React is a JavaScript library for building user interfaces. It uses a declarative paradigm and aims to be both efficient and flexible. ",
+    "title": "Newest 'reactjs' Questions - Stack Overflow"
+  },
+  {
+    "url": "https://twitter.com/reactjs",
+    "tags": [
+      "reactjs",
+      "community"
+    ],
+    "description": "Viimeisimmät twiitit käyttäjältä React (@reactjs). React is a declarative, efficient, and flexible JavaScript library for building user interfaces",
+    "title": "React (@reactjs) | Twitter"
+  },
+  {
+    "url": "https://github.com/reactjs/core-notes",
+    "tags": [
+      "reactjs",
+      "community"
+    ],
+    "description": "core-notes - Weekly meeting notes from the React core team",
+    "title": "GitHub - reactjs/core-notes: Weekly meeting notes from the React core team"
+  },
+  {
+    "url": "https://jsfiddle.net/reactjs/69z2wepo/",
+    "tags": [
+      "reactjs",
+      "playground"
+    ],
+    "description": "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.",
+    "title": "React Base Fiddle (JSX) - JSFiddle"
+  },
+  {
+    "url": "https://jsfiddle.net/reactjs/5vjqabv3/",
+    "tags": [
+      "reactjs",
+      "playground"
+    ],
+    "description": "Test your JavaScript, CSS, HTML or CoffeeScript online with JSFiddle code editor.",
+    "title": "React Base Fiddle (non-JSX) - JSFiddle"
+  },
+  {
+    "url": "https://babeljs.io/repl/",
+    "tags": [
+      "reactjs",
+      "playground"
+    ],
+    "description": "The compiler for writing next generation JavaScript"
+  },
+  {
+    "url": "https://facebook.github.io/react/html-jsx.html",
+    "tags": [
+      "reactjs",
+      "playground"
+    ]
+  },
+  {
+    "url": "http://react.run/",
+    "tags": [
+      "reactjs",
+      "playground"
+    ],
+    "description": "A live environment for React & JavaScript. The fastest way to run React in the browser",
+    "title": "React.run - The fastest way to run React"
+  },
+  {
+    "url": "https://facebook.github.io/react/docs/tutorial.html",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ]
+  },
+  {
+    "url": "http://courses.reactjsprogram.com/courses/reactjsfundamentals",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "The React.js Fundamentals course is the best place to start learning React and the React ecosystem, and it's free.",
+    "title": "React.js Fundamentals | ReactJS Program"
+  },
+  {
+    "url": "https://github.com/mikechau/react-primer-draft",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "react-primer-draft - A primer for building web applications with React.",
+    "title": "GitHub - mikechau/react-primer-draft: A primer for building web applications with React."
+  },
+  {
+    "url": "https://speakerdeck.com/pedronauck/reactjs-keep-simple-everything-can-be-a-component",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "title": "ReactJS: Keep Simple. Everything can be a component! // Speaker Deck"
+  },
+  {
+    "url": "https://github.com/arkency/reactjs_koans",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "reactjs_koans - Learn basics of React.js making the tests pass",
+    "title": "GitHub - arkency/reactjs_koans: Learn basics of React.js making the tests pass"
+  },
+  {
+    "url": "http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "I also heard React.js was good and recently spent some time playing with it. Now that I’m pretty comfortable with React, I decided to write a tutorial on this subject.",
+    "title": "\n    \n      React.js Introduction For People Who Know Just Enough jQuery To Get By · React for Designers\n    \n  "
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=MhkGQAoc7bc&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "This React JS Course will help you get quickly up to pace with React.js development. React is an AMAZING Javascript framework that allows you to build extrem...",
+    "title": "REACT JS TUTORIAL #1 - Reactjs Javascript Introduction & Workspace Setup - YouTube"
+  },
+  {
+    "url": "https://thinkster.io/topics/react",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "The best place on the web for tutorials and screencasts covering AngularJS, Ionic, Swift, MEAN, and more!",
+    "title": "React Tutorials and Courses - Thinkster"
+  },
+  {
+    "url": "https://www.fullstackreact.com/articles/react-tutorial-cloning-yelp/",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "As we're writing the Fullstack React book, we get a lot of questions about how to build large applications with React and how to integrate external APIs.",
+    "title": "Fullstack React: React Tutorial: Cloning Yelp"
+  },
+  {
+    "url": "https://github.com/mking/react-hn",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": "react-hn - Learn React by building the Hacker News front page",
+    "title": "GitHub - mking/react-hn: Learn React by building the Hacker News front page"
+  },
+  {
+    "url": "http://krasimirtsonev.com/blog/article/react-js-in-design-patterns",
+    "tags": [
+      "reactjs",
+      "tutorial"
+    ],
+    "description": " / blog of Krasimir Tsonev - front and back-end developer who writes for web technologies",
+    "title": "React.js in patterns"
+  },
+  {
+    "url": "http://nicolashery.com/integrating-d3js-visualizations-in-a-react-app/",
+    "tags": [
+      "reactjs",
+      "chart",
+      "article"
+    ],
+    "description": "A small example exploring how to integrate D3.js data visualizations into a React app.",
+    "title": "Integrating D3.js visualizations in a React app - Nicolas Hery"
+  },
+  {
+    "url": "http://10consulting.com/2014/02/19/d3-plus-reactjs-for-charting/",
+    "tags": [
+      "reactjs",
+      "chart",
+      "article"
+    ],
+    "description": " Published on Feb 19, 2014 JavaScript React D3 ",
+    "title": "D3 and React - the future of charting components? - Binary Consulting"
+  },
+  {
+    "url": "https://github.com/facebookincubator/create-react-app",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "create-react-app - Create React apps with no build configuration.",
+    "title": "GitHub - facebookincubator/create-react-app: Create React apps with no build configuration."
+  },
+  {
+    "url": "https://github.com/kriasoft/react-app",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-app - CLI tools and templates for authoring React applications with a single dev dependency and no configurations",
+    "title": "GitHub - kriasoft/react-app: CLI tools and templates for authoring React applications with a single dev dependency and no configurations"
+  },
+  {
+    "url": "https://github.com/kriasoft/react-starter-kit",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-starter-kit - React Starter Kit — isomorphic web app boilerplate (Node.js, Express, GraphQL, React.js, Babel 6, PostCSS, Webpack, Browsersync)",
+    "title": "GitHub - kriasoft/react-starter-kit: React Starter Kit — isomorphic web app boilerplate (Node.js, Express, GraphQL, React.js, Babel 6, PostCSS, Webpack, Browsersync)"
+  },
+  {
+    "url": "https://github.com/kriasoft/aspnet-starter-kit",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "aspnet-starter-kit - Cross-platform web development with Visual Studio Code, C#, F#, JavaScript, ASP.NET Core, EF Core, React (ReactJS), Redux, Babel. Single-page application boilerplate.",
+    "title": "GitHub - kriasoft/aspnet-starter-kit: Cross-platform web development with Visual Studio Code, C#, F#, JavaScript, ASP.NET Core, EF Core, React (ReactJS), Redux, Babel. Single-page application boilerplate."
+  },
+  {
+    "url": "https://github.com/kriasoft/fsharp-starter-kit",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "fsharp-starter-kit - Cross-platform web development with Visual Studio Code, C#, F#, JS, ASP.NET Core, EF Core, React (ReactJS), Babel and Webpack. Demo =>",
+    "title": "GitHub - kriasoft/fsharp-starter-kit: Cross-platform web development with Visual Studio Code, C#, F#, JS, ASP.NET Core, EF Core, React (ReactJS), Babel and Webpack. Demo =>"
+  },
+  {
+    "url": "https://github.com/erikras/react-redux-universal-hot-example",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-redux-universal-hot-example - A starter boilerplate for a universal webapp using express, react, redux, webpack, and react-transform",
+    "title": "GitHub - erikras/react-redux-universal-hot-example: A starter boilerplate for a universal webapp using express, react, redux, webpack, and react-transform"
+  },
+  {
+    "url": "https://github.com/coryhouse/react-slingshot",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-slingshot - React + Redux starter kit / boilerplate with Babel, hot reloading, testing, linting and a working example app, all built in",
+    "title": "GitHub - coryhouse/react-slingshot: React + Redux starter kit / boilerplate with Babel, hot reloading, testing, linting and a working example app, all built in"
+  },
+  {
+    "url": "https://github.com/steida/este",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "este - Starter kit for universal full–fledged React apps. One stack for browser, mobile, server.",
+    "title": "GitHub - este/este: Starter kit for universal full–fledged React apps. One stack for browser, mobile, server."
+  },
+  {
+    "url": "https://github.com/tj/frontend-boilerplate",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "frontend-boilerplate - webpack-react-redux-babel-autoprefixer-hmr-postcss-css-modules-rucksack-boilerplate",
+    "title": "GitHub - tj/frontend-boilerplate: webpack-react-redux-babel-autoprefixer-hmr-postcss-css-modules-rucksack-boilerplate"
+  },
+  {
+    "url": "https://github.com/paypal/react-engine",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-engine - a composite render engine for universal (isomorphic) express apps to render both plain react views and react-router views",
+    "title": "GitHub - paypal/react-engine: a composite render engine for universal (isomorphic) express apps to render both plain react views and react-router views"
+  },
+  {
+    "url": "https://github.com/choonkending/react-webpack-node",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "reactGo - Your One-Stop solution for a full-stack universal Redux App!",
+    "title": "GitHub - reactGo/reactGo: Your One-Stop solution for a full-stack universal Redux App!"
+  },
+  {
+    "url": "https://github.com/benoitvallon/react-native-nw-react-calculator",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-native-nw-react-calculator - Mobile, desktop and website Apps with the same code",
+    "title": "GitHub - benoitvallon/react-native-nw-react-calculator: Mobile, desktop and website Apps with the same code"
+  },
+  {
+    "url": "https://github.com/FredericHeem/starhackit",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "starhackit - StarHackIt: React/Redux + Node full-stack starter kit with authentication and authorization, data backed by SQL.",
+    "title": "GitHub - FredericHeem/starhackit: StarHackIt: React/Redux + Node full-stack starter kit with authentication and authorization, data backed by SQL."
+  },
+  {
+    "url": "https://github.com/unimonkiez/react-cordova-boilerplate",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "react-cordova-boilerplate - TodoMVC example for react with development tools to build a cordova application",
+    "title": "GitHub - unimonkiez/react-cordova-boilerplate: TodoMVC example for react with development tools to build a cordova application"
+  },
+  {
+    "url": "https://github.com/codefoundries/UniversalRelayBoilerplate",
+    "tags": [
+      "reactjs",
+      "boilerplate"
+    ],
+    "description": "UniversalRelayBoilerplate - Boilerplate + examples for React Native (iOS, Android), React (isomorphic, Material-UI), Relay, GraphQL, JWT, Node.js, Apache Cassandra, DynamoDB, waterline",
+    "title": "GitHub - codefoundries/UniversalRelayBoilerplate: Boilerplate + examples for React Native (iOS, Android), React (isomorphic, Material-UI), Relay, GraphQL, JWT, Node.js, Apache Cassandra, DynamoDB, waterline"
+  },
+  {
+    "url": "http://formidable.com/open-source/victory/",
+    "tags": [
+      "reactjs",
+      "chart",
+      "library"
+    ],
+    "description": "A collection of composable React components for building interactive data visualizations.",
+    "title": "Victory"
+  }
+]
