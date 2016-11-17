@@ -40,7 +40,7 @@ export default class Header extends Component {
 
     return (
       <Navbar fixedTop className={styles.header}>
-        <Nav pullRight className={c('hidden-xs', styles.navNormalScreen)}>
+        <Nav pullRight className={c('hidden-xs', styles.navNormalScreen, { [styles.scrolled]: get(this.state, 'scrolled')})}>
           <NavItem>Search</NavItem>
           <NavItem onClick={this.props.unReadInstruction}>How to use</NavItem>
           <NavItem>About</NavItem>

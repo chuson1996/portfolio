@@ -27,6 +27,7 @@ $border-color: rgba(160,160,160,0.3);
       display: table;
       :global(.form-control) {
         border-right-width: 0;
+        z-index: 2;
       }
     }
     :global(.input-group-btn) {

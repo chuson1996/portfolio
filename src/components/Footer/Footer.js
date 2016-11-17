@@ -16,22 +16,26 @@ export default class Footer extends Component {
     const styles = require('./Footer.scss');
 
     return (
-      <Navbar fixedBottom inverse className={`${styles.footer}`}>
-        <Nav className={`hidden-xs`}>
-          <NavItem>© 2016 FroDev</NavItem>
-        </Nav>
-        <Row className={`visible-xs`}>
-          <a onClick={() => this.props.push('/')} className={`${styles.footerBtn} col-xs-4`}>
-            <i className="fa fa-search"></i>
-          </a>
-          <a onClick={() => this.props.push('/instruction')} className={`${styles.footerBtn} col-xs-4`}>
-            <i className="fa fa-question"></i>
-          </a>
-          <a className={`${styles.footerBtn} col-xs-4`}>
-            <i className="fa fa-info"></i>
-          </a>
-        </Row>
-      </Navbar>
+      <div>
+        <Navbar inverse className={`${styles.footer} hidden-xs`}>
+          <Nav>
+            <NavItem>© 2016 FroDev</NavItem>
+          </Nav>
+        </Navbar>
+        <Navbar fixedBottom inverse className={`${styles.footer} visible-xs`}>
+          <Row>
+            <a onClick={() => this.props.push('/')} className={`${styles.footerBtn} col-xs-4`}>
+              <i className="fa fa-search"></i>
+            </a>
+            <a onClick={() => this.props.push('/instruction')} className={`${styles.footerBtn} col-xs-4`}>
+              <i className="fa fa-question"></i>
+            </a>
+            <a className={`${styles.footerBtn} col-xs-4`}>
+              <i className="fa fa-info"></i>
+            </a>
+          </Row>
+        </Navbar>
+      </div>
     );
   }
 }

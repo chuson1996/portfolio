@@ -4,7 +4,17 @@
 
 .header {
   z-index: 3;
-  .navNormalScreen {}
+  .navNormalScreen {
+    > li > a {
+      @include transition(padding-top .3s ease-in, padding-bottom .3s ease-in);
+    }
+    &.scrolled {
+      > li > a {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+    }
+  }
   .navSmallScreen {
     @include transition(margin-top .3s ease-in, margin-bottom .3s ease-in);
 
