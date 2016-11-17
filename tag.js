@@ -19,7 +19,8 @@ const content = jsonfile.readFileSync(filePath);
 
 const filePaths = [
   './resources/resources.json',
-  './resources/tympanus.json'
+  './resources/tympanus.json',
+  './resources/cssVideos.json'
 ];
 
 const allResources = R.chain(
@@ -78,7 +79,8 @@ const ignoreWords = [
   'any', 'out', 'need', `it's`, 'all', 'they', 'most', 'our',
   'if', 'there', 'used', 'just', 'should', 'through', 'many',
   'over', 'every', 'also', 'them', 'do', 'have', 'just', 'should',
-  'through', 'go', 'its', 'only'];
+  'through', 'go', 'its', 'only', 'very', 'been', 'where', 'there',
+  'know', 'thing', 'work'];
 const getTags = R.pipe(
   R.chain(({description, title}) => ((title || ' ') + (description || '')).split(/[ \.]/)),
   R.map(R.compose(turnPluralToSingular, R.toLower)),

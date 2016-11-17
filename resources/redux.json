@@ -1,0 +1,128 @@
+[
+  {
+    "url": "https://egghead.io/series/getting-started-with-redux",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "> I had no idea why I'd want to use Redux when I started this course. This course really made it easy to understand the how & why of redux. Thanks Dan! Managing state in an application is critical, and is often done haphazardly. Redux provides a state container for JavaScript applications that will help your applications behave consistently. Redux is an evolution of the ideas presented by Facebook's [Flux](https://egghead.io/articles/gentle-introduction-to-the-react-flux-architecture), avoiding the complexity found in Flux by looking to how applications are built with the Elm language. Redux is useful for React applications, but React is not a requirement! In this series, we will learn the basics of Redux, so that you can start using it to simplify your applications. It's highly recommended that you have a quick read of the [Redux documentation](http://redux.js.org/docs/introduction/Motivation.html) alongside or before you watch the series. There are some amazing [community notes on this course here on Github](https://github.com/tayiorbeii/egghead.io_redux_course_notes). Once you are finished with this course be sure to check out part 2: [building-react-applications-with-idiomatic-redux](https://egghead.io/courses/building-react-applications-with-idiomatic-redux) ",
+    "title": "  Getting Started with Redux\n   - Course by @dan_abramov\n @eggheadio"
+  },
+  {
+    "url": "https://egghead.io/series/building-react-applications-with-idiomatic-redux",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "This course will pick up where we left off with the [Redux Fundamentals course](https://egghead.io/series/getting-started-with-redux). If you haven't watched that yet, you are highly encouraged to do so! You are about to learn practical production ready techniques for building your React and Redux applications. You will explore advanced state management, middleware, React Router integration, and other common problems you are likely to encounter while building applications for your clients and customers. Even if you have already spent time studying Redux, this course will show you better practices straight from the library's creator Dan Abramov. **[Click here to see the Community Notes on this course](https://github.com/tayiorbeii/egghead.io_idiomatic_redux_course_notes)** ",
+    "title": "  Building React Applications with Idiomatic Redux\n   - Course by @dan_abramov\n @eggheadio"
+  },
+  {
+    "url": "https://github.com/happypoulp/redux-tutorial",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "redux-tutorial - Learn how to use redux step by step",
+    "title": "GitHub - happypoulp/redux-tutorial: Learn how to use redux step by step"
+  },
+  {
+    "url": "http://vulgairedev.fr/blog/article/intro-Redux-ReactJS",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "I began to use ReactJS some weeks ago. Like I said in a previous post (in french), React is not a framework, but a library, its aim is not to provide tools for building a complete app : people say that it is the \"V\" in MVC. It does it really well, but what other tools can we use to build a complete app ? Well, we have Redux.",
+    "title": "Vulgaire Developpeur"
+  },
+  {
+    "url": "http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-1/",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "Getting Started with React, Redux and Immutable: a Test-Driven TodoMVC Tutorial",
+    "title": "Getting Started with React, Redux and Immutable: a Test-Driven Tutorial (Part 1) | Theodo"
+  },
+  {
+    "url": "http://www.theodo.fr/blog/2016/03/getting-started-with-react-redux-and-immutable-a-test-driven-tutorial-part-2/",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "Getting Started with React, Redux and Immutable: a Test-Driven TodoMVC Tutorial (Part 2)",
+    "title": "Getting Started with React, Redux and Immutable: a Test-Driven Tutorial (Part 2) | Theodo"
+  },
+  {
+    "url": "https://www.codementor.io/reactjs/tutorial/redux-server-rendering-react-router-universal-web-app",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "This tutorial will walk you through a sample universal React.js app that uses Redux and react-router.",
+    "title": "\nServer-Side Rendering with Redux and React-Router | Codementor\n"
+  },
+  {
+    "url": "https://www.codementor.io/reactjs/tutorial/intro-to-react-redux-pros",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "If you're interested in learning Redux or you want to learn why you should use Redux, check out this article!",
+    "title": "\nGetting Started With React Redux: An Intro | Codementor\n"
+  },
+  {
+    "url": "https://www.codementor.io/reactjs/tutorial/redux-unit-test-mocha-mocking",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "At Codementor, we use React to build some of our services. Here’s the second part of the React & Redux series written...",
+    "title": "\nUnit Testing a Redux App | Codementor\n"
+  },
+  {
+    "url": "https://auth0.com/blog/2016/01/04/secure-your-react-and-redux-app-with-jwt-authentication/",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "Learn how to add JWT authentication to your React and Redux app. Use Redux middleware to make secure calls to an API.",
+    "title": "Secure Your React and Redux App with JWT Authentication"
+  },
+  {
+    "url": "http://joelhooks.com/blog/2016/03/20/build-an-image-gallery-using-redux-saga",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "Building an Image Gallery The image gallery we will build is a simple application that displays an array of image URLs loaded from a service (Flickr …",
+    "title": "Build an Image Gallery Using React, Redux and redux-saga - @jhooks"
+  },
+  {
+    "url": "http://www.sohamkamani.com/blog/2016/06/05/redux-apis/",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "Redux has taken the web development by storm, and after the success of react and flux, it has made the flux philosophy more accessible through its simplified approach. Although, something has always bothered me about redux :",
+    "title": "A simplified approach to calling APIs with redux ⏬"
+  },
+  {
+    "url": "https://github.com/smanne/reduxnor",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "reduxnor - React Redux based blood donor demo application",
+    "title": "GitHub - smanne/reduxnor: React Redux based blood donor demo application"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1w-oQ-i1XB8&list=PLoYCgNOIyGABj2GQSlDRjgvXtqfDxKm5b&index=15",
+    "tags": [
+      "redux",
+      "tutorial"
+    ],
+    "description": "This Redux tutorial series will show you the schematics of a Redux application. Redux is AWESOME, but it takes a bit to get it setup. There really aren't a l...",
+    "title": "Redux Tutorial #1 - React js tutorial - How Redux Works - YouTube"
+  }
+]

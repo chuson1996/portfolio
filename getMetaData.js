@@ -14,7 +14,7 @@ const resources = jsonfile.readFileSync(filePath);
 const promises = [];
 
 const format = (str) => {
-  return str.replace(/\\n/g, ' ').replace(/\s{2,}/, ' ');
+  return str.replace(/\\n/g, ' ').replace(/\s{2,}/g, ' ');
 };
 
 const overrideResource = (index) => (callback) => {

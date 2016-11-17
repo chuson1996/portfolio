@@ -1,0 +1,446 @@
+[
+  {
+    "url": "https://www.youtube.com/watch?v=9AG35HCBpo4",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Let's find out what is coming to CSS in the near future and how we can start using of these new features today. We'll dive into things like CSS modules, vari...",
+    "title": "CSS in 2016 and Beyond - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=lTCukb6Zn3g&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "animation"
+    ],
+    "description": "CSS variables are here, and they're much more powerful than you think. In this presentation, we will explore the many possibilities with mixing RxJS with CSS...",
+    "title": "David Khourshid: Reactive Animations with CSS Variables - JSConf Iceland 2016 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ibeF6rbzD70&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "grid",
+      "flexbox"
+    ],
+    "description": "It is 2016. CSS is now 20 years old, and it has taken this long for us to get a true layout system designed for web pages and applications. A layout system, ...",
+    "title": "\"Laying out the future with Grid and Flexbox\" - View Source Conference talk by Rachel Andrew - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/184235576",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "With the availability of SVG and CSS filters and blend modes, our browsers have become very powerful image rendering engines. From creating surrealist effects to…",
+    "title": "SmashingConf Freiburg 2016 - Una Kravets on Practical Blend Modes on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5Z7lSSMwRgo&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "We finally have the tools necessary to create amazing page designs on the web. Now we can art direct our layouts, leveraging the power and tradition of graph...",
+    "title": "\"Real Art Direction on the Web\" - View Source Conference talk by Jen Simmons - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=5FdHqVDlXu0&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Nowadays it is very common to find CSS frameworks like Bootstrap used everywhere. But they come at a cost, paid in big CSS files, styles that don't get used,...",
+    "title": "\"You might not need a CSS framework\" - View Source Conference talk by Belen Albeza - YouTube"
+  },
+  {
+    "url": "http://jqueryuk.com/2015/videos.php?s=mdo-ular-css",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Much of the recent discussion around CSS has focused on immutable rules for writing CSS classes, but this spotlight feels rather shortsighted. Instead, let’s talk about writing better CSS with fewer, more flexible guidelines that help put the focus on what’s between the curly braces.",
+    "title": "jQuery UK Conference - Oxford 2015"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=1yUFTrAxTzg&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "postcss"
+    ],
+    "title": "Andrey Sitnik - PostCSS: The Future After Sass and LESS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=zSYo7m5kGHQ&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "We're all pretty big fans of Bootstrap. It's a component library that helps us turn our ideas into reality faster than we've ever been able to do in the past...",
+    "title": "Alex Sexton: Your Very Own Component Library | JSConf.ar 2014 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=J6wUmQDQBkw&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Thanks our friends at SitePoint, Benjamin De Cock's CSSConf Australia 2015 presentation 'Lets move!'. http://2015.cssconf.com.au/ https://twitter.com/bdc htt...",
+    "title": "Benjamin De Cock - Lets move! - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=TjsXqt-UxLo&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "animation"
+    ],
+    "description": "OpenVis Conference 2015, Boston.",
+    "title": "MOTION DESIGN WITH CSS   Val Head - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=iniwPUEbPUM&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Jacob Thornton presents at Code Genius. 6/4/15 Follow Jacob Thornton: @fat http://byfat.xxx/ Visit code.genius.com for more information about past events and...",
+    "title": "CODE GENIUS - Cascading Shit Show by Jacob Thornton - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=NoaxsCi13yQ&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "title": "Colin Megill - Inline Styles are About to Kill CSS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=NHpSmJrEvRQ&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "title": "Michelle Bu | TXJS 2015 - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/140641366",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Depending on where you draw your measurements from, the first programming languages for use on ‘modern’ electric computers were designed in the ’40s…",
+    "title": "SmashingConf Freiburg: CSS For Software Engineers For CSS Developers on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=LY65F2e4B5w&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Una’s talk, Photoshop is Dead: Editing Images in CSS, demonstrates how we can use CSS blend modes, filters, and gradients to implement custom photo effects r...",
+    "title": "CSSconf EU 2015 | Una Kravets: Photoshop is Dead!: Editing Images in CSS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=_98SE8WUvLk&index=10&list=PL37ZVnwpeshHoV6GgvG9WWAP6rjnEdAs9",
+    "tags": [
+      "css",
+      "video",
+      "flexbox",
+      "responsive"
+    ],
+    "description": "\"Enhancing Responsiveness With Flexbox\": Flexbox and responsive web design go great together, like peanut butter and jelly! Flexbox gives you more control ov...",
+    "title": "CSSconf 2015 | Zoe M. Gillenwater: Enhancing Responsiveness With Flexbox - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=zmjfh099zYg&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Filmed at http://2015.dotcss.io on December 4th in Paris. More talks on http://thedotpost.com Over the 8 years of its life, Dropbox’s CSS codebase has grown ...",
+    "title": "dotCSS 2015 - Daniel Eden - Move Slow and Fix Things - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/95734680",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "CSS frameworks: you either love 'em or you loathe 'em. Whichever side of the fence you're on, it's fair to say that CSS frameworks have had a…",
+    "title": "Harry Roberts - What Is A CSS Framework Anyway? on Vimeo"
+  },
+  {
+    "url": "https://vimeo.com/99877232",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Finally we got the chance to get Snoook over to Düsseldorf. His talk was … Title: \"CSS is a Mess\" Description: --------------- CSS…",
+    "title": "Jonathan Snook – CSS is a Mess – beyond tellerrand Düsseldorf 2014 on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=FYcu-wWrNqo&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "CSS is a very funny language. That is something we all have realised at some point or the other while working with it. If not used correctly, a language used...",
+    "title": "Kushagra Gour: 10 Commandments for Efficient CSS Architecture - CSSConf.Asia 2014 - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/100501790",
+    "tags": [
+      "css",
+      "video",
+      "refactor"
+    ],
+    "description": "Refactoring is a practice that is often overlooked when it comes to CSS. As a result, CSS seems to just grow and grow like a hydra, until no one knows for sure which…",
+    "title": "Slaying the Dragon: Refactoring CSS for Maintainability – Alicia Liu at Front-Trends 2014 on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=vBHt61yDO9U&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "responsive"
+    ],
+    "description": "If you're building a modern web application, you know you want to target as many devices and deployment channels as possible, so what's holding you back? Unf...",
+    "title": "Angelina Fabbro: CSS In Your Pocket - Mobile CSS Tips From The Trenches [CSSConfUS2014] - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=lf7L8X6ZBu8&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "svg"
+    ],
+    "description": "Scalable Vector Graphics, or SVGs, are the new big thing in web design today, and for a good reason. With the proliferation of retina screens and high resolu...",
+    "title": "CSSconf EU 2014 | Sara Soueidan: Styling and Animating Scalable Vector Graphics with CSS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=-bZSTMLqf8Q&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "CSS methodologies and best practices such as CSS Semantics, OOCSS, Grid Systems, SASS, LESS, (and more) exist to guide us towards making more efficient and m...",
+    "title": "HTML5DevConf Brad Westfall, AZPixels: Play nice with CSS tools and Methodologies - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=Tk_0qYEFtAY&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Why don’t ’back-end’ coders get CSS?!? They call it an ’anti-language full of black magic’, and post GIFs making fun of our craft. Let’s kill two birds with ...",
+    "title": "Christian Lilley: Build Scalable, Automated CSS - CSSConf.Asia 2014 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=_0Fk85to6hA&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "For a website to feel instant, a perceptible response to user input must be provided within hundreds of milliseconds. This perceived speed of your website re...",
+    "title": "CSSconf EU 2014 | Patrick Hamann: CSS and the Critical Path - YouTube"
+  },
+  {
+    "url": "http://new.livestream.com/accounts/6779986/events/2928486/videos/51426837",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": " Your browser doesn't have support for real-time updates. Please install flash or upgrade your browser. ",
+    "title": "Val Head: All the right mov... on Livestream"
+  },
+  {
+    "url": "https://vimeo.com/98746172",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Designing a page's layout in CSS has traditionally been a hard problem, though developers have come up with a lot of amazing hacks. Today, and in the near future,…",
+    "title": "Tab Atkins | Present and Future of CSS Layout | CSS Day on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=L8w3v9m6G04&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Filmed at http://2014.dotcss.io in Paris on November 14, 2014. More talks on http://www.thedotpost.com Nicolas is the creator of Normalize.css & suit.css",
+    "title": "dotCSS 2014 - Nicolas Gallagher - Thinking beyond “Scalable CSS” - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=QHxrr6Q82yI&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "CSS is what got Philip Walton into web development. When he found out about Web Components, a light bulb went off and he started to think about how these too...",
+    "title": "Web Components & the Future of CSS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=FEs2jgZBaQA&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "performance"
+    ],
+    "description": "You've learned the concepts, now meet the tools. High-performance sites need to feel instant and deliver the goods in less than 1000ms. In this talk, learn a...",
+    "title": "CSSconf EU 2014 | Addy Osmani: CSS Performance Tooling - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/100264064",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "This talk will showcase a series of obscure CSS fun facts, such as CSS syntax gimmicks and quirks, weird tricks that involve CSS in one way or another, and security…",
+    "title": "Mathias Bynens | 3.14 things I didn’t know about CSS | CSS Day on Vimeo"
+  },
+  {
+    "url": "http://vimeo.com/101718785",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Classes, and the CSS methodologies based on them, have begot a component based approach to styling web pages. This results in a form of presentational markup that,…",
+    "title": "Heydon Pickering | Effortless Style | CSS Day on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=xbpnqbM6cRk&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "title": "[CSSConfUS 2013] Pamela Fox: When Bootstrap Attacks - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=NTJUFQmHbvc&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "animation"
+    ],
+    "description": "\"CSS2.1 was two dimensional: There was no concept of depth or time. CSS3 brings us some control over both, with transitions and animations for the latter. In...",
+    "title": "Lea Verou: CSS in the 4th Dimension - JSConf.Asia 2013 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=2PU6JX4S7zI&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "test"
+    ],
+    "description": "\"You have some kind of test suite for your web app, so you know the features work. But does it look right? You fire up half a dozen virtual machines and open...",
+    "title": "Jakob Mattsson: Automated CSS Testing - JSConf.Asia 2013 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ue-Z_HxS3cc&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "CSSconf.eu - http://cssconf.eu - Berlin, September 13, 2013 Slides: http://de.slideshare.net/stubbornella/why-are-you-here-26314610 About: \"Nicole is a UI pe...",
+    "title": "[CSSconf.eu 2013] Nicole Sullivan - Keynote - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/74359951",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "The current state of the Web platform makes working with, and maintaining lots of HTML and CSS a painful task. Even modestly-sized applications can quickly end up…",
+    "title": "Nicolas Gallagher — CSS Application Architecture (SmashingConf 2013, Freiburg) on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=I82ytAWxzrI&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video",
+      "refactor"
+    ],
+    "description": "SASS Conf 2013, Session 11",
+    "title": "Realigning & Refactoring UI - Jina Bolton - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=ldx4ZFxMEeo&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "CSSconf.eu - http://cssconf.eu - Berlin, September 13, 2013 Slides: https://speakerdeck.com/csswizardry/normalising-designs-for-better-quality-css Talk descr...",
+    "title": "[CSSconf.eu 2013] Harry Roberts - Normalising designs for better quality CSS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=833xr1MyE30&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "http://velocityconf.com The best way to minimize the latency caused by stylesheet loading is to cut down on the CSS footprint; an obvious way to do this is t...",
+    "title": "Velocity Europe Conference 2013, Addy Osmani: Lightning Demo: Automating The Removal Of Unused CSS - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=2iFw2GCOPj0&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Speaker: Lea Verou Border-radius is humble. It will never show off. Everyone and their cat think they know it well, but it won't stand up to defend itself. I...",
+    "title": "The Humble border-radius - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/66039168",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "Nicole Sullivan as part of the HTML5/CSS3 Group at TexasJavaScript 2013. Thanks to the TXJS sponsors Mozilla, Volusion, and Bazaarvoice for the funding of these…",
+    "title": "Nicole Sullivan | TXJS 2013 on Vimeo"
+  },
+  {
+    "url": "https://vimeo.com/70041549",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "I am happy that Harry Roberts was part of beyond tellerrand 2013. Not just because he created one of the most quoted sentences of this event with \"Cheese is…",
+    "title": "Harry Roberts – Architecting Scalable CSS – beyond tellerrand 2013 on Vimeo"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=3ikye7Qc7Ak&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "css",
+      "video"
+    ],
+    "description": "W3Conf is W3C's an­nual confer­ence for web pro­fes­sion­als. If you are a web devel­op­er or designer want­ing to hear the lat­est news on HTML5, CSS, the o...",
+    "title": "Lea Verou, \"More CSS Secrets: Another 10 things you may not know about CSS\" at W3Conf 2013 - YouTube"
+  },
+  {
+    "url": "https://www.youtube.com/watch?v=hFdbE6T9QGc&list=PLUS3uVC08ZaqVEGFkl_dS_3FUzILkOIzA",
+    "tags": [
+      "design",
+      "video",
+      "tool"
+    ],
+    "description": "In this talk from HTML5 Dev Conf, GitHub Designer Julie Ann Horvath talks about hacking together a design environment. She'll talk about her design process (...",
+    "title": "Open Source Tools and Libraries for Designers - YouTube"
+  },
+  {
+    "url": "https://vimeo.com/54990931",
+    "tags": [
+      "css",
+      "video",
+      "performance"
+    ],
+    "description": "A talk on some problems solved related to CSS Performance at GitHub. The talk was given at CSS Dev Conference in Honolulu, HI 2012. The slides are available in PDF…",
+    "title": "GitHub's CSS Performance on Vimeo"
+  }
+]

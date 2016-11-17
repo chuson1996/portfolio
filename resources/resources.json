@@ -1861,7 +1861,6 @@
     "title": "Human JavaScript Videos",
     "tags": [
       "video",
-      "javascript",
       "tutorial",
       "reactjs"
     ]
@@ -2336,7 +2335,6 @@
     "url": "https://reactjsnews.com/",
     "tags": [
       "reactjs",
-      "javascript",
       "news"
     ]
   },
@@ -2557,7 +2555,6 @@
     "title": "Functional Principles In React",
     "url": "https://www.youtube.com/watch?v=1uRC3hmKQnM",
     "tags": [
-      "javascript",
       "functional programming",
       "reactjs",
       "video"
@@ -3569,7 +3566,6 @@
     "title": "moroshko/react-autosuggest: WAI-ARIA compliant React autosuggest component",
     "url": "https://github.com/moroshko/react-autosuggest",
     "tags": [
-      "javascript",
       "reactjs",
       "tag",
       "library"
