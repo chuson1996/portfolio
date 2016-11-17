@@ -4,6 +4,7 @@ import TagsInput from 'react-tagsinput';
 import intersection from 'lodash/intersection';
 import {AutocompleteRenderInput} from 'components';
 import { Tag } from 'components';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 export default class ReactTags extends Component {
   static propTypes = {
@@ -39,6 +40,24 @@ export default class ReactTags extends Component {
           {...{autocomplete, suggestions, classNames, renderInputComponent}}
           {...props} />
         }
+        renderLayout={(tagComponents, inputComponent) => {
+          return (<span>
+            <div className={styles.tagContainer}>
+              <ReactCSSTransitionGroup
+                transitionEnterTimeout={1000}
+                transitionLeaveTimeout={1000}
+                transitionName={{
+                  enter: 'animatedEnter',
+                  enterActive: 'fadeInUp',
+                  leave: 'animated',
+                  leaveActive: 'fadeOutUp'
+                }} >
+                {tagComponents}
+              </ReactCSSTransitionGroup>
+            </div>
+            {inputComponent}
+          </span>);
+        }}
         value={this.props.tags}
         onChange={::this.handleChange} />
     );

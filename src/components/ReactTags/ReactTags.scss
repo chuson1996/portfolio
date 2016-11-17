@@ -4,6 +4,13 @@
 
 $border-color: rgba(160,160,160,0.3);
 
+.tagContainer {
+  // position: absolute;
+  // display: block;
+  // top: 67px;
+  // z-index: -1;
+}
+
 .tagsInput {
   background-color: $body-bg;
   :global(.input-group.tags-input-group) {
