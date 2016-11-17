@@ -6,6 +6,7 @@ import {connect} from 'react-redux';
 import { unReadInstruction } from 'redux/modules/isInstructionRead';
 import c from 'classnames';
 import get from 'lodash/get';
+import {LinkContainer} from 'react-router-bootstrap';
 
 @connect(null, {
   unReadInstruction
@@ -44,7 +45,9 @@ export default class Header extends Component {
         <Nav pullRight className={c('hidden-xs', styles.navNormalScreen, { [styles.scrolled]: get(this.state, 'scrolled')})}>
           <NavItem>Search</NavItem>
           <NavItem onClick={this.props.unReadInstruction}>How to use</NavItem>
-          <NavItem>About</NavItem>
+          <LinkContainer to={'/about'}>
+            <NavItem>About</NavItem>
+          </LinkContainer>
         </Nav>
 
         <Nav className={c('visible-xs', styles.navSmallScreen, { [styles.scrolled]: get(this.state, 'scrolled')})}>
