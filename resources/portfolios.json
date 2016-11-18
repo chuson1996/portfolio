@@ -1,6 +1,10 @@
-{
-  "url": "http://dypsilon.com/",
-  "tags": [
-    "portfolio"
-  ]
-}
+[
+  {
+    "url": "http://dypsilon.com/",
+    "tags": [
+      "portfolio"
+    ],
+    "description": "Personal website and contact info of Dmytro Navrotskyy - a full stack web developer.",
+    "title": "Dmytro Navrotskyy - Personal Website"
+  }
+]

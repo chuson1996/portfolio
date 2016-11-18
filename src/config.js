@@ -18,7 +18,7 @@ module.exports = Object.assign({
   mongoDB: process.env.MONGO_DB || 'mongodb://localhost:27017/codeadvisor',
   fbSDK: environment.isProduction ? '/fb-sdk.js' : '/fb-sdk.dev.js',
   app: {
-    title: 'Front-end Bookmark',
+    title: 'FroDev',
     link: [
       {
         rel: 'stylesheet',
@@ -31,19 +31,23 @@ module.exports = Object.assign({
       {
         src: '//assets.juicer.io/embed.js',
         type: 'text/javascript'
+      },
+      {
+        src: '/ga.js',
+        type: 'text/javascript'
       }
     ],
     description: 'The richest bookmark of front-end resources',
     head: {
-      titleTemplate: 'Front-end Bookmark: %s',
+      titleTemplate: 'FroDev: %s',
       meta: [
         {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1'},
         {name: 'description', content: 'The richest bookmark of front-end resources'},
         {charset: 'utf-8'},
         {property: 'og:site_name', content: 'The richest bookmark of front-end resources'},
-        {property: 'og:image', content: 'https://frontend-advisor.herokuapp.com/logo.jpg'},
+        {property: 'og:image', content: 'https://frodev.herokuapp.com/logo.jpg'},
         {property: 'og:locale', content: 'fi_FI'},
-        {property: 'og:title', content: 'Front-end Bookmark'},
+        {property: 'og:title', content: 'FroDev'},
         {property: 'og:description', content: 'The richest bookmark of front-end resources'},
         {property: 'og:card', content: 'summary'},
         {property: 'og:site', content: '@chuson1996'},
