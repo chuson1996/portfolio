@@ -2,6 +2,13 @@
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
 @import '../../theme/variables.scss';
 
+@mixin transform-translate($x, $y) {
+  -webkit-transform: translate($x, $y);
+  -ms-transform: translate($x, $y);
+  transform: translate($x, $y);
+}
+
+
 .logoSVG {
   .faceOuter {
     rx: 5px;
@@ -10,10 +17,10 @@
   .glass {
     @include transition(transform .3s ease-in);
     &.glassLeft {
-      transform: translate(0, 146px);
+      @include transform-translate(0, 146px);
     }
     &.glassRight {
-      transform: translate(228px, 146px);
+      @include transform-translate(228px, 146px);
     }
     .glassOuter {
       rx: 5px;
@@ -23,10 +30,10 @@
   :hover {
     .glass {
       &.glassLeft {
-        transform: translate(0, 136px);
+        @include transform-translate(0, 136px);
       }
       &.glassRight {
-        transform: translate(228px, 136px);
+        @include transform-translate(228px, 136px);
       }
     }
   }

@@ -9,7 +9,8 @@ import {
     About,
     NotFound,
     Home,
-    Instruction
+    Instruction,
+    AddResource,
   } from 'containers';
 
 export default (/* store */) => {
@@ -39,6 +40,7 @@ export default (/* store */) => {
       <IndexRoute component={Home}/>
       <Route path="/instruction" component={Instruction}/>
       <Route path="/about" component={About}/>
+      <Route path="/add" component={AddResource}/>
 
       { /* Routes requiring login */ }
       {/* <Route onEnter={requireLogin}>

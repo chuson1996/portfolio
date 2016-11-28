@@ -1,11 +1,23 @@
 import React, {Component} from 'react';
 import Helmet from 'react-helmet';
+import c from 'classnames';
+import Navbar from 'react-bootstrap/lib/Navbar';
+import Nav from 'react-bootstrap/lib/Nav';
+import NavItem from 'react-bootstrap/lib/NavItem';
 
 export default class About extends Component {
   render() {
     return (
       <div className="container bodyContainer">
         <Helmet title="About Us"/>
+        <Navbar fixedTop className={c('header-small')}>
+          <Nav>
+            <NavItem>
+              <h4 className="text-center">About</h4>
+            </NavItem>
+          </Nav>
+        </Navbar>
+
         <p className="m-t-20 text-center">This project was originally created by Chu Hoang Son</p>
 
         <h1 className="text-center m-t-40">

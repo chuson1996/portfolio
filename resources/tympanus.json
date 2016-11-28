@@ -5,8 +5,6 @@
       "progress",
       "button",
       "inspiration",
-      "css",
-      "design",
       "loading"
     ],
     "description": "Progress Button Styles: Creative effects for loading buttons",
@@ -29,6 +27,13 @@
       "inspiration",
       "slideshow",
       "navigation"
+    ]
+  },
+  {
+    "url": "http://tympanus.net/Development/TiltHoverEffects/",
+    "tags": [
+      "inspiration",
+      "hover"
     ]
   }
 ]

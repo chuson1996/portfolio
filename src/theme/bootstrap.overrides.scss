@@ -6,6 +6,7 @@
 @import '../../node_modules/hover.css/scss/hover.scss';
 @import '../../node_modules/animate.css/animate.css';
 @import '../../node_modules/react-progress-bar-plus/lib/progress-bar.css';
+@import '../../node_modules/material-design-icons/iconfont/material-icons.css';
 
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
@@ -32,7 +33,7 @@
 }
 
 .animatedEnter {
-  animation-duration: 1s;
+  animation-duration: .3s;
   animation-fill-mode: both;
   opacity: 0;
   @include transition(opacity .3s ease-in);
@@ -140,6 +141,25 @@ a,
   // }
 }
 
+// Header
+.header-small {
+  height: $header-small-height;
+  z-index: 3;
+  // position: relative;
+  :global(.navbar-nav) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  h3, h4, h5 {
+    font-weight: 400;
+    margin-top: 13px;
+    color: $brand-primary;
+  }
+
+  @media (min-width: $container-sm) {
+    display: none;
+  }
+}
 
 // Button
 .btn {
@@ -170,6 +190,9 @@ a,
 
 .panel {
   border-width: 0;
+  .panel-heading {
+    border-width: 0;
+  }
   @include box-shadow(none);
 }
 

@@ -8,6 +8,7 @@ import {reducer as requests} from '../middleware/clientMiddleware';
 import tags from './tags';
 import suggestResource from './suggestResource';
 import isInstructionRead from './isInstructionRead';
+import preview from './preview';
 
 export default combineReducers({
   routing: routerReducer,
@@ -18,4 +19,5 @@ export default combineReducers({
   tags,
   suggestResource,
   isInstructionRead,
+  preview,
 });

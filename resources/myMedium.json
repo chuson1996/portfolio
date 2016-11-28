@@ -1,38 +1,54 @@
-[{
-  "url": "https://medium.mybridge.co/22-amazing-open-source-react-projects-cb8230ec719f#.32egccaum",
-  "tags": [
-    "resource",
-    "reactjs",
-    "article"
-  ]
-}, {
-  "url": "https://uxdesign.cc/5-best-practices-for-user-onboarding-1cc870c2ab49#.44rhvzawg",
-  "tags": [
-    "article",
-    "design",
-    "ux"
-  ]
-}, {
-  "url": "https://uxdesign.cc/designing-confirmation-278d159723e#.a9vo42x5a",
-  "tags": [
-    "article",
-    "design",
-    "confirmation"
-  ]
-}, {
-  "url": "https://medium.com/portfolio-principles/the-unofficial-design-portfolio-handbook-674113391bc?source=bookmarks---------9---------",
-  "tags": [
-    "article",
-    "portfolio",
-    "design",
-    "resource"
-  ]
-}, {
-  "url": "https://medium.com/@sapegin/react-and-redux-single-page-applications-resources-22cd859b0c1d#.hummipe5u",
-  "tags": [
-    "article",
-    "resource",
-    "reactjs",
-    "redux"
-  ]
-}]
+[
+  {
+    "url": "https://medium.mybridge.co/22-amazing-open-source-react-projects-cb8230ec719f#.32egccaum",
+    "tags": [
+      "resource",
+      "reactjs",
+      "article"
+    ],
+    "description": "This is a collection of open source apps built with React.JS library. In this observation, we compared nearly 800 projects to pick the top 22. (React Native: 11, React: 11) To evaluate the quality…",
+    "title": "22 Amazing open source React projects – Mybridge for Professionals"
+  },
+  {
+    "url": "https://uxdesign.cc/5-best-practices-for-user-onboarding-1cc870c2ab49#.44rhvzawg",
+    "tags": [
+      "article",
+      "design",
+      "ux"
+    ],
+    "description": "Try to engage users by keeping the onboarding/sign up process quick — avoid using more than 3 to 5 screens and benefits, and use minimal copy. Opt for illustrations when possible and show the high…",
+    "title": "5 Best Practices for User Onboarding – uxdesign.cc – User Experience Design"
+  },
+  {
+    "url": "https://uxdesign.cc/designing-confirmation-278d159723e#.a9vo42x5a",
+    "tags": [
+      "article",
+      "design",
+      "confirmation"
+    ],
+    "description": "The confirmation design pattern isn’t something to be taken lightly. If employed erroneously, or not at all, users may commit unintended havoc. This article shares guidelines and best practices for…",
+    "title": "Designing Confirmation – uxdesign.cc – User Experience Design"
+  },
+  {
+    "url": "https://medium.com/portfolio-principles/the-unofficial-design-portfolio-handbook-674113391bc?source=bookmarks---------9---------",
+    "tags": [
+      "article",
+      "portfolio",
+      "design",
+      "resource"
+    ],
+    "description": "Building your Portfolio\nHow should I start with building my portfolio?\nWhat are the most important things to include in my portfolio? Should I design my portfolio for web or for print?\nShould I build…",
+    "title": "The Unofficial Design Portfolio Handbook – Rethink your Design Portfolio – Medium"
+  },
+  {
+    "url": "https://medium.com/@sapegin/react-and-redux-single-page-applications-resources-22cd859b0c1d#.hummipe5u",
+    "tags": [
+      "article",
+      "resource",
+      "reactjs",
+      "redux"
+    ],
+    "description": "Here is a list of the best articles, books and talks about the libraries and tools we use at the Here product tools team. Redux is an app state container. It means that we store the whole application…",
+    "title": "React and Redux Single Page Applications Resources – Artem Sapegin – Medium"
+  }
+]

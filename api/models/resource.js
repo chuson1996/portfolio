@@ -1,8 +1,8 @@
 import mongoose from 'mongoose';
-import Tag from './tag';
-import Author from './author';
-import reject from 'lodash/reject';
-import includes from 'lodash/includes';
+// import Tag from './tag';
+// import Author from './author';
+// import reject from 'lodash/reject';
+// import includes from 'lodash/includes';
 import Promise from 'bluebird';
 mongoose.Promise = Promise;
 

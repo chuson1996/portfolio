@@ -4,8 +4,9 @@
 .footer {
   color: $white;
   margin-bottom: 0;
-  :global(.fa) {
+  i {
     font-size: 2em;
+    margin: 10px 0;
   }
   :global(.col-xs-4) {
     text-align: center;

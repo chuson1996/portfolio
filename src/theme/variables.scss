@@ -52,6 +52,7 @@ $input-bg: $body-bg;
 // Panel
 $panel-body-padding: 15px 0;
 $panel-bg: transparent;
+$panel-default-heading-bg: transparent;
 
 // Pagination
 $pagination-bg: transparent;
@@ -63,6 +64,10 @@ $pagination-disabled-bg: transparent;
 
 // Footer
 $footer-height: 51px;
+
+// Header
+$header-height-xs: 86px;
+$header-small-height: 64px;
 
 // Navbar
 $navbar-default-bg: $brand-white-smoke;
@@ -79,3 +84,6 @@ $btn-default-border: $gray;
 
 // Type
 $state-danger-text: $brand-danger;
+
+// Forms
+$input-bg: transparent;

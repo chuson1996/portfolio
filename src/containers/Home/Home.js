@@ -3,7 +3,7 @@ import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import * as tagsActions from 'redux/modules/tags';
 import * as instructionActions from 'redux/modules/isInstructionRead';
-import { asyncConnect } from 'redux-async-connect';
+// import { asyncConnect } from 'redux-async-connect';
 import includes from 'lodash/includes';
 import get from 'lodash/get';
 import flatten from 'lodash/flatten';
@@ -24,22 +24,9 @@ import {
   // Tag,
   Instruction,
   LogoSVG,
+  ResourceCard,
 } from 'components';
 
-@asyncConnect([{
-  promise: ({ store: { dispatch, getState }}) => {
-    const { isLoaded: areTagsLoaded,
-      load: loadTags } = tagsActions;
-
-    const promises = [];
-
-    if (!areTagsLoaded(getState())) {
-      promises.push(dispatch(loadTags()));
-    }
-
-    return Promise.all(promises);
-  }
-}])
 @connect(
   (state) => ({
     allTags: state.tags.data,
@@ -53,7 +40,7 @@ import {
     ...instructionActions,
   }
 )
-export default class FrontendAdvisor extends Component {
+export default class Home extends Component {
   static propTypes = {
     allTags: PropTypes.array,
     inputTags: PropTypes.array,
@@ -145,31 +132,13 @@ export default class FrontendAdvisor extends Component {
 
     const possibleTags = inputTags.length ? xor(flatten(resources.map((resource) => resource.tags)), inputTags) : allTags;
 
-    const renderItem = ({ title, tags, url, description }, i) => <Panel key={i}>
-        <h3 className="m-b-12">{title}</h3>
-        <p className="m-b-12">{description}</p>
-        <p className="m-b-12">
-          <a href={url} target={'_blank'}>
-            <i className={`fa fa-globe`}></i>&nbsp;{url}
-          </a>
-        </p>
-        <p className="m-b-12">
-          <span className={`gray`}>Tags: </span>
-          {tags.map((tag, _i) =>
-            <span key={_i}>
-              { _i !== 0 && <span>, </span>}
-              <a
-                className="link link-dark"
-                onClick={() => this.handleAddition(tag)}>{tag}</a>
-            </span>
-          )}
-        </p>
-      </Panel>;
+    const renderItem = (props, i) =>
+      <ResourceCard key={i} {...props} />;
 
     // const items = (resources && !!resources.length) ? resources.map() : [];
 
     return (
-      <div className={`container ${styles.frontendAdvisor}`}>
+      <div className={`container ${styles.home}`}>
         <div className={`${styles.masthead}`}>
           {/* <div className={`${styles.logo} hidden-xs`}></div> */}
           <LogoSVG className={cl('hidden-xs', styles.logo)} />
@@ -189,20 +158,14 @@ export default class FrontendAdvisor extends Component {
             }
           </ReactCSSTransitionGroup>
 
-          {/* <AlwaysVisible style={{ height: 82, position: 'relative', zIndex: 1 }}> */}
           <ReactTags
             classNames={{
-              // tag: styles.tag,
-              // remove: styles.remove,
-              // suggestions: styles.suggestions,
               tagInputField: `${styles.tagInputField}`
             }}
             tags={inputTags}
             suggestions={possibleTags}
             handleChange={this.handleChange}
-            // handleDelete={(i) => (i !== -1) && removeTag(inputTags[i].text)}
-            // handleAddition={this.handleAddition}
-            autocomplete={!false}
+            autocomplete
             renderInputComponent={(props) => {
               // console.log(props);
               const onInputFocus = (e) => {

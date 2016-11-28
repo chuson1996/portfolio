@@ -2,7 +2,7 @@
 @import '../../theme/variables.scss';
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 
-.frontendAdvisor {
+.home {
   min-height: calc(100vh - #{$footer-height});
   margin-bottom: 86px;
   .instruction {

@@ -13,7 +13,8 @@ export default class ReactTags extends Component {
     tags: PropTypes.array,
     autocomplete: PropTypes.bool,
     classNames: PropTypes.object,
-    renderInputComponent: PropTypes.func
+    renderInputComponent: PropTypes.func,
+    inputProps: PropTypes.object,
   };
 
   handleChange(newTags) {
@@ -26,7 +27,7 @@ export default class ReactTags extends Component {
   }
 
   render() {
-    const { suggestions, autocomplete, classNames, renderInputComponent } = this.props;
+    const { suggestions, autocomplete, classNames, renderInputComponent, inputProps } = this.props;
     const styles = require('./ReactTags.scss');
     classNames.suggestions = styles.suggestions;
 
@@ -36,10 +37,7 @@ export default class ReactTags extends Component {
         className={styles.tagsInput}
         focusedClassName={styles.focused}
         inputProps={{
-          onFocus: () => {
-            // if (window.innerWidth < 769) {
-            //   document.body.style.overflowY = 'hidden';
-            // }
+          onFocus: (e) => {
             document.body.classList.add(styles.noScrollYForSmallScreen);
 
             /* For trasition animation */
@@ -48,12 +46,16 @@ export default class ReactTags extends Component {
             setTimeout(() => {
               div.style.top = null;
             }, 1);
+
+            if (inputProps && inputProps.onFocus) {
+              inputProps.onFocus(e);
+            }
           },
-          onBlur: () => {
-            // if (window.innerWidth < 769) {
-            //   document.body.style.overflowY = 'auto';
-            // }
+          onBlur: (e) => {
             document.body.classList.remove(styles.noScrollYForSmallScreen);
+            if (inputProps && inputProps.onBlur) {
+              inputProps.onBlur(e);
+            }
           }
         }}
         renderTag={(props) => <Tag index={props.key} {...props} />}

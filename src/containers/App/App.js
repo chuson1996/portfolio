@@ -18,9 +18,21 @@ import { Footer, Header } from 'components';
 import ProgressBar from 'react-progress-bar-plus';
 import { isGlobalLoading } from 'redux/middleware/clientMiddleware';
 // import random from 'lodash/random';
+import * as tagsActions from 'redux/modules/tags';
 
 @asyncConnect([{
-  promise: () => Promise.all([]) // Without this line, server-side rendering breaks!?
+  promise: ({ store: { dispatch, getState }}) => {
+    const { isLoaded: areTagsLoaded,
+      load: loadTags } = tagsActions;
+
+    const promises = [];
+
+    if (!areTagsLoaded(getState())) {
+      promises.push(dispatch(loadTags()));
+    }
+
+    return Promise.all(promises);
+  }
 }])
 @connect(
   (state) => ({

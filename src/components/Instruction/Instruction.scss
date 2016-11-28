@@ -3,12 +3,12 @@
 @import '../../theme/variables.scss';
 
 .instruction {
-  background-color: $gray-lighter;
   border-left: 3px solid $brand-primary;
 
   padding-left: 20px;
   padding-right: 20px;
   @media (min-width: $container-sm) {
+    background-color: $gray-lighter;
     padding-left: 41px;
     padding-right: 41px;
   }

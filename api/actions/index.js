@@ -7,3 +7,4 @@
 export loadTags from './loadTags';
 export getMetaData from './getMetaData';
 export postSuggestion from './postSuggestion';
+export getPreview from './getPreview';

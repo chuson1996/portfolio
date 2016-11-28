@@ -18,14 +18,17 @@ export default class Footer extends Component {
         </Navbar>
         <Navbar fixedBottom inverse className={`${styles.footer} visible-xs`}>
           <Row>
-            <Link to={`/`} className={`${styles.footerBtn} col-xs-4`}>
-              <i className="fa fa-search"></i>
+            <Link to={`/`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+              <i className="material-icons">search</i>
             </Link>
-            <Link to={`/instruction`} className={`${styles.footerBtn} col-xs-4`}>
-              <i className="fa fa-question"></i>
+            <Link to={`/add`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+              <i className="material-icons">library_add</i>
             </Link>
-            <Link to={`/about`} className={`${styles.footerBtn} col-xs-4`}>
-              <i className="fa fa-info"></i>
+            <Link to={`/instruction`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+              <i className="material-icons">help_outline</i>
+            </Link>
+            <Link to={`/about`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+              <i className="material-icons">info_outline</i>
             </Link>
           </Row>
         </Navbar>

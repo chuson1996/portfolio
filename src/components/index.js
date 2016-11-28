@@ -18,3 +18,4 @@ export Tag from './Tag/Tag';
 export Header from './Header/Header';
 export Instruction from './Instruction/Instruction';
 export LogoSVG from './LogoSVG/LogoSVG';
+export ResourceCard from './ResourceCard/ResourceCard';
