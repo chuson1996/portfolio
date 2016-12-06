@@ -2,6 +2,12 @@
 @import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
 @import '../../theme/variables.scss';
 
+.addResource {
+  padding-top: $header-height-xs;
+  padding-bottom: $footer-height;
+  min-height: calc(100vh - #{$header-small-height});
+}
+
 .header {
   .navbarRight {
     position: absolute;
@@ -16,30 +22,12 @@
     li.deleteBtn > a {
       color: $brand-danger;
     }
+    li.submitBtn.disabled > a{
+      color: $gray;
+    }
     li.submitBtn > a {
       color: $brand-success;
     }
-  }
-}
-
-.addResource {
-  padding-top: $header-height-xs;
-  padding-bottom: $footer-height;
-}
-
-:global(.panel).preview {
-  text-align: center;
-  margin-bottom: 15px;
-  > :global(.panel-heading) > :global(.panel-title) > h3 {
-    margin-bottom: -$font-size-h3;
-    text-transform: uppercase;
-  }
-  > :global(.panel-body) {
-    @include box-shadow(0 2px 7px 0 rgba(0, 0, 0, .25));
-  }
-  .content {
-    text-align: left;
-    padding: 0 15px;
   }
 }
 
@@ -49,7 +37,8 @@
   z-index: 5;
   background-color: $brand-success;
   position: fixed;
-  height: calc(100vh - #{$footer-height};
+  height: calc(100vh - #{$footer-height});
+  width: 100vw;
   color: $white;
   display: flex;
   flex-direction: column;

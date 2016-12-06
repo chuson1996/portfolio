@@ -37,18 +37,18 @@ module.exports = Object.assign({
         type: 'text/javascript'
       }
     ],
-    description: 'The richest bookmark of front-end resources',
+    description: 'The richest bookmark for front-end developers',
     head: {
       titleTemplate: 'FroDev: %s',
       meta: [
         {name: 'viewport', content: 'width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1'},
-        {name: 'description', content: 'The richest bookmark of front-end resources'},
+        {name: 'description', content: 'The richest bookmark for front-end developers'},
         {charset: 'utf-8'},
-        {property: 'og:site_name', content: 'The richest bookmark of front-end resources'},
+        {property: 'og:site_name', content: 'The richest bookmark for front-end developers'},
         {property: 'og:image', content: 'https://frodev.herokuapp.com/logo.jpg'},
         {property: 'og:locale', content: 'fi_FI'},
         {property: 'og:title', content: 'FroDev'},
-        {property: 'og:description', content: 'The richest bookmark of front-end resources'},
+        {property: 'og:description', content: 'The richest bookmark for front-end developers'},
         {property: 'og:card', content: 'summary'},
         {property: 'og:site', content: '@chuson1996'},
         {property: 'og:creator', content: '@chuson1996'},

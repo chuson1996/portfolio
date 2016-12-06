@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Panel from 'react-bootstrap/lib/Panel';
+import c from 'classnames';
 
 export default class ResourceCard extends Component {
   static propTypes = {
@@ -7,13 +8,24 @@ export default class ResourceCard extends Component {
     description: PropTypes.string,
     tags: PropTypes.array,
     url: PropTypes.string.isRequired,
+    creator: PropTypes.string,
   };
 
   render() {
-    const { title, description, tags, url, ...others } = this.props;
+    const { title, description, tags, url, creator, ...others } = this.props;
+    const styles = require('./ResourceCard.scss');
+
+    const isInBookmark = !!creator;
+
     return (
       <Panel {...others}>
         <h3 className="m-b-12">{title}</h3>
+        {isInBookmark &&
+          <p className={c(styles.bookmarkedText)}>
+            <i className="material-icons m-r-10">lock_outline</i>
+            Bookmarked
+          </p>
+        }
         <p className="m-b-12">{description}</p>
         <p className="m-b-12">
           <a href={url} target={'_blank'}>

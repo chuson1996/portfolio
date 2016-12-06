@@ -1,7 +1,7 @@
 const READ_INSTRUCTION = 'frontend-advisor/isInstructionRead/READ_INSTRUCTION';
 const UNREAD_INSTRUCTION = 'frontend-advisor/isInstructionRead/UNREAD_INSTRUCTION';
 
-export default function reducer(state = false, action) {
+export default function reducer(state = true, action) {
   switch (action.type) {
     case READ_INSTRUCTION:
       return true;

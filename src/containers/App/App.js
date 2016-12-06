@@ -7,7 +7,10 @@ import { connect } from 'react-redux';
 // import NavItem from 'react-bootstrap/lib/NavItem';
 import Helmet from 'react-helmet';
 // import { isLoaded as isInfoLoaded, load as loadInfo } from 'redux/modules/info';
-// import { isLoaded as isAuthLoaded, load as loadAuth, logout } from 'redux/modules/auth';
+import {
+  isLoaded as isAuthLoaded,
+  load as loadAuth,
+} from 'redux/modules/auth';
 // import { InfoBar } from 'components';
 import { push } from 'react-router-redux';
 import config from '../../config';
@@ -29,6 +32,10 @@ import * as tagsActions from 'redux/modules/tags';
 
     if (!areTagsLoaded(getState())) {
       promises.push(dispatch(loadTags()));
+    }
+
+    if (!isAuthLoaded(getState())) {
+      promises.push(dispatch(loadAuth()));
     }
 
     return Promise.all(promises);

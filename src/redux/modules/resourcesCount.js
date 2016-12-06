@@ -1,7 +1,6 @@
-const LOAD = 'frontend-advisor/preview/LOAD';
-const LOAD_SUCCESS = 'frontend-advisor/preview/LOAD_SUCCESS';
-const LOAD_FAIL = 'frontend-advisor/preview/LOAD_FAIL';
-const DESTROY = 'frontend-advisor/preview/DESTROY';
+const LOAD = 'frontend-advisor/resourcesCount/LOAD';
+const LOAD_SUCCESS = 'frontend-advisor/resourcesCount/LOAD_SUCCESS';
+const LOAD_FAIL = 'frontend-advisor/resourcesCount/LOAD_FAIL';
 
 const initialState = {
   loaded: false,
@@ -29,26 +28,14 @@ export default function reducer(state = initialState, action) {
         loaded: false,
         error: action.error
       };
-    case DESTROY:
-      return {
-        ...state,
-        data: null,
-        loaded: false
-      };
     default:
       return state;
   }
 }
 
-export function load(url) {
+export function load() {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
-    promise: (client) => client.get(`/getPreview?url=${url}`)
-  };
-}
-
-export function destroy() {
-  return {
-    type: DESTROY
+    promise: (client) => client.get(`/getResourcesCount`)
   };
 }

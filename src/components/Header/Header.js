@@ -64,6 +64,9 @@ export default class Header extends Component {
         <IndexLinkContainer to={'/about'} activeClassName={`undefined`}>
           <NavItem>About</NavItem>
         </IndexLinkContainer>
+        <IndexLinkContainer to={'/login'} activeClassName={`undefined`}>
+          <NavItem>Login</NavItem>
+        </IndexLinkContainer>
       </Nav>
     );
 

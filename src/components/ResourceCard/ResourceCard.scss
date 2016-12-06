@@ -1,0 +1,10 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+.bookmarkedText {
+  color: $gray;
+  i:global(.material-icons) {
+    vertical-align: bottom;
+  }
+}

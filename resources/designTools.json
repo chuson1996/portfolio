@@ -16,20 +16,26 @@
       "stock",
       "image",
       "video"
-    ]
+    ],
+    "description": "Over 820,000 high quality photos, illustrations, and vector graphics. Free for commercial use. No attribution required.",
+    "title": "Free Images - Pixabay"
   },
   {
     "url": "http://stocky.pro/",
     "tags": [
       "design",
       "stock"
-    ]
+    ],
+    "description": "Free 240 color grading Photoshop presets",
+    "title": "Gently "
   },
   {
     "url": "http://theinspirationgrid.com",
     "tags": [
       "inspiration",
       "design"
-    ]
+    ],
+    "description": "Inspiration Grid is a daily-updated blog celebrating creative talent from around the world. Get your daily fix of design, art, illustration, typography, photography, architecture, fashion and more.",
+    "title": "Inspiration Grid | Design Inspiration"
   }
 ]

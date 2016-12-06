@@ -27,8 +27,11 @@ export default class Footer extends Component {
             <Link to={`/instruction`} className={`${styles.footerBtn} col-xs-3 text-center`}>
               <i className="material-icons">help_outline</i>
             </Link>
-            <Link to={`/about`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+            {/* <Link to={`/about`} className={`${styles.footerBtn} col-xs-3 text-center`}>
               <i className="material-icons">info_outline</i>
+            </Link> */}
+            <Link to={`/login`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+              <i className="material-icons">account_circle</i>
             </Link>
           </Row>
         </Navbar>

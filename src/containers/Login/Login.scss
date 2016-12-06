@@ -1,0 +1,24 @@
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
+@import '../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
+@import '../../theme/variables.scss';
+
+.login {
+  color: $brand-primary;
+}
+
+.logo {
+  width: 231px;
+  height: 163px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.githubLoginBtn, .googleLoginBtn {
+  // padding: 18px 64px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  width: 276px;
+  i {
+    margin-right: 18px;
+  }
+}

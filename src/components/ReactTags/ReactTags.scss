@@ -19,8 +19,7 @@ $border-color: rgba(160,160,160,0.3);
 }
 
 .tagsInput {
-  @include transition(height .3s ease-in);
-  background-color: $body-bg;
+  background-color: transparent;
   :global(.input-group.tags-input-group) {
     display: block;
     :global(.form-control) {
@@ -31,6 +30,7 @@ $border-color: rgba(160,160,160,0.3);
     display: none;
   }
   &.focused {
+    background-color: $white;
     :global(.input-group.tags-input-group) {
       display: table;
       :global(.form-control) {
@@ -43,8 +43,13 @@ $border-color: rgba(160,160,160,0.3);
     }
   }
 
-  @include transition(top .1s ease-in);
+  @include transition(top .2s ease-in-out, height .5s ease-in, background-color .2s ease-in);
   @media (max-width: $screen-sm + 1) {
+    &.postFocused {
+      position: fixed;
+      width: calc(100vw - 30px);
+    }
+
     &.focused {
       position: fixed;
       top: 0;

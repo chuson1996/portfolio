@@ -5,18 +5,19 @@ import config from '../src/config';
 import * as actions from './actions/index';
 import {mapUrl} from 'utils/url.js';
 import PrettyError from 'pretty-error';
-// import http from 'http';
-// import SocketIo from 'socket.io';
 import connect from 'connect';
 import sessionMongoose from 'session-mongoose';
 import mongoose from 'mongoose';
+import passport from 'passport';
+import GitHubStrategy from 'passport-github2';
+import User from './models/user';
+require('dotenv').config();
 
 mongoose.Promise = Promise;
 
 const pretty = new PrettyError();
 const app = express();
 
-// const server = new http.Server(app);
 mongoose.connect(config.mongoDB, {
   server: {
     socketOptions: { keepAlive: 1 }
@@ -25,17 +26,64 @@ mongoose.connect(config.mongoDB, {
 const MongoSessionStore = sessionMongoose(connect);
 const sessionStore = new MongoSessionStore({url: config.mongoDB});
 
-// const io = new SocketIo(server);
-// io.path('/ws');
-
 app.use(session({
   secret: 'chuhoangson',
   resave: false,
   saveUninitialized: false,
-  cookie: { maxAge: 60000 },
+  cookie: { maxAge: 86400000 },
   store: sessionStore
 }));
 app.use(bodyParser.json());
+
+// Auth
+app.use(passport.initialize());
+app.use(passport.session());
+// -- Github
+passport.use(new GitHubStrategy({
+  clientID: process.env.GITHUB_CLIENT_ID,
+  clientSecret: process.env.GITHUB_CLIENT_SECRET,
+  callbackURL: 'http://localhost:3000/api/auth/github/callback'
+}, (accessToken, refreshToken, profile, done) => {
+  User.findOne({ email: profile.emails[0].value }, (err, result) => {
+    let user;
+    if (!result) {
+      // console.log(profile);
+      user = new User({
+        email: profile.emails[0].value,
+        displayName: profile.displayName,
+        avatarUrl: profile._json.avatar_url
+      });
+      return user.save()
+        .then(() => done(null, user))
+        .catch((error) => done(error));
+    }
+    return done(null, result);
+  });
+}
+));
+
+passport.serializeUser((user, done) => {
+  done(null, user._id);
+});
+
+passport.deserializeUser((id, done) => {
+  // console.log('deserializeUser');
+  User.findById(id, (err, user) => {
+    // console.log(id, user);
+    done(err, user);
+  });
+});
+
+app.get('/auth/github',
+  passport.authenticate('github', { scope: [ 'user:email' ] }));
+
+app.get('/auth/github/callback',
+  passport.authenticate('github', { failureRedirect: '/login' }),
+  (req, res) => {
+    // Successful authentication, redirect home.
+    res.redirect('/');
+  }
+);
 
 
 app.use((req, res) => {
@@ -64,41 +112,14 @@ app.use((req, res) => {
   }
 });
 
-
-// const bufferSize = 100;
-// const messageBuffer = new Array(bufferSize);
-// let messageIndex = 0;
-
 if (config.apiPort) {
-  /* const runnable =  */app.listen(config.apiPort, (err) => {
+  app.listen(config.apiPort, (err) => {
     if (err) {
       console.error(err);
     }
     console.info('----\n==> 🌎  API is running on port %s', config.apiPort);
     console.info('==> 💻  Send requests to http://%s:%s', config.apiHost, config.apiPort);
   });
-
-  // io.on('connection', (socket) => {
-  //   socket.emit('news', {msg: `'Hello World!' from server`});
-
-  //   socket.on('history', () => {
-  //     for (let index = 0; index < bufferSize; index++) {
-  //       const msgNo = (messageIndex + index) % bufferSize;
-  //       const msg = messageBuffer[msgNo];
-  //       if (msg) {
-  //         socket.emit('msg', msg);
-  //       }
-  //     }
-  //   });
-
-  //   socket.on('msg', (data) => {
-  //     data.id = messageIndex;
-  //     messageBuffer[messageIndex % bufferSize] = data;
-  //     messageIndex++;
-  //     io.emit('msg', data);
-  //   });
-  // });
-  // io.listen(runnable);
 } else {
   console.error('==>     ERROR: No PORT environment variable has been specified');
 }

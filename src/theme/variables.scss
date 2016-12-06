@@ -30,11 +30,18 @@ $brand-danger:          $brand-dark-terra-cotta;
 
 $headings-font-weight: 600;
 $text-color: #333;
-$font-size-base: 16px;
 $font-family-sans-serif: "Avenir Next", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
 $link-color:            $brand-info;
 
+$font-size-base: 16px;
+$font-size-h1:            floor(($font-size-base * 2.6));
+$font-size-h2:            floor(($font-size-base * 2.15));
 $font-size-h3:            ceil(($font-size-base * 1.5));
+$font-size-h4:            ceil(($font-size-base * 1.25));
+$font-size-h5:            $font-size-base !default;
+$font-size-h6:            ceil(($font-size-base * 0.85));
+
+
 
 $body-bg: $white;
 
@@ -78,12 +85,15 @@ $navbar-inverse-color: $white;
 $navbar-inverse-bg: $brand-primary;
 
 // Button
-$btn-default-color: $white;
-$btn-default-bg: $gray;
-$btn-default-border: $gray;
+$btn-default-color: $brand-primary;
+$btn-default-bg: $gray-light;
+$btn-default-border: $gray-light;
 
 // Type
 $state-danger-text: $brand-danger;
 
 // Forms
 $input-bg: transparent;
+
+// Modal
+$modal-content-bg: $white;
