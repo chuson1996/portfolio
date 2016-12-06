@@ -16,6 +16,7 @@ import * as tagsActions from 'redux/modules/tags';
 import * as instructionActions from 'redux/modules/isInstructionRead';
 import { formValueSelector, destroy, touch as touchForm } from 'redux-form';
 import { destroy as _destroyPreview } from 'redux/modules/preview';
+import { save as saveResource } from 'redux/modules/userResources';
 import {
   ReactTags,
   Pagination,
@@ -37,7 +38,7 @@ const addResourceFormSelector = formValueSelector('addResource');
     isInstructionRead: state.isInstructionRead,
     addResourceInputTag: addResourceFormSelector(state, 'addResourceInputTag'),
     resourceUrl: addResourceFormSelector(state, 'resourceUrl'),
-    formInvalid: !get(state, 'form.addResource.syncErrors')
+    formValid: !get(state, 'form.addResource.syncErrors')
   }),
   {
     ...tagsActions,
@@ -46,6 +47,7 @@ const addResourceFormSelector = formValueSelector('addResource');
     destroyPreview: _destroyPreview,
     push,
     touchForm,
+    saveResource,
   }
 )
 export default class Home extends Component {
@@ -66,8 +68,9 @@ export default class Home extends Component {
     destroyForm: PropTypes.func.isRequired,
     destroyPreview: PropTypes.func.isRequired,
     push: PropTypes.func.isRequired,
-    formInvalid: PropTypes.bool.isRequired,
+    formValid: PropTypes.bool.isRequired,
     touchForm: PropTypes.func.isRequired,
+    saveResource: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -160,23 +163,39 @@ export default class Home extends Component {
   };
 
   submit = () => {
-    const { addResourceInputTag, resourceUrl, destroyForm, destroyPreview, touchForm } = this.props;
+    const {
+      addResourceInputTag,
+      resourceUrl,
+      destroyForm,
+      destroyPreview,
+      touchForm,
+      formValid,
+      saveResource,
+    } = this.props;
     touchForm('addResource');
-    console.log(addResourceInputTag, resourceUrl);
-    this.setState({
-      ...this.state,
-      showSuccessMessage: true,
-      showAddResourceModal: false
-    });
-    destroyForm('addResource');
-    destroyPreview();
 
-    this.successMessageTimeout = setTimeout(() => {
-      this.setState({
-        ...this.state,
-        showSuccessMessage: false
+    if (formValid) {
+      /* Form valid */
+      saveResource({
+        resourceUrl,
+        tags: addResourceInputTag
+      }).then(() => {
+        this.setState({
+          ...this.state,
+          showSuccessMessage: true,
+          showAddResourceModal: false
+        });
+        destroyForm('addResource');
+        destroyPreview();
+
+        this.successMessageTimeout = setTimeout(() => {
+          this.setState({
+            ...this.state,
+            showSuccessMessage: false
+          });
+        }, 3000);
       });
-    }, 3000);
+    }
   };
 
   render() {
@@ -189,7 +208,7 @@ export default class Home extends Component {
       isInstructionRead,
       // addResourceInputTag,
       // resourceUrl,
-      formInvalid,
+      formValid,
       destroyForm,
       destroyPreview,
     } = this.props;
@@ -325,7 +344,7 @@ export default class Home extends Component {
                 Discard
               </Button>
               <Button
-                disabled={!formInvalid}
+                disabled={!formValid}
                 onClick={this.submit}
                 bsStyle={'success'}
                 className={c('m-l-23')}>
