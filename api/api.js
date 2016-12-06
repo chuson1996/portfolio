@@ -42,7 +42,7 @@ app.use(passport.session());
 passport.use(new GitHubStrategy({
   clientID: process.env.GITHUB_CLIENT_ID,
   clientSecret: process.env.GITHUB_CLIENT_SECRET,
-  callbackURL: 'http://localhost:3000/api/auth/github/callback'
+  callbackURL: `${config.domain}/api/auth/github/callback`
 }, (accessToken, refreshToken, profile, done) => {
   User.findOne({ email: profile.emails[0].value }, (err, result) => {
     let user;
