@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import { destroy as destroyPreview } from 'redux/modules/preview';
 import get from 'lodash/get';
 import { save as saveResource } from 'redux/modules/userResources';
+import { load as loadTags } from 'redux/modules/tags';
 
 const addResourceFormSelector = formValueSelector('addResource');
 
@@ -23,7 +24,8 @@ const addResourceFormSelector = formValueSelector('addResource');
     destroyForm: destroy,
     destroyPreview,
     touchForm,
-    saveResource
+    saveResource,
+    loadTags
   }
 )
 export default class AddResource extends Component {
@@ -35,6 +37,7 @@ export default class AddResource extends Component {
     formValid: PropTypes.bool.isRequired,
     touchForm: PropTypes.func.isRequired,
     saveResource: PropTypes.func.isRequired,
+    loadTags: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -53,6 +56,7 @@ export default class AddResource extends Component {
       destroyForm,
       destroyPreview,
       saveResource,
+      loadTags,
     } = this.props;
     touchForm('addResource');
 
@@ -65,6 +69,7 @@ export default class AddResource extends Component {
       }).then(() => {
         destroyForm('addResource');
         destroyPreview();
+        loadTags();
 
         this.setState({
           submitted: true,

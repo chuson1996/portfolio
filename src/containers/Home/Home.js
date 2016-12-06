@@ -17,6 +17,7 @@ import * as instructionActions from 'redux/modules/isInstructionRead';
 import { formValueSelector, destroy, touch as touchForm } from 'redux-form';
 import { destroy as _destroyPreview } from 'redux/modules/preview';
 import { save as saveResource } from 'redux/modules/userResources';
+import { load as loadTags } from 'redux/modules/tags';
 import {
   ReactTags,
   Pagination,
@@ -48,6 +49,7 @@ const addResourceFormSelector = formValueSelector('addResource');
     push,
     touchForm,
     saveResource,
+    loadTags,
   }
 )
 export default class Home extends Component {
@@ -71,6 +73,7 @@ export default class Home extends Component {
     formValid: PropTypes.bool.isRequired,
     touchForm: PropTypes.func.isRequired,
     saveResource: PropTypes.func.isRequired,
+    loadTags: PropTypes.func.isRequired,
   };
 
   constructor(props) {
@@ -127,10 +130,11 @@ export default class Home extends Component {
     const {
       addTag,
       allTags,
+      inputTags,
       // inputTagsInfo,
       loadTag
     } = this.props;
-    if (includes(allTags, tag)) {
+    if (includes(allTags, tag) && !includes(inputTags, tag)) {
       addTag(tag);
       /* Load even when it's not available */
       loadTag(tag);
@@ -171,6 +175,7 @@ export default class Home extends Component {
       touchForm,
       formValid,
       saveResource,
+      loadTags,
     } = this.props;
     touchForm('addResource');
 
@@ -187,6 +192,7 @@ export default class Home extends Component {
         });
         destroyForm('addResource');
         destroyPreview();
+        loadTags();
 
         this.successMessageTimeout = setTimeout(() => {
           this.setState({
