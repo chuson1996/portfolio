@@ -5,6 +5,10 @@
 .header {
   z-index: 3;
   .navNormalScreen {
+    .avatarContainer > a {
+      padding-top: 18px;
+      padding-bottom: 18px;
+    }
     > li > a {
       @include transition(padding-top .3s ease-in, padding-bottom .3s ease-in);
     }
@@ -12,6 +16,10 @@
       > li > a {
         padding-top: 20px;
         padding-bottom: 20px;
+      }
+      .avatarContainer > a {
+        padding-top: 7px;
+        padding-bottom: 7px;
       }
     }
   }

@@ -217,6 +217,11 @@ a,
     transform: translateY(-50%);
   }
 }
+img.avatar {
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+}
 
 .panel {
   border-width: 0;

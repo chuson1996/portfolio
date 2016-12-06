@@ -4,20 +4,25 @@ import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import {connect} from 'react-redux';
 import { unReadInstruction } from 'redux/modules/isInstructionRead';
+import { push } from 'react-router-redux';
 import c from 'classnames';
 import get from 'lodash/get';
-import {IndexLinkContainer} from 'react-router-bootstrap';
+// import {IndexLinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router';
 
 @connect((state) => ({
-  path: get(state, 'routing.locationBeforeTransitions.pathname')
+  path: get(state, 'routing.locationBeforeTransitions.pathname'),
+  user: state.auth.user
 }), {
-  unReadInstruction
+  unReadInstruction,
+  push
 })
 export default class Header extends Component {
   static propTypes = {
     unReadInstruction: PropTypes.func,
     path: PropTypes.string,
+    user: PropTypes.object,
+    push: PropTypes.func.isRequired,
   };
 
   componentDidMount() {
@@ -43,7 +48,7 @@ export default class Header extends Component {
 
   render() {
     const styles = require('./Header.scss');
-    const {path} = this.props;
+    const {path, push, unReadInstruction, user} = this.props;
 
     const MobileHeader = (
       <Nav className={c('visible-xs', styles.navSmallScreen, { [styles.scrolled]: get(this.state, 'scrolled')})}>
@@ -55,18 +60,18 @@ export default class Header extends Component {
 
     const defaultHeader = (
       <Nav pullRight className={c('hidden-xs', styles.navNormalScreen, { [styles.scrolled]: get(this.state, 'scrolled')})}>
-        <IndexLinkContainer to={`/`} activeClassName={`undefined`}>
-          <NavItem>Search</NavItem>
-        </IndexLinkContainer>
-        <IndexLinkContainer to={'/'} activeClassName={`undefined`}>
-          <NavItem onClick={this.props.unReadInstruction}>How to use</NavItem>
-        </IndexLinkContainer>
-        <IndexLinkContainer to={'/about'} activeClassName={`undefined`}>
-          <NavItem>About</NavItem>
-        </IndexLinkContainer>
-        <IndexLinkContainer to={'/login'} activeClassName={`undefined`}>
-          <NavItem>Login</NavItem>
-        </IndexLinkContainer>
+        <NavItem onClick={() => push('/')}>Search</NavItem>
+        <NavItem onClick={() => {
+          push('/');
+          unReadInstruction();
+        }}>Instruction</NavItem>
+        <NavItem onClick={() => push('/about')}>About</NavItem>
+        { user ?
+          <NavItem className={c(styles.avatarContainer)}>
+            <img src={user.avatarUrl} className={c('avatar')} alt="avatar"/>
+          </NavItem> :
+          <NavItem onClick={() => push('/login')}>Login</NavItem>
+        }
       </Nav>
     );
 
