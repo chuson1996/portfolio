@@ -1,10 +1,38 @@
+import get from 'lodash/get';
+import jwt from 'jsonwebtoken';
+import User from '../models/user';
 import PendingResource from '../models/pendingResource';
 import PendingTag from '../models/pendingTag';
 import differenceBy from 'lodash/differenceBy';
 import getMetaData from './getMetaData';
 
 // POST
-export default function saveResource({ body, user }) {
+export default async function saveResource(req) {
+  const authorization = get(req, 'headers.authorization');
+  let token;
+  let user;
+  if (authorization) {
+    token = authorization.split(' ')[1];
+    user = await new Promise((resolve, reject) => {
+      jwt.verify(token, 'chu hoang son', (err, decoded) => {
+        if (err) {
+          return reject({
+            status: 400,
+            message: 'Access token is invalid'
+          });
+        }
+
+        return User.findOne({ _id: decoded._id })
+          .then(resolve);
+      });
+    });
+  }
+
+  const { body } = req;
+  if (!user) {
+    user = req.user;
+  }
+
   /* Check if user is in session */
   if (!user) {
     return Promise.reject({
