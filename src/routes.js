@@ -14,6 +14,7 @@ import {
     Instruction,
     AddResource,
     Login,
+    Download,
   } from 'containers';
 
 export default (store) => {
@@ -49,6 +50,7 @@ export default (store) => {
         component={AddResource}
         onEnter={requireLogin} />
       <Route path="/login" component={Login}/>
+      <Route path="/download" component={Download}/>
 
       { /* Routes requiring login */ }
       {/* <Route onEnter={requireLogin}>

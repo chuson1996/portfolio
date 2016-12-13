@@ -61,6 +61,7 @@ export default class Header extends Component {
     const defaultHeader = (
       <Nav pullRight className={c('hidden-xs', styles.navNormalScreen, { [styles.scrolled]: get(this.state, 'scrolled')})}>
         <NavItem onClick={() => push('/')}>Search</NavItem>
+        <NavItem onClick={() => push('/download')}>Download</NavItem>
         <NavItem onClick={() => {
           push('/');
           unReadInstruction();

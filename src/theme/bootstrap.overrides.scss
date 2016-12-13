@@ -30,6 +30,7 @@
 .bodyContainer {
   margin-top: 86px;
   margin-bottom: $footer-height;
+  // height: calc(100vh - #{86px + 86px});
 }
 
 .animatedEnter {

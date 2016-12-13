@@ -5,3 +5,4 @@ export About from './About/About';
 export Instruction from './Instruction/Instruction';
 export AddResource from './AddResource/AddResource';
 export Login from './Login/Login';
+export Download from './Download/Download';
