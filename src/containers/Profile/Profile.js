@@ -6,21 +6,24 @@ import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import Row from 'react-bootstrap/lib/Row';
 import { connect } from 'react-redux';
-import {Link} from 'react-router';
+// import {Link} from 'react-router';
+import { push } from 'react-router-redux';
 
 @connect(
   (state) => ({
     user: state.auth.user
-  })
+  }),
+  { push }
 )
 export default class Profile extends Component {
   static propTypes = {
-    user: PropTypes.object
+    user: PropTypes.object,
+    push: PropTypes.func.isRequired,
   };
 
   render() {
     const s = require('./Profile.scss');
-    const { user } = this.props;
+    const { user, push } = this.props;
 
     return (
       <div className={c('container bodyContainer fullScreen')}>
@@ -40,7 +43,7 @@ export default class Profile extends Component {
 
         <Row>
           <ul className={c(s.buttonsList)}>
-            <li><Link to={'/bookmark'}>Bookmark</Link></li>
+            <li onClick={() => push('/bookmark')}><a>Bookmark</a></li>
             <li><a>Logout</a></li>
           </ul>
         </Row>
