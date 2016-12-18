@@ -18,7 +18,7 @@ export default class About extends Component {
           </Nav>
         </Navbar>
 
-        <p className="m-t-20 text-center">This project was originally created by Chu Hoang Son</p>
+        <p className="text-center">This project was originally created by Chu Hoang Son</p>
 
         <h1 className="text-center m-t-40">
           <a href="mailto:chuson1996@gmail.com" target="_blank">

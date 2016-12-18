@@ -15,7 +15,7 @@ $gray-dark:              #535353;
 $gray:                   #A2A2A2;
 $gray-light:             rgba(162, 162, 162, 0.37);
 $gray-lighter:           rgba(245, 245, 245, 0.94);
-$granite-gray:           #686963;
+$gray-granite:           #686963;
 $brand-sea-serpent:      #66CED6;
 $brand-independence:     #3D5467;
 $brand-dark-terra-cotta: #DB5461;
@@ -56,6 +56,11 @@ $border-box-shadow-color: rgba(0, 0, 0, 0.075);
 $input-border: $brand-independence;
 $input-bg: $body-bg;
 
+$avatar-size: 53px;
+
+// Scaffolding
+$hr-border: $gray;
+
 // Panel
 $panel-body-padding: 15px 0;
 $panel-bg: transparent;
@@ -74,7 +79,7 @@ $footer-height: 51px;
 
 // Header
 $header-height-xs: 86px;
-$header-small-height: 64px;
+$header-small-height: 66px;
 
 // Navbar
 $navbar-default-bg: $brand-white-smoke;

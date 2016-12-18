@@ -2,12 +2,14 @@ import React, { Component, PropTypes } from 'react';
 import Navbar from 'react-bootstrap/lib/Navbar';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
+import DropdownButton from 'react-bootstrap/lib/DropdownButton';
+import MenuItem from 'react-bootstrap/lib/MenuItem';
 import {connect} from 'react-redux';
 import { unReadInstruction } from 'redux/modules/isInstructionRead';
 import { push } from 'react-router-redux';
 import c from 'classnames';
 import get from 'lodash/get';
-// import {IndexLinkContainer} from 'react-router-bootstrap';
+import {LinkContainer} from 'react-router-bootstrap';
 import {Link} from 'react-router';
 
 @connect((state) => ({
@@ -68,9 +70,22 @@ export default class Header extends Component {
         }}>Instruction</NavItem>
         <NavItem onClick={() => push('/about')}>About</NavItem>
         { user ?
-          <NavItem className={c(styles.avatarContainer)}>
-            <img src={user.avatarUrl} className={c('avatar')} alt="avatar"/>
-          </NavItem> :
+          <DropdownButton
+            className={c(styles.avatarContainer)}
+            noCaret
+            id="dropdown-size-medium"
+            title={<img src={user.avatarUrl}
+              className={c('avatar')}
+              alt="avatar"
+              />
+            }>
+            <LinkContainer to={'/bookmark'}>
+              <MenuItem eventKey="1">Bookmark</MenuItem>
+            </LinkContainer>
+            <MenuItem eventKey="2">Logout</MenuItem>
+          </DropdownButton> :
+          // <NavItem className={c(styles.avatarContainer)}>
+          // </NavItem> :
           <NavItem onClick={() => push('/login')}>Login</NavItem>
         }
       </Nav>

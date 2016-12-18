@@ -26,11 +26,18 @@
 .gray {
   color: $gray;
 }
+.gray-granite {
+  color: $gray-granite;
+}
 
 .bodyContainer {
   margin-top: 86px;
-  margin-bottom: $footer-height;
-  // height: calc(100vh - #{86px + 86px});
+  padding-bottom: $footer-height;
+  padding-top: 20px;
+}
+
+.fullScreen {
+  min-height: calc(100vh - #{86px + $footer-height}); // 20px is margin-bottom of navbar header
 }
 
 .animatedEnter {
@@ -139,6 +146,10 @@ h1, h2, h3, h4, h5, h6 {
       }
     }
   }
+}
+
+.inline {
+  display: inline-block;
 }
 
 @for $i from 0 through 40 {

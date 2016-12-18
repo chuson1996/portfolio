@@ -8,3 +8,17 @@
     vertical-align: bottom;
   }
 }
+
+.bookmarkIcon {
+  color: $gray-granite;
+  cursor: pointer;
+  &.mobile {
+    vertical-align: top;
+  }
+  vertical-align: bottom;
+}
+
+.title {
+  width: calc(100% - 27px);
+  display: inline-block;
+}

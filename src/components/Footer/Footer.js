@@ -30,7 +30,7 @@ export default class Footer extends Component {
             {/* <Link to={`/about`} className={`${styles.footerBtn} col-xs-3 text-center`}>
               <i className="material-icons">info_outline</i>
             </Link> */}
-            <Link to={`/login`} className={`${styles.footerBtn} col-xs-3 text-center`}>
+            <Link to={`/profile`} className={`${styles.footerBtn} col-xs-3 text-center`}>
               <i className="material-icons">account_circle</i>
             </Link>
           </Row>

@@ -25,6 +25,7 @@ export default class ResourceCard extends Component {
     inputTags: PropTypes.array,
     addTag: PropTypes.func.isRequired,
     loadTag: PropTypes.func.isRequired,
+    saved: PropTypes.bool
   };
 
   handleAddition = (tag) => {
@@ -49,18 +50,21 @@ export default class ResourceCard extends Component {
   };
 
   render() {
-    const { title, description, tags, url, creator, ...others } = this.props;
-    const styles = require('./ResourceCard.scss');
+    const { title, description, tags, url, creator, saved, ...others } = this.props;
+    const s = require('./ResourceCard.scss');
 
     const isInBookmark = !!creator;
 
     return (
       <Panel {...others}>
-        <h3 className="m-b-12">{title}</h3>
+        <h3 className={c('m-b-12', s.title)}>
+          {title}
+        </h3>
+        <i className={c('material-icons pull-right visible-xs m-t-22', s.bookmarkIcon, s.mobile)}>{ saved ? 'bookmark' : 'bookmark_border' }</i>
         {isInBookmark &&
-          <p className={c(styles.bookmarkedText)}>
+          <p className={c(s.bookmarkedText)}>
             <i className="material-icons m-r-10">lock_outline</i>
-            Bookmarked
+            Private
           </p>
         }
         <p className="m-b-12">{description}</p>
@@ -80,6 +84,13 @@ export default class ResourceCard extends Component {
             </span>
           )}
         </p>
+        <div className={c('hidden-xs')}>
+          <hr/>
+          <p className={'gray-granite'}>
+            <i className={c('material-icons', { 'm-r-10': saved }, s.bookmarkIcon)}>{ saved ? 'bookmark' : 'bookmark_border' }</i>
+            { saved && <span>Saved</span> }
+          </p>
+        </div>
       </Panel>
     );
   }

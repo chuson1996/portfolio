@@ -5,11 +5,15 @@
 .header {
   z-index: 3;
   .navNormalScreen {
-    .avatarContainer > a {
+    .avatarContainer {
+      background-color: transparent;
       padding-top: 18px;
       padding-bottom: 18px;
+      // > a {
+      // }
     }
-    > li > a {
+    > li > a,
+    .avatarContainer {
       @include transition(padding-top .3s ease-in, padding-bottom .3s ease-in);
     }
     &.scrolled {
@@ -17,7 +21,7 @@
         padding-top: 20px;
         padding-bottom: 20px;
       }
-      .avatarContainer > a {
+      .avatarContainer {
         padding-top: 7px;
         padding-bottom: 7px;
       }

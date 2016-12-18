@@ -6,3 +6,5 @@ export Instruction from './Instruction/Instruction';
 export AddResource from './AddResource/AddResource';
 export Login from './Login/Login';
 export Download from './Download/Download';
+export Profile from './Profile/Profile';
+export Bookmark from './Bookmark/Bookmark';

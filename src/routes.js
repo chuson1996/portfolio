@@ -15,6 +15,8 @@ import {
     AddResource,
     Login,
     Download,
+    Profile,
+    Bookmark,
   } from 'containers';
 
 export default (store) => {
@@ -37,6 +39,8 @@ export default (store) => {
     }
   };
 
+  const requireLoginProp = { onEnter: requireLogin };
+
   /**
    * Please keep routes in alphabetical order
    */
@@ -46,11 +50,18 @@ export default (store) => {
       <IndexRoute component={Home}/>
       <Route path="/instruction" component={Instruction}/>
       <Route path="/about" component={About}/>
-      <Route path="/add"
-        component={AddResource}
-        onEnter={requireLogin} />
       <Route path="/login" component={Login}/>
       <Route path="/download" component={Download}/>
+
+      <Route path="/add"
+        component={AddResource}
+        {...requireLoginProp} />
+      <Route path="/profile"
+        component={Profile}
+        {...requireLoginProp} />
+      <Route path="/bookmark"
+        component={Bookmark}
+        {...requireLoginProp} />
 
       { /* Routes requiring login */ }
       {/* <Route onEnter={requireLogin}>

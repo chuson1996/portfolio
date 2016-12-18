@@ -11,3 +11,4 @@ export getPreview from './getPreview';
 export getResourcesCount from './getResourcesCount';
 export saveResource from './saveResource';
 export createAccessToken from './createAccessToken';
+export loadResources from './loadResources';
