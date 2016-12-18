@@ -1,3 +1,5 @@
+import compareDesc from 'date-fns/compare_desc';
+
 const LOAD = 'frontend-advisor/userResources/LOAD';
 const LOAD_SUCCESS = 'frontend-advisor/userResources/LOAD_SUCCESS';
 const LOAD_FAIL = 'frontend-advisor/userResources/LOAD_FAIL';
@@ -56,6 +58,7 @@ export function load() {
   return {
     types: [LOAD, LOAD_SUCCESS, LOAD_FAIL],
     promise: (client) => client.get('/loadResources')
+      .then((resources) => resources.sort((a, b) => compareDesc(new Date(a.createdAt), new Date(b.createdAt))))
   };
 }
 

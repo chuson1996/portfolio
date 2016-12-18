@@ -1,9 +1,12 @@
 import React, { Component, PropTypes } from 'react';
 import Panel from 'react-bootstrap/lib/Panel';
+import Row from 'react-bootstrap/lib/Row';
+import Col from 'react-bootstrap/lib/Col';
 import c from 'classnames';
 import includes from 'lodash/includes';
 import { connect } from 'react-redux';
 import * as tagsActions from 'redux/modules/tags';
+import formatDate from 'date-fns/format';
 
 @connect(
   (state) => ({
@@ -21,6 +24,7 @@ export default class ResourceCard extends Component {
     tags: PropTypes.array,
     url: PropTypes.string.isRequired,
     creator: PropTypes.string,
+    createdAt: PropTypes.string,
     allTags: PropTypes.array,
     inputTags: PropTypes.array,
     addTag: PropTypes.func.isRequired,
@@ -50,7 +54,7 @@ export default class ResourceCard extends Component {
   };
 
   render() {
-    const { title, description, tags, url, creator, saved, ...others } = this.props;
+    const { title, description, tags, url, creator, saved, createdAt, ...others } = this.props;
     const s = require('./ResourceCard.scss');
 
     const isInBookmark = !!creator;
@@ -86,10 +90,17 @@ export default class ResourceCard extends Component {
         </p>
         <div className={c('hidden-xs')}>
           <hr/>
-          <p className={'gray-granite'}>
-            <i className={c('material-icons', { 'm-r-10': saved }, s.bookmarkIcon)}>{ saved ? 'bookmark' : 'bookmark_border' }</i>
-            { saved && <span>Saved</span> }
-          </p>
+          <Row>
+            <Col md={7}>
+              <p className={'gray-granite'}>
+                <i className={c('material-icons', { 'm-r-10': saved }, s.bookmarkIcon)}>{ saved ? 'bookmark' : 'bookmark_border' }</i>
+                { saved && <span>Saved</span> }
+              </p>
+            </Col>
+            <Col md={5} className={'text-right gray-granite'}>
+              { formatDate(createdAt, 'D MMM') }
+            </Col>
+          </Row>
         </div>
       </Panel>
     );
