@@ -20,9 +20,10 @@ export default async function loadTags(req) {
         .exec();
 
       if (pendingResult) {
+        console.log(pendingResult.resources);
         resources = [
           ...resources,
-          ...pendingResult.resources,
+          ...pendingResult.resources.map(({ description, title, url, createdAt, tags }) => ({ description, title, url, createdAt, tags, saved: true }))
         ];
       }
     }
