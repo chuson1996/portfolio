@@ -98,7 +98,7 @@ export default class ResourceCard extends Component {
               </p>
             </Col>
             <Col md={5} className={'text-right gray-granite'}>
-              { formatDate(createdAt, 'D MMM') }
+              { createdAt && formatDate(createdAt, 'D MMM') }
             </Col>
           </Row>
         </div>
