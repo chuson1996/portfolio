@@ -1,7 +1,7 @@
 import get from 'lodash/get';
 import jwt from 'jsonwebtoken';
 import User from '../models/user';
-import PendingResource from '../models/pendingResource';
+import PrivateResource from '../models/privateResource';
 // import PendingTag from '../models/pendingTag';
 // import differenceBy from 'lodash/differenceBy';
 // import getMetaData from './getMetaData';
@@ -41,6 +41,6 @@ export default async function saveResource(req) {
   }
 
   /* Create resource */
-  return PendingResource.find({ creator: user._id })
+  return PrivateResource.find({ creator: user._id })
     .exec();
 }

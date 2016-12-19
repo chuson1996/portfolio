@@ -4,7 +4,7 @@ const pendingTagSchema = new mongoose.Schema({
   name: String,
   resources: [{
     type: Number,
-    ref: 'PendingResource'
+    ref: 'PrivateResource'
   }],
   creator: {
     type: mongoose.Schema.Types.ObjectId,

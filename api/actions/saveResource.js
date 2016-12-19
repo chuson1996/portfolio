@@ -1,7 +1,7 @@
 import get from 'lodash/get';
 import jwt from 'jsonwebtoken';
 import User from '../models/user';
-import PendingResource from '../models/pendingResource';
+import PrivateResource from '../models/privateResource';
 import PendingTag from '../models/pendingTag';
 import differenceBy from 'lodash/differenceBy';
 import getMetaData from './getMetaData';
@@ -54,7 +54,7 @@ export default async function saveResource(req) {
   // console.log(body);
 
   /* Create resource */
-  const pendingResource = new PendingResource({
+  const privateResource = new PrivateResource({
     url: body.resourceUrl,
     tags: body.tags,
     creator: user._id,
@@ -64,8 +64,8 @@ export default async function saveResource(req) {
   const getMetaDataPromise = getMetaData({ query: {
     url: body.resourceUrl
   }}).then(({ title, description }) => {
-    pendingResource.title = title;
-    pendingResource.description = description;
+    privateResource.title = title;
+    privateResource.description = description;
   });
 
   /* Create pending tags */
@@ -79,7 +79,7 @@ export default async function saveResource(req) {
       let allTags = [];
 
       existingTags.forEach((tag) => {
-        tag.resources = [...tag.resources, pendingResource];
+        tag.resources = [...tag.resources, privateResource];
         tag.creator = user._id;
       });
 
@@ -94,17 +94,17 @@ export default async function saveResource(req) {
 
         newTags = newTags.map((tag) => new PendingTag({
           name: tag.name,
-          resources: [pendingResource],
+          resources: [privateResource],
           creator: user._id
         }));
         // console.log(newTags);
         allTags = [...allTags, ...newTags]; // Contains Mongoose PendingTag Models
       }
 
-      pendingResource._tags = allTags;
+      privateResource._tags = allTags;
 
       return getMetaDataPromise.then(() => Promise.all([
-        pendingResource.save(),
+        privateResource.save(),
         ...allTags.map((tag) => tag.save())
       ]).then(() => 'OK'));
     });

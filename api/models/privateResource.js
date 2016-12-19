@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 import Promise from 'bluebird';
 mongoose.Promise = Promise;
 
-const pendingResourceSchema = new mongoose.Schema({
+const privateResourceSchema = new mongoose.Schema({
   title: String,
   description: String,
   tags: [String],
@@ -18,4 +18,4 @@ const pendingResourceSchema = new mongoose.Schema({
   createdAt: Date
 });
 
-export default mongoose.model('PendingResource', pendingResourceSchema);
+export default mongoose.model('PrivateResource', privateResourceSchema);
