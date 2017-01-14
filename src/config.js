@@ -15,6 +15,13 @@ module.exports = Object.assign({
   apiHost: process.env.APIHOST || '0.0.0.0',
   apiPort: process.env.APIPORT,
   app: {
+    link: [
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'
+      }
+    ],
     title: 'Son Portfolio',
     description: 'Chu Hoang Son - Front-end Developer',
     head: {
