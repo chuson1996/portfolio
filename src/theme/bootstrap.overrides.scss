@@ -1,262 +1,55 @@
-/**
- * Override Bootstrap styles that you can't modify via variables here.
- *
- */
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Open+Sans+Condensed:300');
 
-@import '../../node_modules/hover.css/scss/hover.scss';
-@import '../../node_modules/animate.css/animate.css';
-@import '../../node_modules/react-progress-bar-plus/lib/progress-bar.css';
-@import '../../node_modules/material-design-icons/iconfont/material-icons.css';
-
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Raleway:400,800,900');
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
-
-// Juicer
-.juicer-feed li.feed-item.j-video a.j-image:before {
-  z-index: 2 !important;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
 }
 
-.text-gray-base {
-  color: $gray-base;
+h1 {
+  font-family: 'Bungee Shade', cursive;
 }
 
-.gray-light {
-  color: $gray-light;
+a:visited,
+a:active,
+a:focus,
+a {
+  color: inherit;
 }
-.gray {
-  color: $gray;
-}
-.gray-granite {
-  color: $gray-granite;
-}
-
-.bodyContainer {
-  margin-top: 86px;
-  padding-bottom: $footer-height;
-  padding-top: 20px;
-}
-
-.fullScreen {
-  min-height: calc(100vh - #{86px + $footer-height}); // 20px is margin-bottom of navbar header
-}
-
-.animatedEnter {
-  animation-duration: .3s;
-  animation-fill-mode: both;
-  opacity: 0;
-  @include transition(opacity .3s ease-in);
-  &.bounceInLeft {
-    opacity: 1;
-  }
-}
-
-.fastAnimated {
-  animation-duration: .3s;
-  animation-fill-mode: both;
-}
-
-html,body
-{
-  // width: 100%;
-  // height: 100%;
-  // margin: 0px;
-  // padding: 0px;
-  overflow-x: hidden;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
-}
-
-.navbar-default {
-  @include box-shadow(0 0 7px 0 $gray)
-}
-
-.navbar-brand {
+a {
+  text-decoration: none;
   position: relative;
-  padding-left: 50px;
+}
+a:after {
+  content: ' ';
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  /*color: black;*/
+  background-color: black;
+  transition: all .3s ease-out;
+}
+a:hover::after {
+  width: 100%;
 }
 
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a:focus {
-  // color: #33e0ff;
-  background-color: transparent;
+.lead {
+  font-size: 1.5em;
 }
 
-.navbar {
-  border: 0;
-}
-
-.form-control {
-  // http://stackoverflow.com/questions/3062968/remove-textarea-inner-shadow-on-mobile-safari-iphone
-  -webkit-appearance: none;
-  border: 0;
-  padding-left: 0;
-  padding-bottom: 16px;
-  @include box-shadow(none);
-  border-bottom: 2px solid $input-border;
-  @include transition(border-bottom .3s ease-in);
-  &:focus {
-    outline: 0;
-    border: 0;
-    @include box-shadow(none);
-    border-bottom: 2px solid $brand-info;
-  }
-
-  &.form-control-danger {
-    border-color: $brand-danger;
-  }
-  &.form-control-success {
-    border-color: $brand-success;
-  }
-}
-
-.input-group,
-.input-group.tags-input-group {
-  .form-control-danger + .input-group-btn {
-    border-color: $brand-danger !important;
-  }
-  .form-control-success + .input-group-btn {
-    border-color: $brand-success !important;
-  }
-}
-
-.input-group.tags-input-group {
-  .form-control + .input-group-btn {
-    @include transition(border-bottom .3s ease-in);
-  }
-  .form-control:focus + .input-group-btn {
-    @include box-shadow(none);
-    border-bottom: 2px solid $brand-info;
-  }
-  .input-group-btn {
-    @include box-shadow(none);
-    border-bottom: 2px solid $input-border;
-    .btn {
-      border: 0;
-      color: $gray-light;
-      background-color: transparent;
-      @include box-shadow(none);
-
-      &:hover,
-      &:focus,
-      &:active {
-        outline-width: 0;
-      }
-    }
-  }
-}
-
-.inline {
-  display: inline-block;
-}
-
-@for $i from 0 through 40 {
-  .m-l-#{$i} {
-    margin-left: 0px + $i;
-  }
-  .m-r-#{$i} {
-    margin-right: 0px + $i;
-  }
-  .m-t-#{$i} {
-    margin-top: 0px + $i;
-  }
-  .m-b-#{$i} {
-    margin-bottom: 0px + $i;
-  }
-}
-
-a,
-.link {
-  cursor: pointer;
-
-  &.link-dark {
-    color: $brand-independence;
-  }
-  // &:hover {
-  //   text-decoration: none;
-  // }
-}
-
-// Header
-.header-small {
-  height: $header-small-height;
-  z-index: 3;
-  // position: relative;
-  :global(.navbar-nav) {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  h3, h4, h5 {
-    font-weight: 400;
-    margin-top: 13px;
-    color: $brand-primary;
-  }
-
-  @media (min-width: $container-sm) {
-    display: none;
-  }
-}
-
-// Button
-.btn {
-  padding-top: 11px;
-  padding-bottom: 11px;
-  border-width: 0px;
-  // font-weight: lighter;
-  > i {
-    margin-right: 5px;
-    vertical-align: middle;
-  }
-  span {
-    vertical-align: middle;
-  }
-}
-
-// Button circle
-.btn.btn-circle {
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
+.page {
+  padding: 80px 30px 20px 30px;
+  min-height: calc(100vh - 100px);
   position: relative;
-  > i {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-}
-img.avatar {
-  border-radius: 50%;
-  width: 3em;
-  height: 3em;
 }
 
-.panel {
-  border-width: 0;
-  .panel-heading {
-    border-width: 0;
-  }
-  @include box-shadow(none);
+.page .page__title {
+  text-align: center;
 }
 
-.pagination {
-  > li {
-    > a,
-    > span {
-      border-width: 0;
-    }
-  }
-
-  > .active > a,
-  > .active > span {
-    &,
-    &:hover,
-    &:focus {
-      text-decoration: underline;
-    }
-  }
+.bigger {
+  font-size: 1.5em;
 }

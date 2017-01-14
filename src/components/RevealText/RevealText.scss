@@ -1,0 +1,12 @@
+.revealText__container {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.revealText__block {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

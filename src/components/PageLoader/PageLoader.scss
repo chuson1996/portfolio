@@ -1,0 +1,14 @@
+.pageLoader {
+	background-image: url(../../assets/footer_lodyas.png);
+	background-repeat: repeat;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	z-index: 9999;
+	left: 0;
+	top: 0;
+	pointer-events: none;
+}

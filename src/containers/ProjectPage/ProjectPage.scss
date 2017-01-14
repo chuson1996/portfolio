@@ -1,0 +1,105 @@
+.projectPage {
+  background-image: url(../../assets/school.png);
+  background-repeat: repeat;
+
+  color: rgba(179, 100, 100, 1);
+  .page__title__cover {
+    background-color: rgba(179, 100, 100, 1);
+  }
+
+  .projects {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 400px;
+    margin: 0 -30px;
+
+    .project {
+      position: absolute;
+      width: 100%;
+
+      .projectThumbnail {
+        background-image: url('../../assets/laptop.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 316px;
+        height: 165px;
+        position: relative;
+
+        margin-top: 50px;
+        // margin-bottom: 22px;
+
+        transform-origin: 50% 1500px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        > .projectScreen {
+          position: absolute;
+          left: 45px;
+          width: 72%;
+          top: 13px;
+          height: 80%;
+          overflow: hidden;
+          background-color: #c3baba;
+
+          > img {
+            width: 100%;
+          }
+        }
+      }
+
+      .projectCaption .name,
+      .projectCaption .description {
+        text-align: center;
+      }
+    }
+  }
+
+
+
+
+  .sliderControl {
+    position: absolute;
+    bottom: 36px;
+    font-size: 1.5em;
+    display: flex;
+    left: 0;
+    right: 0;
+    padding: 0 30px;
+
+    > div {
+      flex-grow: 1;
+      text-align: left;
+
+      &:nth-of-type(2) {
+        flex-grow: 2;
+        text-align: center;
+      }
+      &:last-of-type {
+        text-align: right;
+      }
+
+      > a::after {
+        display: none;
+      }
+      > a > i {
+        width: 23px;
+        overflow: hidden;
+        transition: width .3s ease-out;
+        & + i {
+          color: #c3baba;
+          width: 0;
+        }
+      }
+
+      > a.disabled > i {
+        width: 0;
+        & + i {
+          width: 23px;
+        }
+      }
+    }
+  }
+}
+

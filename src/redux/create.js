@@ -11,10 +11,10 @@ export default function createStore(history, client, data) {
   let finalCreateStore;
   if (__DEVELOPMENT__ && __CLIENT__ && __DEVTOOLS__) {
     const { persistState } = require('redux-devtools');
-    const DevTools = require('../containers/DevTools/DevTools');
+    // const DevTools = require('../containers/DevTools/DevTools');
     finalCreateStore = compose(
       applyMiddleware(...middleware),
-      window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : DevTools.instrument(),
+      window.__REDUX_DEVTOOLS_EXTENSION__ ? window.__REDUX_DEVTOOLS_EXTENSION__() : null,
       persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
     )(_createStore);
   } else {

@@ -1,0 +1,41 @@
+.menuButton {
+  width: 25px;
+  height: 13px;
+  border: 1px solid black;
+  padding: 16px 10px;
+
+  position: fixed;
+  top: 23px;
+  right: 23px;
+  z-index: 2;
+
+  transition: border-color .3s ease-in;
+}
+
+.menuButton span {
+  background-color: black;
+  width: 22px;
+  height: 1px;
+  display: block;
+  margin-bottom: 5px;
+  float: right;
+
+  transition: background-color .3s ease-in;
+}
+.menuButton span:nth-of-type(2) {
+  width: 17px;
+}
+
+.menuButton.open {
+  border-color: white !important;
+}
+.menuButton.open span {
+  background-color: white !important;
+}
+
+.menuButton.atPage2 {
+  border-color: rgba(179, 100, 100, 1);
+}
+.menuButton.atPage2 span {
+  background-color: rgba(179, 100, 100, 1);
+}
