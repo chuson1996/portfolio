@@ -127,6 +127,7 @@
     "redux": "^3.0.4",
     "redux-async-connect": "^1.0.0-rc2",
     "redux-form": "^6.2.0",
+    "scroll-behavior": "^0.3.4",
     "serialize-javascript": "^1.1.2",
     "serve-favicon": "^2.3.0",
     "smoothscroll-polyfill": "^0.3.4",
