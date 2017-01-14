@@ -31,7 +31,7 @@ module.exports = {
   },
   styles: {
     mixins: false,
-    normalize: false,
+    normalize: true,
     print: false,
     glyphicons: false,
     scaffolding: false,

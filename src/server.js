@@ -2,6 +2,9 @@ import Express from 'express';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import config from './config';
+import favicon from 'serve-favicon';
+import compression from 'compression';
+import path from 'path';
 import createStore from './redux/create';
 import ApiClient from './helpers/ApiClient';
 import Html from './helpers/Html';
@@ -18,6 +21,11 @@ import getRoutes from './routes';
 const pretty = new PrettyError();
 const app = new Express();
 const server = new http.Server(app);
+
+app.use(compression());
+app.use(favicon(path.join(__dirname, '..', 'static', 'favicon.ico')));
+
+app.use(Express.static(path.join(__dirname, '..', 'static')));
 
 app.use((req, res) => {
   if (__DEVELOPMENT__) {
