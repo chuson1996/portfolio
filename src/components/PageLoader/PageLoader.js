@@ -18,10 +18,10 @@ export default class PageLoader extends Component {
 
   componentDidMount() {
     const timeline = [
-      ['500', () => ({ dashoffset: spring(30) })],
-      ['+500', () => ({ dashoffset: spring(60) })],
-      ['+500', () => ({ dashoffset: spring(100) })],
-      ['+500', () => {
+      ['1000', () => ({ dashoffset: spring(30) })],
+      ['+1000', () => ({ dashoffset: spring(60) })],
+      ['+1000', () => ({ dashoffset: spring(100) })],
+      ['+1000', () => {
         this.props.done();
         return { width: spring(0), opacity: spring(0) };
       }]

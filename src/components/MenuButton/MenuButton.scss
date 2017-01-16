@@ -6,7 +6,7 @@
 
   position: fixed;
   top: 23px;
-  right: 23px;
+  left: calc(100vw - 62px);
   z-index: 2;
 
   transition: border-color .3s ease-in;

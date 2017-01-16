@@ -1,5 +1,5 @@
 .projectPage {
-  background-image: url(../../assets/school.png);
+  background-image: url(../../assets/geometry2.png);
   background-repeat: repeat;
 
   color: rgba(179, 100, 100, 1);
@@ -53,6 +53,10 @@
       .projectCaption .description {
         text-align: center;
       }
+      .projectCaption .description {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
     }
   }
 
@@ -70,25 +74,26 @@
 
     > div {
       flex-grow: 1;
-      text-align: left;
+      text-align: right;
 
       &:nth-of-type(2) {
         flex-grow: 2;
         text-align: center;
       }
       &:last-of-type {
-        text-align: right;
+        text-align: left;
       }
 
       > a::after {
         display: none;
       }
-      > a > i {
+      &:first-of-type > a > i,
+      &:last-of-type > a > i {
         width: 23px;
         overflow: hidden;
         transition: width .3s ease-out;
         & + i {
-          color: #c3baba;
+          color: #979797;
           width: 0;
         }
       }

@@ -2,6 +2,7 @@ import lensProp from 'ramda/src/lensProp';
 import set from 'ramda/src/set';
 import view from 'ramda/src/view';
 import merge from 'ramda/src/merge';
+import lensPath from 'ramda/src/lensPath';
 
 const last = (arr) => arr[arr.length - 1];
 
@@ -55,4 +56,33 @@ export default (context, timeline, path) => {
   }
 
   throw new Error('Invalid format of timeline.');
+};
+
+export const se = (object) => {
+  const result = {};
+  const writeToResult = (key, val) => { result[key] = val; };
+
+  const start = (prefix = '', obj) => {
+    if (typeof obj === 'object') {
+      Object.keys(obj).forEach((key) => {
+        const val = obj[key];
+        if (prefix) start(`${prefix}.${key}`, val);
+        else start(`${key}`, val);
+      });
+    } else {
+      writeToResult(prefix, obj);
+    }
+  };
+  start('', object);
+  return result;
+};
+
+export const de = (object) => {
+  let result = {};
+  Object.keys(object).forEach((key) => {
+    const val = object[key];
+    result = set(lensPath(key.split('.')), val, result);
+    console.log(result);
+  });
+  return result;
 };

@@ -1,0 +1,49 @@
+.projectFroDev {
+  background-image: url(../../assets/light_wool.png);
+  background-repeat: repeat;
+  color: #465970;
+
+  .projecNameBackground {
+    background-color: #465970;
+  }
+
+  .thumbnailContainer {
+    margin: -80px -30px 0 -30px;
+    background-color: #c3baba;
+    .thumbnail {
+      width: 100%;
+      margin-bottom: -5px;
+    }
+  }
+
+  .projectName {
+    text-align: center;
+  }
+
+  .links {
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    a:after {
+      background-color: #465970;
+    }
+  }
+
+  .skills {
+    position: absolute;
+    bottom: 30px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    hr {
+      width: 45%;
+    }
+
+    .skill {
+      width: 50px;
+      margin: 20px;
+    }
+  }
+}

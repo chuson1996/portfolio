@@ -2,6 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Motion, spring } from 'react-motion';
 import c from 'classnames';
 import setStateWithTimeline from 'helpers/setStateWithTimeline';
+import log from 'helpers/log';
 
 export default class RevealText extends Component {
   static propTypes = {
@@ -39,7 +40,7 @@ export default class RevealText extends Component {
       ['+500', () => ({
         blockStyle: {
           width: spring(0),
-          x: spring(this.container.offsetWidth)
+          x: spring(log('offsetWidth', this.container.offsetWidth))
         },
         textStyle: {
           opacity: 1

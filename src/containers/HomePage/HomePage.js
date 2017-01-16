@@ -1,32 +1,38 @@
 import React, { Component, PropTypes } from 'react';
 import { Motion, spring } from 'react-motion';
 import { RevealText } from 'components';
+import { Link } from 'react-router';
 import setStateWithTimeline from 'helpers/setStateWithTimeline';
 
 export default class HomePage extends Component {
-  static propTypes = {};
+  static propTypes = {
+    location: PropTypes.object.isRequired
+  };
   constructor(props) {
     super(props);
     this.state = {
       showHeadline: false,
       showAboutMe: false,
       showContact: false,
-      showSocialMedia: false
+      showSocialMedia: false,
+      showBottomSection: false
     };
   }
 
   componentDidMount() {
+    const {location} = this.props;
     const timeline = [
-      ['0', () => ({ showHeadline: true })],
-      ['+250', () => ({ showAboutMe: true })],
-      ['+250', () => ({ showContact: true })],
-      ['+250', () => ({ showSocialMedia: true })]
+      [location.action === 'PUSH' ? '500' : '0', () => ({ showHeadline: true })],
+      ['+500', () => ({ showAboutMe: true })],
+      ['+500', () => ({ showContact: true })],
+      ['+500', () => ({ showSocialMedia: true })],
+      ['+500', () => ({ showBottomSection: true })]
     ];
     setStateWithTimeline(this, timeline);
   }
 
   render() {
-    const { showHeadline, showAboutMe, showContact, showSocialMedia } = this.state;
+    const { showHeadline, showAboutMe, showContact, showSocialMedia, showBottomSection } = this.state;
     const s = require('./HomePage.scss');
 
     return (
@@ -58,6 +64,21 @@ export default class HomePage extends Component {
             </p>
           }
         </Motion> }
+        { showBottomSection && <Motion
+            defaultStyle={{ opacity: 0, y: 20 }}
+            style={{ opacity: spring(1), y: spring(0) }}
+          >
+            {({ opacity, y }) =>
+              <div className={s.bottomSection}
+                style={{ opacity, transform: `translateY(${y}px)` }}>
+                <svg width="5px" height="42px" viewBox="0 0 5 42">
+                  <path d="M0,0 L0,42" stroke="#000" strokeWidth="1" strokeLinecap="square" fill="none"></path>
+                </svg>
+                <p className={s.text}><Link to="/projects">VIEW MY WORK</Link></p>
+              </div>
+            }
+          </Motion>
+        }
       </div>
     );
   }

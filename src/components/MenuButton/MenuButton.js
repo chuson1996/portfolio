@@ -8,7 +8,8 @@ const wobbly = (val) => spring(val, presets.wobbly);
 export default class MenuButton extends Component {
   static propTypes = {
     onClick: PropTypes.func,
-    open: PropTypes.bool
+    open: PropTypes.bool,
+    extraClassName: PropTypes.string
   };
 
   constructor(props) {
@@ -69,13 +70,13 @@ export default class MenuButton extends Component {
   }
 
   render() {
-    const { onClick, open } = this.props;
+    const { onClick, open, extraClassName } = this.props;
     const s = require('./MenuButton.scss');
 
     return (
       <Motion style={this.state}>
         {({ y, line1X, line2X, line3X, opacity, line1ScaleX, line2ScaleX, line3ScaleX, line2Right }) =>
-          <div onClick={onClick} className={c(s.menuButton, { [s.open]: open }, s[`atPage${this.state.atPage}`])} style={{
+          <div onClick={onClick} className={c(s.menuButton, extraClassName, { [s.open]: open }, s[`atPage${this.state.atPage}`])} style={{
             opacity,
             transform: `translateY(${y}px)`
           }}>

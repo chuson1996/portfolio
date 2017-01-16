@@ -1,3 +1,17 @@
+@mixin colorMenuButton($color) {
+	border-color: $color;
+	span {
+		background-color: $color;
+	}
+}
+
 .app {
 	opacity: 1;
+
+	.menuButtonHomePage{
+		@include colorMenuButton(black);
+	}
+	.menuButtonProjectPage{
+		@include colorMenuButton(#b36464);
+	}
 }

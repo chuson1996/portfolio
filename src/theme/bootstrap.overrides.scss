@@ -43,7 +43,7 @@ a:hover::after {
 .page {
   padding: 80px 30px 20px 30px;
   min-height: calc(100vh - 100px);
-  position: relative;
+  position: absolute;
 }
 
 .page .page__title {
