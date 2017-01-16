@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import c from 'classnames';
 import { Motion, spring } from 'react-motion';
 import { RevealText } from 'components';
-import setStateWithTimeline from 'helpers/setStateWithTimeline';
+import setStateWithTimeline, { se, de } from 'helpers/setStateWithTimeline';
 
 export default class ProjectFroDev extends Component {
   static propTypes = {};
@@ -13,13 +13,14 @@ export default class ProjectFroDev extends Component {
         name: false
       },
       motion: {
-        pageY: -100, // Unit: vh,
-        imageX: -100, // Unit: vw,
-        descriptionOpacity: 0,
-        descriptionY: 20,
-        linksX: -100,
-        linksOpacity: 0,
-        skillsOpacity: 0,
+        page: { y: -100 }, // Unit: vh,
+        image: { x: -100}, // Unit: vw,
+        description: { opacity: 0, y: 20 },
+        links: { x: -100, opacity: 0 },
+        skills: { opacity: 0 },
+        skill1: { opacity: 0, y: 20 },
+        skill2: { opacity: 0, y: 20 },
+        skill3: { opacity: 0, y: 20 },
       }
     };
   }
@@ -27,27 +28,25 @@ export default class ProjectFroDev extends Component {
   componentDidMount() {
     setTimeout(() => this.setState({ show: {name: true}}), 1000);
     const timeline = [
-      ['0', () => ({ pageY: spring(0) })],
-      ['+500', () => ({ imageX: spring(0) })],
-      // ['+500', () => {
-      //   console.log('Hello?');
-      //   this.setState({
-      //     show: {
-      //       name: true
-      //     }
-      //   });
-      //   return {};
-      // }],
+      ['0', () => ({ page: {y: spring(0)} })],
+      ['+500', () => ({ image: {x: spring(0)} })],
       ['+1000', () => ({
-        descriptionOpacity: spring(1),
-        descriptionY: spring(0)
+        description: { opacity: spring(1), y: spring(0) },
       })],
       ['+500', () => ({
-        linksX: spring(0),
-        linksOpacity: spring(1)
+        links: { x: spring(0), opacity: spring(1) },
       })],
       ['+500', () => ({
-        skillsOpacity: spring(1)
+        skills: { opacity: spring(1) }
+      })],
+      ['+500', () => ({
+        skill1: { opacity: spring(1), y: spring(0) },
+      })],
+      ['+500', () => ({
+        skill2: { opacity: spring(1), y: spring(0) },
+      })],
+      ['+500', () => ({
+        skill3: { opacity: spring(1), y: spring(0) },
       })]
     ];
     setStateWithTimeline(this, timeline, 'motion');
@@ -59,14 +58,14 @@ export default class ProjectFroDev extends Component {
 
     return (
       <Motion
-        style={this.state.motion} >
-        {({ pageY, imageX, descriptionOpacity, descriptionY, linksX, linksOpacity, skillsOpacity }) =>
+        style={se(this.state.motion)} >
+        {(rawStyle) => (({ page, image, description, links, skills, skill1, skill2, skill3 }) =>
           <div
-            style={{ transform: `translateY(${pageY}vh)` }}
+            style={{ transform: `translateY(${page.y}vh)` }}
             className={c(s.projectFroDev, 'page')}>
             <div className={s.thumbnailContainer}>
               <img
-                style={{ transform: `translateX(${imageX}vw)` }}
+                style={{ transform: `translateX(${image.x}vw)` }}
                 className={s.thumbnail}
                 src={require('../../assets/frodev_thumbnail.png')} />
             </div>
@@ -75,28 +74,37 @@ export default class ProjectFroDev extends Component {
               coverClassName={s.projecNameBackground}
               text={<h1 className={s.projectName}>FRODEV</h1>} /> }
             <p style={{
-              opacity: descriptionOpacity,
-              transform: `translateY(${descriptionY})px`
+              opacity: description.opacity,
+              transform: `translateY(${description.y})px`
             }} className={s.projectDescription}>FroDev manages link and resources using tags.</p>
             <div style={{
-              transform: `translateX(${linksX}px)`,
-              opacity: linksOpacity
+              transform: `translateX(${links.x}px)`,
+              opacity: links.opacity
             }} className={s.links}>
               <p>
-                <a href="">Go to Website</a>
+                <a target="_blank" href="https://frodev.herokuapp.com">Go to Website</a>
               </p>
               <p>
-                <a href="">Github</a>
+                <a target="_blank" href="https://github.com/chuson1996/frontend-advisor">Github</a>
               </p>
             </div>
-            <div style={{ opacity: skillsOpacity }} className={s.skills}>
+            <div style={{ opacity: skills.opacity }} className={s.skills}>
               <p className="lead">Skills:</p>
               <hr/>
-              <img className={s.skill} src={require('../../assets/react.png')}/>
-              <img className={s.skill} src={require('../../assets/redux.png')}/>
-              <img className={s.skill} src={require('../../assets/sketch.png')}/>
+              <img style={{
+                opacity: skill1.opacity,
+                transform: `translateY(${skill1.y}px)`
+              }} className={s.skill} src={require('../../assets/react.png')}/>
+              <img style={{
+                opacity: skill2.opacity,
+                transform: `translateY(${skill2.y}px)`
+              }} className={s.skill} src={require('../../assets/redux.png')}/>
+              <img style={{
+                opacity: skill3.opacity,
+                transform: `translateY(${skill3.y}px)`
+              }} className={s.skill} src={require('../../assets/sketch.png')}/>
             </div>
-          </div>
+          </div>)(de(rawStyle))
         }
       </Motion>
     );

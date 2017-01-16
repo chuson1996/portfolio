@@ -58,12 +58,19 @@ export default (context, timeline, path) => {
   throw new Error('Invalid format of timeline.');
 };
 
+const isSpringPreset = (value) => (
+  value.hasOwnProperty('damping') &&
+  value.hasOwnProperty('precision') &&
+  value.hasOwnProperty('stiffness') &&
+  value.hasOwnProperty('val')
+);
+
 export const se = (object) => {
   const result = {};
   const writeToResult = (key, val) => { result[key] = val; };
 
   const start = (prefix = '', obj) => {
-    if (typeof obj === 'object') {
+    if (typeof obj === 'object' && !isSpringPreset(obj)) {
       Object.keys(obj).forEach((key) => {
         const val = obj[key];
         if (prefix) start(`${prefix}.${key}`, val);
@@ -82,7 +89,6 @@ export const de = (object) => {
   Object.keys(object).forEach((key) => {
     const val = object[key];
     result = set(lensPath(key.split('.')), val, result);
-    console.log(result);
   });
   return result;
 };

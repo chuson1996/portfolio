@@ -1,7 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { Motion, spring, presets } from 'react-motion';
 import c from 'classnames';
-import setStateWithTimeline from 'helpers/setStateWithTimeline';
+import setStateWithTimeline, { se, de } from 'helpers/setStateWithTimeline';
 import { browserHistory } from 'react-router';
 import { RevealText } from 'components';
 
@@ -35,20 +35,26 @@ export default class ProjectPage extends Component {
         caption: { x: 100, opacity: 0 }
       }],
       animations: {
-        pageOpacity: 1,
-        titleOpacity: 0,
-        laptopY: 30,
-        laptopOpacity: 0,
-        captionY: 30,
-        captionOpacity: 0,
-        microscopeOpacity: 0,
-        microscopeY: 0,
-        microscopeScale: 1,
-        leftArrowOpacity: 0,
-        leftArrowX: 40,
-        rightArrowOpacity: 0,
-        rightArrowX: -40,
-        imageX: 0
+        page: {
+          opacity: 1
+        },
+        title: { opacity: 0 },
+        laptop: { y: 30, opacity: 0 },
+        caption: { y: 30, opacity: 0 },
+        microscope: {
+          opacity: 0,
+          y: 0,
+          scale: 1,
+        },
+        leftArrow: {
+          opacity: 0,
+          x: 40,
+        },
+        rightArrow: {
+          opacity: 0,
+          x: -40,
+        },
+        image: { x: 0 }
       }
     };
   }
@@ -59,39 +65,53 @@ export default class ProjectPage extends Component {
     let timeline;
     if (location.action === 'PUSH' && /^\/.+\/.+$/.test(location.pathname)) {
       timeline = [['0', () => ({
-        pageOpacity: 0,
-        microscopeY: 0,
-        microscopeScale: 1,
-        leftArrowOpacity: 1,
-        leftArrowX: 0,
-        rightArrowOpacity: 1,
-        rightArrowX: 0,
+        page: { opacity: 0 },
+        microscope: {
+          opacity: 1,
+          y: 0,
+          scale: 1,
+        },
+        leftArrow: {
+          opacity: 1,
+          x: 0,
+        },
+        rightArrow: {
+          opacity: 1,
+          x: 0,
+        }
       })]];
     } else {
       timeline = [
-        [location.action === 'PUSH' ? '500' : '0', () => ({ titleOpacity: spring(1),
-          pageOpacity: 1
+        [location.action === 'PUSH' ? '500' : '0', () => ({
+          title: { opacity: spring(1) },
+          page: { opacity: 1 }
         })],
         ['+500', () => ({
-          laptopY: spring(0),
-          laptopOpacity: spring(1)
+          laptop: { y: spring(0), opacity: spring(1) },
         })],
         ['+500', () => ({
-          captionOpacity: spring(1),
-          captionY: spring(0)
+          caption: { y: spring(0), opacity: spring(1) },
         })],
         ['+500', () => ({
-          microscopeOpacity: spring(1),
-          microscopeY: spring(-50),
-          microscopeScale: spring(2)
+          microscope: {
+            opacity: spring(1),
+            y: spring(-50),
+            scale: spring(2)
+          },
         })],
         ['+500', () => ({
-          microscopeY: wobbly(0),
-          microscopeScale: spring(1),
-          leftArrowOpacity: wobbly(1),
-          leftArrowX: wobbly(0),
-          rightArrowOpacity: spring(1),
-          rightArrowX: wobbly(0),
+          microscope: {
+            y: wobbly(0),
+            scale: spring(1),
+          },
+          leftArrow: {
+            opacity: spring(1),
+            x: wobbly(0),
+          },
+          rightArrow: {
+            opacity: spring(1),
+            x: wobbly(0),
+          }
         })]
       ];
     }
@@ -134,7 +154,7 @@ export default class ProjectPage extends Component {
 
   openProjectMotion = () => {
     const timeline = [
-      ['0', () => ({ imageX: spring(-100) })],
+      ['0', () => ({ image: {x: spring(-100)} })],
       ['+500', () => { browserHistory.push('/projects/frodev'); return {}; }]
     ];
     setStateWithTimeline(this, timeline, 'animations');
@@ -150,11 +170,11 @@ export default class ProjectPage extends Component {
 
     return (
       <div>
-        <Motion style={this.state.animations}>
-          {({pageOpacity, titleOpacity, laptopY, laptopOpacity, captionY, captionOpacity, microscopeOpacity, microscopeY, microscopeScale, leftArrowOpacity, leftArrowX, rightArrowOpacity, rightArrowX, imageX }) =>
-            <div style={{ opacity: pageOpacity }} className={`page ${s.projectPage}`}>
+        <Motion style={se(this.state.animations)}>
+          { (rawStyles) => (({page, title, laptop, caption, microscope, leftArrow, rightArrow, image }) =>
+            <div style={{ opacity: page.opacity }} className={`page ${s.projectPage}`}>
               <div
-                style={{ opacity: titleOpacity }}
+                style={{ opacity: title.opacity }}
                 className={s.projectPage__title__container}>
                 <RevealText
                   coverClassName={s.page__title__cover}
@@ -166,8 +186,8 @@ export default class ProjectPage extends Component {
                 {projects.map(({ thumbnailUrl, name, description }, index) =>
                   <div className={s.project} key={index}>
                     <div style={{
-                      opacity: laptopOpacity,
-                      transform: `translateY(${laptopY}px)`
+                      opacity: laptop.opacity,
+                      transform: `translateY(${laptop.y}px)`
                     }}>
                       <Motion style={motion[index].thumbnail}>
                         {({ rotateZ, opacity }) =>
@@ -177,7 +197,7 @@ export default class ProjectPage extends Component {
                           }}>
                             <div className={s.projectScreen}>
                               <img style={{
-                                transform: `translateX(${imageX}%)`
+                                transform: `translateX(${image.x}%)`
                               }} src={thumbnailUrl} alt=""/>
                             </div>
                           </div>
@@ -185,8 +205,8 @@ export default class ProjectPage extends Component {
                       </Motion>
                     </div>
                     <div style={{
-                      opacity: captionOpacity,
-                      transform: `translateY(${captionY}px)`
+                      opacity: caption.opacity,
+                      transform: `translateY(${caption.y}px)`
                     }}>
                       <Motion style={motion[index].caption}>
                         {({ opacity, x }) =>
@@ -206,8 +226,8 @@ export default class ProjectPage extends Component {
 
               <div className={s.sliderControl}>
                 <div style={{
-                  opacity: leftArrowOpacity,
-                  transform: `translateX(${leftArrowX}px)`
+                  opacity: leftArrow.opacity,
+                  transform: `translateX(${leftArrow.x}px)`
                 }}>
                   <a className={c({ [s.disabled]: atProject === 1 })} onClick={() => this.switchProject()}>
                     <i className="fa fa-arrow-left"></i>
@@ -215,16 +235,16 @@ export default class ProjectPage extends Component {
                   </a>
                 </div>
                 <div style={{
-                  opacity: microscopeOpacity,
-                  transform: `translateY(${microscopeY}px) scale(${microscopeScale})`
+                  opacity: microscope.opacity,
+                  transform: `translateY(${microscope.y}px) scale(${microscope.scale})`
                 }}>
                   <a onClick={this.openProjectMotion}>
                     <i className="fa fa-search"></i>
                   </a>
                 </div>
                 <div style={{
-                  opacity: rightArrowOpacity,
-                  transform: `translateX(${rightArrowX}px)`
+                  opacity: rightArrow.opacity,
+                  transform: `translateX(${rightArrow.x}px)`
                 }}>
                   <a className={c({ [s.disabled]: atProject === projects.length })} onClick={() => this.switchProject(true)}>
                     <i className="fa fa-arrow-right"></i>
@@ -232,7 +252,7 @@ export default class ProjectPage extends Component {
                   </a>
                 </div>
               </div>
-            </div>
+            </div>)(de(rawStyles))
           }
         </Motion>
         {this.props.children}
